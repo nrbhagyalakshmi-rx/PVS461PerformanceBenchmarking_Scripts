@@ -1,0 +1,199 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: signal",
+                "infFile": "t2.inf",
+                "time": 1581675092482
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1581675094502
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: en.json",
+                "infFile": "t4.inf",
+                "time": 1581675094820
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: events",
+                "infFile": "t10.inf",
+                "time": 1581675098013
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Submit Data: saveDashboardConfig",
+                "infFile": "t17.inf",
+                "time": 1581675125591
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Submit Data: searchViews",
+                "infFile": "t25.inf",
+                "time": 1581675147713
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Custom Request: getSelectedItem",
+                "infFile": "t26.inf",
+                "time": 1581675147998
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Submit Data: getPreLevelProductParents",
+                "infFile": "t27.inf",
+                "time": 1581675148315
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Submit Data: getPreLevelProductParents_2",
+                "infFile": "t28.inf",
+                "time": 1581675148623
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Submit Data: getPreLevelProductParents_3",
+                "infFile": "t29.inf",
+                "time": 1581675148917
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Submit Data: getPreLevelProductParents_4",
+                "infFile": "t30.inf",
+                "time": 1581675149208
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Submit Data: getPreLevelProductParents_5",
+                "infFile": "t31.inf",
+                "time": 1581675149504
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Submit Data: getPreLevelProductParents_6",
+                "infFile": "t32.inf",
+                "time": 1581675149811
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Custom Request: prepareICSRsReport",
+                "infFile": "t33.inf",
+                "time": 1581676107520
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Custom Request: requestReport",
+                "infFile": "t34.inf",
+                "time": 1581676130488
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Custom Request: requestReport_2",
+                "infFile": "t35.inf",
+                "time": 1581676152603
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Custom Request: requestReport_3",
+                "infFile": "t36.inf",
+                "time": 1581676172876
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Custom Request: requestReport_4",
+                "infFile": "t37.inf",
+                "time": 1581676195435
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Custom Request: requestReport_5",
+                "infFile": "t38.inf",
+                "time": 1581676218958
+            },
+            {
+                "stepId": "STEP20",
+                "stepName": "Url: index_2",
+                "infFile": "t39.inf",
+                "time": 1581676239034
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "SignalReports_01_OpenApplication",
+                "rawStartTime": 1581675091125,
+                "rawEndTime": 1581675092548,
+                "thinkTime": 0.0,
+                "wastedTime": 0.10957598686218262
+            },
+            {
+                "transactionName": "SignalReports_02_Login",
+                "rawStartTime": 1581675092548,
+                "rawEndTime": 1581675101120,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05764937400817871
+            },
+            {
+                "transactionName": "SignalReports_03_NavigateToSignalReports",
+                "rawStartTime": 1581675125019,
+                "rawEndTime": 1581675128069,
+                "thinkTime": 0.0,
+                "wastedTime": 0.033524274826049808
+            },
+            {
+                "transactionName": "SignalReports_04_GenerateICSRsByCaseCharacteristics",
+                "rawStartTime": 1581675149817,
+                "rawEndTime": 1581676107521,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0063517093658447269
+            },
+            {
+                "transactionName": "SignalReports_05_InitiatePBRERSignalSummaryReport",
+                "rawStartTime": 1581676129790,
+                "rawEndTime": 1581676130489,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004997730255126953
+            },
+            {
+                "transactionName": "SignalReports_06_InitiateSignalSummaryReport",
+                "rawStartTime": 1581676151915,
+                "rawEndTime": 1581676152603,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004735469818115234
+            },
+            {
+                "transactionName": "SignalReports_07_InitiateSignalsByState",
+                "rawStartTime": 1581676172420,
+                "rawEndTime": 1581676172876,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0058841705322265629
+            },
+            {
+                "transactionName": "SignalReports_08_InitiateSignalProductsAction",
+                "rawStartTime": 1581676194738,
+                "rawEndTime": 1581676195436,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004681110382080078
+            },
+            {
+                "transactionName": "SignalReports_09_InitiateMemoReport",
+                "rawStartTime": 1581676218240,
+                "rawEndTime": 1581676218958,
+                "thinkTime": 0.0,
+                "wastedTime": 0.005301952362060547
+            },
+            {
+                "transactionName": "SignalReports_10_Logout",
+                "rawStartTime": 1581676237944,
+                "rawEndTime": 1581676239037,
+                "thinkTime": 0.0,
+                "wastedTime": 0.005667448043823242
+            }
+        ]
+    }
+]

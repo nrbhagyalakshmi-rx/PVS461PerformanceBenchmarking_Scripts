@@ -1,0 +1,14 @@
+Start auto log messages stack - Iteration 9.	[MsgId: MMSG-10545]
+Action.c(583): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(583): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(586): web_add_header("Cache-Control") started  	[MsgId: MMSG-26355]
+Action.c(586): web_add_header("Cache-Control") was successful  	[MsgId: MMSG-26392]
+Action.c(589): web_add_header("Pragma") started  	[MsgId: MMSG-26355]
+Action.c(589): web_add_header("Pragma") was successful  	[MsgId: MMSG-26392]
+Action.c(592): web_add_header("Upgrade") started  	[MsgId: MMSG-26355]
+Action.c(592): web_add_header("Upgrade") was successful  	[MsgId: MMSG-26392]
+Action.c(595): web_websocket_connect started  	[MsgId: MMSG-26355]
+Action.c(595): Error -26627: HTTP Status-Code=404 (Not Found) for "ws://10.100.22.24:8181/signal/stomp/859/6_pxef0x/websocket"  	[MsgId: MERR-26627]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

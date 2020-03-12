@@ -1,0 +1,2579 @@
+{
+  "FilterHeaders": [
+    {
+      "Header": "x-requested-with",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-http-method-override",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-goog-update-updater",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-goog-update-interactivity",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-goog-update-appid",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-goog-api-key",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-csrf-token",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "user-agent",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "upgrade-insecure-requests",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "upgrade",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-websocket-version",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-websocket-key",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-websocket-extensions",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-fetch-site",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-fetch-mode",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "pragma",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "origin",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "if-none-match",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "cache-control",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "accept-language",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "accept-encoding",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "accept",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "a-im",
+      "IncludeInScript": true
+    }
+  ],
+  "FilterResources": [
+    {
+      "IsNonResource": false,
+      "type": "text/proto"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/plain"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/javascript"
+    },
+    {
+      "IsNonResource": true,
+      "type": "text/html"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/css"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/x-icon"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/png"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/jpeg"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/gif"
+    },
+    {
+      "IsNonResource": false,
+      "type": "font/woff2"
+    },
+    {
+      "IsNonResource": false,
+      "type": "font/woff"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/x-protobuf"
+    },
+    {
+      "IsNonResource": true,
+      "type": "application/json"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/javascript"
+    }
+  ],
+  "GeneralInfo": {
+    "BrowserVersion": "",
+    "IsWinInetMode": false,
+    "MaxUsedConnections": 32,
+    "RecordedBrowser": "Chrome",
+    "RecordingDate": "Nov-05-2019",
+    "RecordingDuration": 375375,
+    "RecordingMode": "N/A",
+    "RecordingTimeStamp": 1572947984,
+    "RecordingType": "Browser",
+    "TotalBytesReceived": 3720536,
+    "TotalBytesSent": 293352,
+    "TotalRequests": 257,
+    "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+  },
+  "HostInfo": [
+    {
+      "DomainName": "gstatic.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.163.67",
+          "IncludeInScript": true,
+          "Name": "www.gstatic.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 3416,
+              "HttpStatus": 200,
+              "Size": 76,
+              "URL": "https://www.gstatic.com/autofill/hourly/bins.json"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 3414,
+              "HttpStatus": 200,
+              "Size": 82,
+              "URL": "https://www.gstatic.com/autofill/weekly/merchants.json"
+            }
+          ],
+          "SSLCipher": "ECDHE-ECDSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googleapis.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.163.99",
+          "IncludeInScript": true,
+          "Name": "update.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 359,
+              "EventId": 4225,
+              "HttpStatus": 200,
+              "Size": 648,
+              "URL": "https://update.googleapis.com/service/update2/json?cup2key=9:927616004&cup2hreq=6a00124221c11273fa2fabda77ed920ea743466283737937afb3b3daffc54016"
+            }
+          ],
+          "SSLCipher": "ECDHE-ECDSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.31.202",
+          "IncludeInScript": true,
+          "Name": "safebrowsing.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/x-protobuf",
+              "DownloadTime": 47,
+              "EventId": 3882,
+              "HttpStatus": 200,
+              "Size": 3552,
+              "URL": "https://safebrowsing.googleapis.com/v4/threatListUpdates:fetch?$req=Ch0KDGdvb2dsZWNocm9tZRINNzkuMC4zOTQ1LjEzMBopCAUQARobCg0IBRAGGAEiAzAwMTABEPb_BxoCGAiQafekIgQgASACKAEaKQgBEAEaGwoNCAEQBhgBIgMwMDEwARDS_gYaAhgIcmCKDSIEIAEgAigBGikIAxABGhsKDQgDEAYYASIDMDAxMAEQuYAHGgIYCCSBju0iBCABIAIoARopCAcQARobCg0IBxAGGAEiAzAwMTABEL3qBhoCGAjmF1laIgQgASACKAEaJwgBEAEaGQoNCAEQBhgBIgMwMDEwAxAUGgIYCEqjxu8iBCABIAIoAxooCAEQCBoaCg0IARAIGAEiAzAwMTAEEJoZGgIYCCGbbzciBCABIAIoBBonCAkQARoZCg0ICRAGGAEiAzAwMTAGEAMaAhgI1dRV4iIEIAEgAigGGigIDxABGhoKDQgPEAYYASIDMDAxMAEQ3iAaAhgIxTTUHyIEIAEgAigBGicIChAIGhkKDQgKEAgYASIDMDAxMAEQBRoCGAh2x7GvIgQgASACKAEaJwgJEAEaGQoNCAkQBhgBIgMwMDEwARAZGgIYCANKKcIiBCABIAIoARooCAgQARoaCg0ICBAGGAEiAzAwMTABEPQHGgIYCHNTbHkiBCABIAIoARooCA0QARoaCg0IDRAGGAEiAzAwMTABEMFnGgIYCO0ne3IiBCABIAIoARopCA4QARobCg0IDhAGGAEiAzAwMTABEPeFAxoCGAhdHmcOIgQgASACKAEaKAgQEAEaGgoNCBAQBhgBIgMwMDEwARCtARoCGAg9TWLhIgQgASACKAEiAggB&$ct=application/x-protobuf&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
+            }
+          ],
+          "SSLCipher": "ECDHE-ECDSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.26.163",
+          "IncludeInScript": true,
+          "Name": "clientservices.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 265,
+              "EventId": 3433,
+              "HttpStatus": 304,
+              "Size": 0,
+              "URL": "https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=79"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "google.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.167.142",
+          "IncludeInScript": true,
+          "Name": "clients1.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/proto",
+              "DownloadTime": 47,
+              "EventId": 3711,
+              "HttpStatus": 200,
+              "Size": 28,
+              "URL": "https://clients1.google.com/tbproxy/af/query?q=Chc2LjEuMTcxNS4xNDQyL2VuIChHR0xMKRMZR7yBQeyLwDEjLe_YgOYkIy1_PJqbJCMtkcnz6SQjLbnQilEkIy3RZ88eJCMt0miFOSQjLRv2j6AkIy3wFhzoJCMtOE-ZNiQU"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/proto",
+              "DownloadTime": 62,
+              "EventId": 3431,
+              "HttpStatus": 200,
+              "Size": 28,
+              "URL": "https://clients1.google.com/tbproxy/af/query?q=Chc2LjEuMTcxNS4xNDQyL2VuIChHR0xMKRMZvBF5tm-9p3sjLeeNQA4kIy3OQUx6JBQ="
+            }
+          ],
+          "SSLCipher": "ECDHE-ECDSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "10.100.22.24",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "10.100.22.24",
+          "IncludeInScript": true,
+          "Name": "10.100.22.24",
+          "Port": 8181,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 313,
+              "EventId": 4242,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2Flogin%2Fauth&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 375,
+              "EventId": 4238,
+              "HttpStatus": 200,
+              "Size": 2841,
+              "URL": "http://10.100.22.24:8181/signal/login/auth"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 406,
+              "EventId": 4236,
+              "HttpStatus": 302,
+              "Size": 0,
+              "URL": "http://10.100.22.24:8181/signal/logoff"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 266,
+              "EventId": 4234,
+              "HttpStatus": 302,
+              "Size": 0,
+              "URL": "http://10.100.22.24:8181/signal/logout/index"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1141,
+              "EventId": 4229,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300921"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1078,
+              "EventId": 4215,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300920"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 344,
+              "EventId": 4213,
+              "HttpStatus": 200,
+              "Size": 2720,
+              "URL": "http://10.100.22.24:8181/signal/activity/activitiesBySignal/30322?_=1580885300919"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1218,
+              "EventId": 4207,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300918"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 906,
+              "EventId": 4203,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300917"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 532,
+              "EventId": 4201,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/meeting/list?alertId=30322&appType=Signal%20Management&_=1580885300916"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 531,
+              "EventId": 4199,
+              "HttpStatus": 200,
+              "Size": 2720,
+              "URL": "http://10.100.22.24:8181/signal/activity/activitiesBySignal/30322?_=1580885300915"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 344,
+              "EventId": 4197,
+              "HttpStatus": 200,
+              "Size": 666,
+              "URL": "http://10.100.22.24:8181/signal/action/listByAlert?alertId=30322&appType=Signal%20Management&_=1580885300912"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 735,
+              "EventId": 4185,
+              "HttpStatus": 200,
+              "Size": 371,
+              "URL": "http://10.100.22.24:8181/signal/action/save"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1781,
+              "EventId": 4181,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300911"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 719,
+              "EventId": 4179,
+              "HttpStatus": 200,
+              "Size": 269,
+              "URL": "http://10.100.22.24:8181/signal/user/searchUserGroupList?max=10&lang=en"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1750,
+              "EventId": 4175,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300910"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1562,
+              "EventId": 4170,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300909"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1094,
+              "EventId": 4166,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300908"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1343,
+              "EventId": 4156,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300907"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1781,
+              "EventId": 4150,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300906"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 28531,
+              "EventId": 4148,
+              "HttpStatus": 200,
+              "Size": 9980,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/graphReport"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1860,
+              "EventId": 4144,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300905"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1438,
+              "EventId": 4138,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300904"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 328,
+              "EventId": 4136,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2FvalidatedSignal%2Fdetails%3Fid%3D30322&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 500,
+              "EventId": 4134,
+              "HttpStatus": 200,
+              "Size": 100,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/update"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1485,
+              "EventId": 4130,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300903"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 281,
+              "EventId": 4123,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2FvalidatedSignal%2Fdetails%3Fid%3D30322&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1750,
+              "EventId": 4119,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300902"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 547,
+              "EventId": 4117,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2FvalidatedSignal%2Fdetails%3Fid%3D30322&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 719,
+              "EventId": 4115,
+              "HttpStatus": 404,
+              "Size": 0,
+              "URL": "http://10.100.22.24:8181/signal/assets/images/ui-icons_444444_256x240.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 687,
+              "EventId": 4113,
+              "HttpStatus": 200,
+              "Size": 2010,
+              "URL": "http://10.100.22.24:8181/signal/activity/activitiesBySignal/30322?_=1580885300901"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 485,
+              "EventId": 4111,
+              "HttpStatus": 101,
+              "Size": 5,
+              "URL": "http://10.100.22.24:8181/signal/stomp/156/so5xja0y/websocket"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 344,
+              "EventId": 4109,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/meeting/list?alertId=30322&appType=Signal%20Management&_=1580885300898"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 344,
+              "EventId": 4107,
+              "HttpStatus": 200,
+              "Size": 135,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/fetchAttachments?alertId=30322&_=1580885300899"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 297,
+              "EventId": 4105,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/alertDocument/listBySignal?signalId=30322&_=1580885300900"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 328,
+              "EventId": 4103,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/peAnalysis?id=30322&isTopic=false&_=1580885300896"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 312,
+              "EventId": 4101,
+              "HttpStatus": 200,
+              "Size": 445,
+              "URL": "http://10.100.22.24:8181/signal/action/listByAlert?alertId=30322&appType=Signal%20Management&_=1580885300897"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 281,
+              "EventId": 4099,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/literatureAlertList?id=30322&_=1580885300895"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 546,
+              "EventId": 4095,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/adHocAlertList?id=30322&_=1580885300894"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 578,
+              "EventId": 4093,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/aggregateCaseAlertList?id=30322&_=1580885300892"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1344,
+              "EventId": 4090,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885300891"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 547,
+              "EventId": 4088,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/singleCaseAlertList?id=30322&_=1580885300893"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 579,
+              "EventId": 4086,
+              "HttpStatus": 200,
+              "Size": 78,
+              "URL": "http://10.100.22.24:8181/signal/stomp/info"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 563,
+              "EventId": 4084,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2FvalidatedSignal%2Fdetails%3Fid%3D30322&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 281,
+              "EventId": 4082,
+              "HttpStatus": 200,
+              "Size": 1550,
+              "URL": "http://10.100.22.24:8181/signal/assets/pv-btn-bg3-1e05f4eeb9f3efb885b2c05a0bea4ab4.jpg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 265,
+              "EventId": 4080,
+              "HttpStatus": 200,
+              "Size": 387,
+              "URL": "http://10.100.22.24:8181/signal/assets/i18n/dataTables_en.json"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 297,
+              "EventId": 4078,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/fetchLinkedConfiguration/30322"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 281,
+              "EventId": 4076,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/controlPanel/getDmsFolders?folder="
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 438,
+              "EventId": 4073,
+              "HttpStatus": 200,
+              "Size": 4251,
+              "URL": "http://10.100.22.24:8181/signal/assets/plugin/dictionary/polymer-micro.html"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 282,
+              "EventId": 4070,
+              "HttpStatus": 200,
+              "Size": 8921,
+              "URL": "http://10.100.22.24:8181/signal/assets/plugin/dictionary/polymer-mini.html"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 375,
+              "EventId": 4068,
+              "HttpStatus": 200,
+              "Size": 5250,
+              "URL": "http://10.100.22.24:8181/signal/assets/plugin/dictionary/column-view-lib-bd7bc6ac60142802df527fb4fdd3a579.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 360,
+              "EventId": 4064,
+              "HttpStatus": 200,
+              "Size": 25982,
+              "URL": "http://10.100.22.24:8181/signal/assets/plugin/dictionary/polymer.html"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 312,
+              "EventId": 4061,
+              "HttpStatus": 200,
+              "Size": 8198,
+              "URL": "http://10.100.22.24:8181/signal/assets/settings-icon-b0a317a7f2146920be7046bdda1c7fe4.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 265,
+              "EventId": 4059,
+              "HttpStatus": 200,
+              "Size": 878,
+              "URL": "http://10.100.22.24:8181/signal/assets/pdf-icon.jpg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 344,
+              "EventId": 4057,
+              "HttpStatus": 200,
+              "Size": 4524,
+              "URL": "http://10.100.22.24:8181/signal/assets/plugin/dictionary/dictionaries-28bdb28ccc79e1b54cfb9c2a829ce561.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 313,
+              "EventId": 4055,
+              "HttpStatus": 200,
+              "Size": 320,
+              "URL": "http://10.100.22.24:8181/signal/assets/plugin/dictionary/studyCompounds-d1264ac301b89c2be214faf502830ceb.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 281,
+              "EventId": 4053,
+              "HttpStatus": 200,
+              "Size": 1603,
+              "URL": "http://10.100.22.24:8181/signal/assets/excel.gif"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 344,
+              "EventId": 4051,
+              "HttpStatus": 200,
+              "Size": 470,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/validated_signal/prev_assessment-77e06d295daa837a7b88f73dfb777681.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 297,
+              "EventId": 4049,
+              "HttpStatus": 200,
+              "Size": 920,
+              "URL": "http://10.100.22.24:8181/signal/assets/plugin/dictionary/dictionaries-a389940428e37a7d9156a6bb1e25e277.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 281,
+              "EventId": 4047,
+              "HttpStatus": 200,
+              "Size": 348,
+              "URL": "http://10.100.22.24:8181/signal/assets/plugin/dictionary/studyDrugs-9650caca7b2eaad47de57af7bbefe066.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 313,
+              "EventId": 4045,
+              "HttpStatus": 200,
+              "Size": 1341,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/activity/activities-c675edac8f3d769b686522882abd176e.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 312,
+              "EventId": 4043,
+              "HttpStatus": 200,
+              "Size": 1985,
+              "URL": "http://10.100.22.24:8181/signal/assets/plugin/dictionary/column-view-64c0085c608464f4a6f66e33d985ae27.html"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 4041,
+              "HttpStatus": 200,
+              "Size": 1926,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/documentManagement/document-72e8dec1516af5843deda0cc37ce5c6b.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 281,
+              "EventId": 4039,
+              "HttpStatus": 200,
+              "Size": 2188,
+              "URL": "http://10.100.22.24:8181/signal/assets/jquery/jquery-picklist-7f901c3043731e208b1316334872e809.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 296,
+              "EventId": 4037,
+              "HttpStatus": 200,
+              "Size": 592,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/documentManagement/summaryReportPreference-e2a8c6bda3f93e63f516e7078771f2ee.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 281,
+              "EventId": 4035,
+              "HttpStatus": 200,
+              "Size": 316,
+              "URL": "http://10.100.22.24:8181/signal/assets/jquery-picklist-2048c1f4a033c97a39a65f4accd34e0f.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 313,
+              "EventId": 4033,
+              "HttpStatus": 200,
+              "Size": 1416,
+              "URL": "http://10.100.22.24:8181/signal/assets/word-icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 297,
+              "EventId": 4031,
+              "HttpStatus": 200,
+              "Size": 1849,
+              "URL": "http://10.100.22.24:8181/signal/assets/select2-spinner-7b9776076d5fceef4993b55c9383dedd.gif"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 297,
+              "EventId": 4029,
+              "HttpStatus": 200,
+              "Size": 1603,
+              "URL": "http://10.100.22.24:8181/signal/assets/excel-a40ce78cdd86cac8004163bf736802da.gif"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 297,
+              "EventId": 4027,
+              "HttpStatus": 200,
+              "Size": 1416,
+              "URL": "http://10.100.22.24:8181/signal/assets/word-icon-d5dad3111daf01520f03d97072fa0247.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 4025,
+              "HttpStatus": 200,
+              "Size": 4629,
+              "URL": "http://10.100.22.24:8181/signal/assets/bootstrap-timepicker/bootstrap-timepicker.min-c61759ebbf0b9c32d7dd4b576a02b3af.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 281,
+              "EventId": 4023,
+              "HttpStatus": 200,
+              "Size": 848,
+              "URL": "http://10.100.22.24:8181/signal/assets/bootstrap-timepicker/bootstrap-timepicker.min-5450fea488d9ab3de6359ebee9ab53d2.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 500,
+              "EventId": 4020,
+              "HttpStatus": 200,
+              "Size": 17257,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/validated_signal/actionManagement-9b3035841e83fe8a8a03704decaad1fb.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 406,
+              "EventId": 4018,
+              "HttpStatus": 200,
+              "Size": 3720,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/bootbox.min-05d23d3920015845ca00414081fd0ec6.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 437,
+              "EventId": 4015,
+              "HttpStatus": 200,
+              "Size": 510,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/signalHistory/signalHistoryTable-0c39c083359e752e14f0fb791c71bd84.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 453,
+              "EventId": 4013,
+              "HttpStatus": 200,
+              "Size": 16579,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/alerts_review/alert_review-52aa32c8fa52a61d00aafbee81a39b68.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 391,
+              "EventId": 4011,
+              "HttpStatus": 200,
+              "Size": 973,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/scheduler-82d3be00264ea2ea812cb92114db899e.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 422,
+              "EventId": 4009,
+              "HttpStatus": 404,
+              "Size": 0,
+              "URL": "http://10.100.22.24:8181/signal/assets/solid-gauge.js.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 921,
+              "EventId": 4005,
+              "HttpStatus": 200,
+              "Size": 36867,
+              "URL": "http://10.100.22.24:8181/signal/assets/dygraphs/dygraph.min-0e7f2a89b8c55e6f5dd35fc29aeb0795.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 328,
+              "EventId": 4003,
+              "HttpStatus": 200,
+              "Size": 998,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/alertComments/alertComments-043f2fe715338e3aafc7b078655b345a.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 313,
+              "EventId": 4001,
+              "HttpStatus": 200,
+              "Size": 382,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/validated_signal/signal_charts-77adc41f9e1c88551dba910b24381240.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 312,
+              "EventId": 3999,
+              "HttpStatus": 200,
+              "Size": 529,
+              "URL": "http://10.100.22.24:8181/signal/assets/plugin/dictionary/productDictionary-eeaadfef73b9e8aa3d5bbccd020fbe0e.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3996,
+              "HttpStatus": 200,
+              "Size": 482,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/validated_signal/heat_map-f747d34b3b0c59f40239fc243fb56a35.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3994,
+              "HttpStatus": 200,
+              "Size": 4970,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/meeting/meeting-de535096ddd18f1005ebc2ed485909a3.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 515,
+              "EventId": 3992,
+              "HttpStatus": 404,
+              "Size": 0,
+              "URL": "http://10.100.22.24:8181/signal/assets/solid-gauge.js.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 515,
+              "EventId": 3989,
+              "HttpStatus": 200,
+              "Size": 403,
+              "URL": "http://10.100.22.24:8181/signal/assets/dygraph-9ffc8edc13e94f06f279514e89ae9a34.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 532,
+              "EventId": 3987,
+              "HttpStatus": 200,
+              "Size": 1258,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/validated_signal/pe_analysis-9b94b811858e7d8962b1cfbc74ba940a.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 516,
+              "EventId": 3985,
+              "HttpStatus": 200,
+              "Size": 3669,
+              "URL": "http://10.100.22.24:8181/signal/assets/heatmap-0d373b281efb3c2e426ad55cc3b804b7.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 843,
+              "EventId": 3982,
+              "HttpStatus": 200,
+              "Size": 27197,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/validated_signal/review-77a98c587a3c46b2798e8d9182603927.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 375,
+              "EventId": 3980,
+              "HttpStatus": 200,
+              "Size": 1926,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/configuration/copyPasteValues-dd8a34b0c3cea622c5bf12b4b7b0747e.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 359,
+              "EventId": 3978,
+              "HttpStatus": 200,
+              "Size": 592,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/configuration/dictionaryMultiSearch-0c56737ef3e5624d8c3dc9c884e3ac04.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 312,
+              "EventId": 3976,
+              "HttpStatus": 200,
+              "Size": 878,
+              "URL": "http://10.100.22.24:8181/signal/assets/pdf-icon-a6e7d7d9b9c47fb6cfd5611a914b2db5.jpg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 390,
+              "EventId": 3974,
+              "HttpStatus": 200,
+              "Size": 202,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/alert_utils/common_key_prevent-ef5634527119e90cc2576f0ef956085c.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3972,
+              "HttpStatus": 200,
+              "Size": 890,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/alert_utils/dictionary-utils-b1fcdae2ebabda73b7bf23a9cc971c24.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3970,
+              "HttpStatus": 200,
+              "Size": 2415,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/priority/priority-change-563bf2de0b881ffce6a107ddfd61b0a1.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 313,
+              "EventId": 3968,
+              "HttpStatus": 200,
+              "Size": 1120,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/bootstrap-modal-popover/bootstrap-modal-popover-13efefa1c00b94cc73690eb7d64a74c4.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3966,
+              "HttpStatus": 200,
+              "Size": 1211,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/validated_signal/linked_configurations-f3f6b4c74897224e7a47327ad7d65253.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 281,
+              "EventId": 3963,
+              "HttpStatus": 200,
+              "Size": 4618,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/disposition/disposition-change-2d2e2087675ac5c86ba1271a6d52bfd3.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3961,
+              "HttpStatus": 200,
+              "Size": 1994,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/validated_signal/validated_signal_create-c356d790268665c872947f27aea124ee.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 1125,
+              "EventId": 3954,
+              "HttpStatus": 200,
+              "Size": 70001,
+              "URL": "http://10.100.22.24:8181/signal/assets/highcharts-50a25259e6a580b561454e81986e4486.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 312,
+              "EventId": 3952,
+              "HttpStatus": 200,
+              "Size": 2701,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/validated_signal/validated_signal_charts-01d6504b57318441c2dc3734f4a4937c.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 312,
+              "EventId": 3950,
+              "HttpStatus": 200,
+              "Size": 1443,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/popover/popover.min-1126e05676916775b399f1693085bfcd.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 296,
+              "EventId": 3948,
+              "HttpStatus": 200,
+              "Size": 1032,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/caseHistory/caseHistoryTable-f85fb0708a524a8a3e9796f9a22f1266.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 281,
+              "EventId": 3946,
+              "HttpStatus": 200,
+              "Size": 496,
+              "URL": "http://10.100.22.24:8181/signal/assets/copyPasteModal-23c4a55ddeb74fe71b7e63fa6978b420.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 297,
+              "EventId": 3944,
+              "HttpStatus": 200,
+              "Size": 494,
+              "URL": "http://10.100.22.24:8181/signal/assets/configuration-a161b5c4d73be3b8064380a1a3b2d4cc.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 297,
+              "EventId": 3942,
+              "HttpStatus": 200,
+              "Size": 6481,
+              "URL": "http://10.100.22.24:8181/signal/assets/components-d9f82004362210b46ccd5edf473d8690.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 594,
+              "EventId": 3940,
+              "HttpStatus": 200,
+              "Size": 7034,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/highcharts/highcharts-3d-65774008a3b78b30a394568a24c6af09.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 594,
+              "EventId": 3938,
+              "HttpStatus": 200,
+              "Size": 9725,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/highcharts/highcharts-more-f214354c75a376fd86847242d26a1023.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 562,
+              "EventId": 3936,
+              "HttpStatus": 200,
+              "Size": 544,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/highcharts/themes/grid-rx-b439bf122addf135d43063a53d34f9d7.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 531,
+              "EventId": 3934,
+              "HttpStatus": 200,
+              "Size": 1756,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/dms/dmsConfiguration-dd126e153d823fef612ba29b3824b193.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 281,
+              "EventId": 3932,
+              "HttpStatus": 200,
+              "Size": 4382,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/validated_signal/assessment_dictionary-7324e7ee9ae0f51f04afa68bcdb95ab4.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 3172,
+              "EventId": 3886,
+              "HttpStatus": 200,
+              "Size": 521351,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/details?id=30322"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 922,
+              "EventId": 3876,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885269350"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1031,
+              "EventId": 3863,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885269349"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 343,
+              "EventId": 3859,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2FvalidatedSignal%2Findex&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1063,
+              "EventId": 3855,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885269348"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 312,
+              "EventId": 3853,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2FvalidatedSignal%2Findex&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 359,
+              "EventId": 3851,
+              "HttpStatus": 101,
+              "Size": 5,
+              "URL": "http://10.100.22.24:8181/signal/stomp/964/rlr25qco/websocket"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 781,
+              "EventId": 3847,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885269347"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 531,
+              "EventId": 3844,
+              "HttpStatus": 200,
+              "Size": 18689,
+              "URL": "http://10.100.22.24:8181/signal/assets/spinner.gif"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 406,
+              "EventId": 3840,
+              "HttpStatus": 200,
+              "Size": 388,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/list?_=1580885269346"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 297,
+              "EventId": 3838,
+              "HttpStatus": 200,
+              "Size": 78,
+              "URL": "http://10.100.22.24:8181/signal/stomp/info"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 485,
+              "EventId": 3834,
+              "HttpStatus": 200,
+              "Size": 762,
+              "URL": "http://10.100.22.24:8181/signal/viewInstance/viewColumnInfo?viewInstance.id=35305&_=1580885269345"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 391,
+              "EventId": 3832,
+              "HttpStatus": 200,
+              "Size": 383,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/updatedFixedColumn-4180034da606560f8555366463a750ac.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 1015,
+              "EventId": 3829,
+              "HttpStatus": 200,
+              "Size": 26417,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/validated_signal/validated_signal-dcf09ff2190f7e63d043ac6907136221.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 313,
+              "EventId": 3827,
+              "HttpStatus": 200,
+              "Size": 157,
+              "URL": "http://10.100.22.24:8181/signal/assets/colReorder.dataTables.min-6c9c3520f346057281532b7b491bad4b.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 609,
+              "EventId": 3823,
+              "HttpStatus": 200,
+              "Size": 32483,
+              "URL": "http://10.100.22.24:8181/signal/assets/yadcf/jquery.dataTables.yadcf-a13c93c305588bd0340c6a9901cd3492.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 547,
+              "EventId": 3821,
+              "HttpStatus": 200,
+              "Size": 1596,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/alerts_review/fieldConfigurationManagement-e1a802ff9b5cad88989e761d50770b53.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 531,
+              "EventId": 3819,
+              "HttpStatus": 200,
+              "Size": 542,
+              "URL": "http://10.100.22.24:8181/signal/assets/yadcf/jquery.dataTables.yadcf-926e48d7fd2745f397358930a160f1e9.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 515,
+              "EventId": 3816,
+              "HttpStatus": 200,
+              "Size": 10865,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/datatables/datatable.colsReorder.min-f60fbf698f1fa675a29d5b361968020a.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3814,
+              "HttpStatus": 200,
+              "Size": 263,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/dataTablesActionButtons-50a104b30cb3aa5d21eb1f1f33f1d835.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 968,
+              "EventId": 3798,
+              "HttpStatus": 200,
+              "Size": 54818,
+              "URL": "http://10.100.22.24:8181/signal/validatedSignal/index"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 688,
+              "EventId": 3796,
+              "HttpStatus": 200,
+              "Size": 4,
+              "URL": "http://10.100.22.24:8181/signal/dashboard/saveDashboardConfig"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 906,
+              "EventId": 3790,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885209584"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 1672,
+              "EventId": 3786,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885209583"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 15578,
+              "EventId": 3778,
+              "HttpStatus": 200,
+              "Size": 13651,
+              "URL": "http://10.100.22.24:8181/signal/dashboard/alertList?_=1580885209580"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 484,
+              "EventId": 3776,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2F&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 281,
+              "EventId": 3774,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2F&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 4969,
+              "EventId": 3772,
+              "HttpStatus": 200,
+              "Size": 80,
+              "URL": "http://10.100.22.24:8181/signal/dashboard/getProductByStatus?type=Single%20Case%20Alert&_=1580885209577"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 328,
+              "EventId": 3770,
+              "HttpStatus": 200,
+              "Size": 431,
+              "URL": "http://10.100.22.24:8181/signal/dashboard/actionList?_=1580885209582"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 297,
+              "EventId": 3768,
+              "HttpStatus": 200,
+              "Size": 346,
+              "URL": "http://10.100.22.24:8181/signal/dashboard/signalList?_=1580885209581"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 766,
+              "EventId": 3766,
+              "HttpStatus": 101,
+              "Size": 0,
+              "URL": "http://10.100.22.24:8181/signal/stomp/829/udc9jzk1/websocket"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 625,
+              "EventId": 3764,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2F&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 3687,
+              "EventId": 3762,
+              "HttpStatus": 200,
+              "Size": 147,
+              "URL": "http://10.100.22.24:8181/signal/dashboard/alertByDueDate?_=1580885209576"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 453,
+              "EventId": 3760,
+              "HttpStatus": 404,
+              "Size": 1112,
+              "URL": "http://10.100.22.24:8181/assets/i18n/dataTables_en.json"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/x-icon",
+              "DownloadTime": 500,
+              "EventId": 3758,
+              "HttpStatus": 200,
+              "Size": 537,
+              "URL": "http://10.100.22.24:8181/signal/assets/favicon-2ba00fd40faca3ac3c2e810a7412bceb.ico"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 297,
+              "EventId": 3756,
+              "HttpStatus": 404,
+              "Size": 1112,
+              "URL": "http://10.100.22.24:8181/assets/i18n/dataTables_en.json"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 406,
+              "EventId": 3752,
+              "HttpStatus": 200,
+              "Size": 29008,
+              "URL": "http://10.100.22.24:8181/signal/calendar/events"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 312,
+              "EventId": 3748,
+              "HttpStatus": 200,
+              "Size": 78,
+              "URL": "http://10.100.22.24:8181/signal/stomp/info"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 3203,
+              "EventId": 3746,
+              "HttpStatus": 200,
+              "Size": 79,
+              "URL": "http://10.100.22.24:8181/signal/dashboard/sideBar?_=1580885209572"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 3203,
+              "EventId": 3744,
+              "HttpStatus": 200,
+              "Size": 16,
+              "URL": "http://10.100.22.24:8181/signal/dashboard/caseByStatus?_=1580885209573"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 719,
+              "EventId": 3731,
+              "HttpStatus": 200,
+              "Size": 26716,
+              "URL": "http://10.100.22.24:8181/signal/inboxLog/forUser/7052?_=1580885209579"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "font/woff2",
+              "DownloadTime": 2797,
+              "EventId": 3728,
+              "HttpStatus": 200,
+              "Size": 168210,
+              "URL": "http://10.100.22.24:8181/signal/assets/mdi-fonts/fonts/materialdesignicons-webfont-d1bdfb3838e2f78edf1ede85f56eabc9.woff2?v=3.2.89"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 750,
+              "EventId": 3726,
+              "HttpStatus": 200,
+              "Size": 36,
+              "URL": "http://10.100.22.24:8181/signal/dashboard/getProductByStatus?type=Aggregate%20Case%20Alert&_=1580885209578"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "font/woff2",
+              "DownloadTime": 1110,
+              "EventId": 3719,
+              "HttpStatus": 200,
+              "Size": 77171,
+              "URL": "http://10.100.22.24:8181/signal/assets/fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2?v=4.7.0"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 390,
+              "EventId": 3717,
+              "HttpStatus": 404,
+              "Size": 1112,
+              "URL": "http://10.100.22.24:8181/assets/i18n/dataTables_en.json"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 312,
+              "EventId": 3715,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/dashboard/ahaByStatus?_=1580885209575"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 312,
+              "EventId": 3713,
+              "HttpStatus": 200,
+              "Size": 2,
+              "URL": "http://10.100.22.24:8181/signal/dashboard/aggAlertByStatus?_=1580885209574"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 281,
+              "EventId": 3709,
+              "HttpStatus": 200,
+              "Size": 1606,
+              "URL": "http://10.100.22.24:8181/signal/assets/section-hd-bg-8eaf77fc4a1a47c48ca4b2e3d5a96340.jpg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "",
+              "DownloadTime": 313,
+              "EventId": 3707,
+              "HttpStatus": 200,
+              "Size": 1246,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/hbs-templates/dashboard_widget.hbs"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "font/woff2",
+              "DownloadTime": 313,
+              "EventId": 3704,
+              "HttpStatus": 200,
+              "Size": 18056,
+              "URL": "http://10.100.22.24:8181/signal/assets/glyphicons-halflings-regular-448c34a56d699c29117adc64c43affeb.woff2"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "font/woff",
+              "DownloadTime": 312,
+              "EventId": 3699,
+              "HttpStatus": 200,
+              "Size": 49980,
+              "URL": "http://10.100.22.24:8181/signal/assets/Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff?v=1.0.1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 734,
+              "EventId": 3692,
+              "HttpStatus": 200,
+              "Size": 53624,
+              "URL": "http://10.100.22.24:8181/signal/assets/left_bg-b4ea12efc891fcaf7bd4c4b3ba9828cf.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 719,
+              "EventId": 3687,
+              "HttpStatus": 200,
+              "Size": 80381,
+              "URL": "http://10.100.22.24:8181/signal/assets/bg2-a39cb4fbdd9436c08ad118995fc95c46.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 453,
+              "EventId": 3685,
+              "HttpStatus": 200,
+              "Size": 2427,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/common/rx_common-eb5ac2a48de4f11c8441fab6390495d6.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 453,
+              "EventId": 3683,
+              "HttpStatus": 200,
+              "Size": 3106,
+              "URL": "http://10.100.22.24:8181/signal/assets/i18n/en.json"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 422,
+              "EventId": 3681,
+              "HttpStatus": 200,
+              "Size": 2019,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/jquery.app-1aff8addfae2d2b238c1047c506c75b4.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 422,
+              "EventId": 3679,
+              "HttpStatus": 200,
+              "Size": 573,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/fullcalendar.print-b8f18e9775afba153b4abfbc5f9baaf6.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 407,
+              "EventId": 3677,
+              "HttpStatus": 200,
+              "Size": 2859,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/calendar-fc6eda81299841e4d5296e64fa1ce858.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "",
+              "DownloadTime": 375,
+              "EventId": 3675,
+              "HttpStatus": 200,
+              "Size": 780,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/hbs-templates/date_picker_template.hbs"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 281,
+              "EventId": 3673,
+              "HttpStatus": 200,
+              "Size": 1398,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/jquery.core-9088768891f7d43af5ab8c8d642e5301.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 343,
+              "EventId": 3671,
+              "HttpStatus": 200,
+              "Size": 9610,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/date-time/bootstrap-datetimepicker-5aa81b54c1dd973165b56d66567b57d6.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 312,
+              "EventId": 3669,
+              "HttpStatus": 200,
+              "Size": 1621,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/pushNotification-901fe923ae1e5cbf77d556f25e065418.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 312,
+              "EventId": 3667,
+              "HttpStatus": 200,
+              "Size": 907,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/gridstack/gridstack.jQueryUI.min-4850183e36adcd62a4e2c741ae857fc4.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 610,
+              "EventId": 3660,
+              "HttpStatus": 200,
+              "Size": 94906,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/dashboard/dashboard-7c3ebe508164986a823f76e4f031d18c.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 313,
+              "EventId": 3656,
+              "HttpStatus": 200,
+              "Size": 8743,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/gridstack/gridstack.min-8243969940fd3f8d9a2116948054084f.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 594,
+              "EventId": 3654,
+              "HttpStatus": 200,
+              "Size": 34179,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/fullcalendar.min-eadac4139211e13292deb9473e638d45.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 344,
+              "EventId": 3652,
+              "HttpStatus": 200,
+              "Size": 664,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/highcharts/modules/no-data-to-display-fc44762af3aab44deb8317659be156a6.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 313,
+              "EventId": 3650,
+              "HttpStatus": 200,
+              "Size": 2104,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/dashboard/dashboardWidget-24248f37a4de46fe75c68afd1bc9dca6.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 328,
+              "EventId": 3647,
+              "HttpStatus": 200,
+              "Size": 12764,
+              "URL": "http://10.100.22.24:8181/signal/assets/spring-websocket-867783f03d5a8005372950a4b8cac2a4.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3645,
+              "HttpStatus": 200,
+              "Size": 2999,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/actions/actions-512c6421ca405c7eabb6d90acbf71826.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 375,
+              "EventId": 3643,
+              "HttpStatus": 200,
+              "Size": 873,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/rxTitleOptions-1279146f661735d9e94cde274342b25c.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 328,
+              "EventId": 3641,
+              "HttpStatus": 200,
+              "Size": 1589,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/pvs_app_widget-1f7bb23afecbe0b5fa95eb23984df79b.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 312,
+              "EventId": 3639,
+              "HttpStatus": 200,
+              "Size": 1618,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/userGroupSelect-553b5ae7ef103ca5f8b7f5bea948eebb.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 328,
+              "EventId": 3637,
+              "HttpStatus": 200,
+              "Size": 325,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/menu-e9f9c79de11e89cfb0d2f7ae1cd80554.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3634,
+              "HttpStatus": 200,
+              "Size": 20241,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/waves/waves-2d20efe8b7228bbc963944ac22c9667c.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3632,
+              "HttpStatus": 200,
+              "Size": 412,
+              "URL": "http://10.100.22.24:8181/signal/assets/datatables/buttons.bootstrap-acac51d5cf162bd14f44ad66a6f275f5.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 328,
+              "EventId": 3630,
+              "HttpStatus": 200,
+              "Size": 5293,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/datatable/dataTables.buttons.min-99ef2a29fc5b51a6f8f392977c2e34b1.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 328,
+              "EventId": 3628,
+              "HttpStatus": 200,
+              "Size": 309,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/jquery.ba-throttle-debounce-876f6988f0a240fd9c49f09c5d71b994.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 312,
+              "EventId": 3626,
+              "HttpStatus": 200,
+              "Size": 1404,
+              "URL": "http://10.100.22.24:8181/signal/assets/common/jquery.core-2f63ea2ce21973031b9685e36eba0731.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3624,
+              "HttpStatus": 200,
+              "Size": 11998,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/bower_components/webcomponentsjs/webcomponents-lite-c806470ac3182eedbb9de677fde922de.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 281,
+              "EventId": 3622,
+              "HttpStatus": 200,
+              "Size": 5795,
+              "URL": "http://10.100.22.24:8181/signal/assets/bootstrap-multiselect/bootstrap-multiselect-7b500966794478e2792eea0659e0aa96.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 296,
+              "EventId": 3620,
+              "HttpStatus": 200,
+              "Size": 3007,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/bootstrap-switch/bootstrap-switch-732d14990dba7f4fff6b5b441177c905.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 562,
+              "EventId": 3617,
+              "HttpStatus": 200,
+              "Size": 21231,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/handlebar/handlebars-v4.0.5-8ad4263f81c714ada4985affb687f12b.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 578,
+              "EventId": 3615,
+              "HttpStatus": 200,
+              "Size": 5189,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/sweet-alert/sweet-alert.min-792598f1e6bac9b4f7cc6f060ae6b454.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 547,
+              "EventId": 3613,
+              "HttpStatus": 200,
+              "Size": 1156,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/bootstrapUploader/bootstrap-uploader-265e387a3ec58973abdfae04a79862b2.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 563,
+              "EventId": 3611,
+              "HttpStatus": 200,
+              "Size": 84,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/sweet-alert/rx-notify-db0528274130516c271389cccac65e17.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 547,
+              "EventId": 3609,
+              "HttpStatus": 200,
+              "Size": 579,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/counterup/jquery.counterup.min-86f52f47d4c325261bf7d36b09dcf216.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 547,
+              "EventId": 3607,
+              "HttpStatus": 200,
+              "Size": 2681,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/waypoints/lib/jquery.waypoints.min-4471999ef1b83a94d41d3cebb887c349.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 609,
+              "EventId": 3605,
+              "HttpStatus": 200,
+              "Size": 355,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/notifications/notify-metro-9a1cf25a956b601aedd486c779986df7.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 625,
+              "EventId": 3603,
+              "HttpStatus": 200,
+              "Size": 3258,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/jquery/jquery.blockUI-7aa9ac8e34d97a945dbf467d99fda834.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 593,
+              "EventId": 3601,
+              "HttpStatus": 200,
+              "Size": 3422,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/notifyjs/dist/notify.min-1dba61fec15a5d71814b2c2cb69f65bf.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 609,
+              "EventId": 3599,
+              "HttpStatus": 200,
+              "Size": 1256,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/jquery/jquery.scrollTo.min-240b8d54661c5e0500b96b9594d60b62.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 609,
+              "EventId": 3597,
+              "HttpStatus": 200,
+              "Size": 15946,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/jquery/jquery.nicescroll-09e3ca9889499cfb15271ad8dc51f842.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 594,
+              "EventId": 3595,
+              "HttpStatus": 200,
+              "Size": 1735,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/jquery/jquery.slimscroll-6a314b5f0344bf7ef8e1e0c948bb75f9.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 610,
+              "EventId": 3593,
+              "HttpStatus": 200,
+              "Size": 1704,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/wow/wow.min-237e66d720861f3cc99ee444887b7c32.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 625,
+              "EventId": 3591,
+              "HttpStatus": 200,
+              "Size": 12852,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/datatables/dataTables.fixedColumns.min-acc90a700b69150380759567188a8cd0.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 609,
+              "EventId": 3589,
+              "HttpStatus": 200,
+              "Size": 5862,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/multiselect/jquery.multi-select2.0-c2649a518d094dac8d3e66aaba1e4501.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 594,
+              "EventId": 3587,
+              "HttpStatus": 200,
+              "Size": 1136,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/spinner/spinner.min-6f6eab72fd2531bea7514cc0d9830665.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 594,
+              "EventId": 3585,
+              "HttpStatus": 200,
+              "Size": 2629,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/mobile/fastclick-c74606809464116f3413064b0e200023.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 593,
+              "EventId": 3583,
+              "HttpStatus": 200,
+              "Size": 1323,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/mobile/detect-fd56173b9f1574612026ca4bd0f9ce20.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 531,
+              "EventId": 3581,
+              "HttpStatus": 200,
+              "Size": 1038,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/datatables/dataTables.bootstrapPagination-d133da3f3570036f8532207affa78bd9.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 516,
+              "EventId": 3575,
+              "HttpStatus": 200,
+              "Size": 284,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/datatables/datetime-moment-3fa3fc8eaf60abe3fae2bae2fb4328b0.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 656,
+              "EventId": 3573,
+              "HttpStatus": 200,
+              "Size": 27953,
+              "URL": "http://10.100.22.24:8181/signal/assets/datatables/jquery.dataTables_custom-8dad82f79087bc7c28eeb9b403e756b8.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 906,
+              "EventId": 3571,
+              "HttpStatus": 200,
+              "Size": 42281,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/moment/momentTimezones-with-data-c15ec3e27a3263556fdbb96b61f9206f.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 844,
+              "EventId": 3569,
+              "HttpStatus": 200,
+              "Size": 18982,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/select2/select2-911832dffdffb9e7bafb38412a68f445.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 609,
+              "EventId": 3567,
+              "HttpStatus": 200,
+              "Size": 953,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/datatables/dataTables.bootstrap-93e0b2f3576484b422f6e4a29b3e6037.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 312,
+              "EventId": 3565,
+              "HttpStatus": 200,
+              "Size": 4914,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/popover/popover.min-a48d28e289c6932042ffa0ab05e7bf68.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3562,
+              "HttpStatus": 200,
+              "Size": 25858,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/fuelux/fuelux.min-d30fb133a2493fadc38faabf3f226bc4.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 547,
+              "EventId": 3556,
+              "HttpStatus": 200,
+              "Size": 68070,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/jquery-ui/jquery-ui.min-b0582f2d27fdc676c34681e0c96aac0c.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 312,
+              "EventId": 3550,
+              "HttpStatus": 200,
+              "Size": 65035,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/moment/momentlocales-bd0407faadf015b0c0b0d49b831aeb7b.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 313,
+              "EventId": 3548,
+              "HttpStatus": 200,
+              "Size": 9839,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/bootstrap/bootstrap.min-3f6aa77f4768de267c35a96028599ce3.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 297,
+              "EventId": 3544,
+              "HttpStatus": 200,
+              "Size": 16444,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/moment/moment-434aaa1704890766125108c94efbb50c.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 313,
+              "EventId": 3542,
+              "HttpStatus": 200,
+              "Size": 5829,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/underscore/underscore.min-e6d41cd714673035a7f8a65c30f3dcb1.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 281,
+              "EventId": 3540,
+              "HttpStatus": 200,
+              "Size": 407,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/jquery.i18n-61406922e05804e4abe8c8360ec862fa.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 1844,
+              "EventId": 3534,
+              "HttpStatus": 200,
+              "Size": 64206,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/jquery/jquery-2.2.4-986b7af813adeaf9e589ef20bcc97bb0.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 297,
+              "EventId": 3532,
+              "HttpStatus": 200,
+              "Size": 3176,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/fullcalendar.min-537e31219634a1a50bfc6c265c08a05f.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 312,
+              "EventId": 3530,
+              "HttpStatus": 200,
+              "Size": 106,
+              "URL": "http://10.100.22.24:8181/signal/assets/workflowModal-8863a855e0d38b1c16a0b929c87a1eb2.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 297,
+              "EventId": 3528,
+              "HttpStatus": 200,
+              "Size": 1517,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/bootstrap-datetimepicker-c0f52e788c9b52855aeb720838b56db9.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 297,
+              "EventId": 3526,
+              "HttpStatus": 200,
+              "Size": 1218,
+              "URL": "http://10.100.22.24:8181/signal/assets/dashboard-7d6d721454def651262f344c8062d5e4.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 1594,
+              "EventId": 3522,
+              "HttpStatus": 200,
+              "Size": 25427,
+              "URL": "http://10.100.22.24:8181/signal/assets/mdi-fonts/css/materialdesignicons-2f254cfdb2b23bcf596ab766574b3675.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 687,
+              "EventId": 3520,
+              "HttpStatus": 200,
+              "Size": 2218,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/gridstack.min-82a5fabd01f65ac4b5e87078091be104.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 1328,
+              "EventId": 3518,
+              "HttpStatus": 200,
+              "Size": 9588,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/pvs_app_css-1b12abea6601085c3ed998c8c1d13304.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 1313,
+              "EventId": 3515,
+              "HttpStatus": 200,
+              "Size": 707,
+              "URL": "http://10.100.22.24:8181/signal/assets/app/pvs/pvs_508c-fd4a301235dfeff417d96bed64e8429d.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 1281,
+              "EventId": 3513,
+              "HttpStatus": 200,
+              "Size": 6141,
+              "URL": "http://10.100.22.24:8181/signal/assets/vendorUi/modernizr.min-23fa28ce275880746945a2305077eebc.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 609,
+              "EventId": 3511,
+              "HttpStatus": 200,
+              "Size": 605,
+              "URL": "http://10.100.22.24:8181/signal/assets/theme_gradient_blue-82b8663def72c9ceff32d61e0b4a5253.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 1156,
+              "EventId": 3494,
+              "HttpStatus": 200,
+              "Size": 78421,
+              "URL": "http://10.100.22.24:8181/signal/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 453,
+              "EventId": 3492,
+              "HttpStatus": 302,
+              "Size": 0,
+              "URL": "http://10.100.22.24:8181/signal/login/authenticate"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 297,
+              "EventId": 3486,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2Flogin%2Fauth&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 281,
+              "EventId": 3476,
+              "HttpStatus": 200,
+              "Size": 110,
+              "URL": "http://10.100.22.24:8181/signal/rb_bf71031xra?type=js&session=v_4_srv_2_sn_72C218738C2BE3FF87051E0444618217_perc_100000_ol_0_mul_1&svrid=2&flavor=post&referer=http%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2Flogin%2Fauth&visitID=GHTCJACCAJKTUCLWIPIAAVCMNNHEACJP&modifiedSince=1580287447497&app=ea7c4b59f27d43eb&end=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/x-icon",
+              "DownloadTime": 281,
+              "EventId": 3472,
+              "HttpStatus": 200,
+              "Size": 21630,
+              "URL": "http://10.100.22.24:8181/favicon.ico"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 3282,
+              "EventId": 3437,
+              "HttpStatus": 200,
+              "Size": 546257,
+              "URL": "http://10.100.22.24:8181/signal/assets/background-4c8c4fd7df1b6436735eac4cfed91698.jpg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "font/woff2",
+              "DownloadTime": 1047,
+              "EventId": 3424,
+              "HttpStatus": 200,
+              "Size": 47049,
+              "URL": "http://10.100.22.24:8181/signal/assets/OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2?v=1.1.0"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 2328,
+              "EventId": 3394,
+              "HttpStatus": 200,
+              "Size": 132815,
+              "URL": "http://10.100.22.24:8181/signal/assets/application-b3f48b83f9b7c2d3cbf01ec2a4664551.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 1031,
+              "EventId": 3388,
+              "HttpStatus": 200,
+              "Size": 54775,
+              "URL": "http://10.100.22.24:8181/signal/ruxitagentjs_ICA2SVfqru_10183200114120852.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 734,
+              "EventId": 3386,
+              "HttpStatus": 200,
+              "Size": 3310,
+              "URL": "http://10.100.22.24:8181/signal/assets/pv-signal-logo-61161afba9a8a8e20ebe65b7f0973c2a.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 750,
+              "EventId": 3384,
+              "HttpStatus": 200,
+              "Size": 8686,
+              "URL": "http://10.100.22.24:8181/signal/assets/application-41e85b8b09a3fdf642c49a85a409c671.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 766,
+              "EventId": 3382,
+              "HttpStatus": 200,
+              "Size": 924,
+              "URL": "http://10.100.22.24:8181/signal/assets/login-23162286b278bf1e48cb0201c9e9a644.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 329,
+              "EventId": 3362,
+              "HttpStatus": 200,
+              "Size": 2842,
+              "URL": "http://10.100.22.24:8181/signal/login/auth"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 265,
+              "EventId": 3356,
+              "HttpStatus": 302,
+              "Size": 0,
+              "URL": "http://10.100.22.24:8181/signal/"
+            }
+          ],
+          "SSLCipher": "None",
+          "SSLVersion": "None"
+        }
+      ],
+      "IncludeInScript": true
+    }
+  ],
+  "WebSocket": {
+    "IncludeInScript": false,
+    "IsScriptIncludeWebSocket": true
+  },
+  "NumberOfCorrelations": 9
+}

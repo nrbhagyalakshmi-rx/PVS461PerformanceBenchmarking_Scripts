@@ -1,0 +1,46 @@
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(939): web_url("executionStatus") was successful, 2476 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(952): web_add_header("Cache-Control") started  	[MsgId: MMSG-26355]
+Action.c(952): web_add_header("Cache-Control") was successful  	[MsgId: MMSG-26392]
+Action.c(955): web_add_header("Pragma") started  	[MsgId: MMSG-26355]
+Action.c(955): web_add_header("Pragma") was successful  	[MsgId: MMSG-26392]
+Action.c(958): web_add_header("Upgrade") started  	[MsgId: MMSG-26355]
+Action.c(958): web_add_header("Upgrade") was successful  	[MsgId: MMSG-26392]
+Action.c(961): web_websocket_connect started  	[MsgId: MMSG-26355]
+Action.c(961): Error -26627: HTTP Status-Code=404 (Not Found) for "ws://10.100.22.24:8181/signal/stomp/376/fwdvphek/websocket"  	[MsgId: MERR-26627]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 2.	[MsgId: MMSG-10545]
+Starting action Action.	[MsgId: MMSG-15919]
+Action.c(5): Notify: Transaction "QualitativeAlert_01_OpenApplication" started.	[MsgId: MMSG-16999]
+Action.c(8): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(19): web_url("signal") started  	[MsgId: MMSG-26355]
+Action.c(19): Connection to 10.100.22.24:8181 closed after being inactive for 60 seconds, exceeding the "HTTP Keep-Alive timeout" Runtime Setting (60 seconds). URL="http://10.100.22.24:8181/signal/"  	[MsgId: MMSG-27648]
+Action.c(19): Error -35048: No match found for the requested parameter "_csrf". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 3.	[MsgId: MMSG-10545]
+Starting action Action.	[MsgId: MMSG-15919]
+Action.c(5): Notify: Transaction "QualitativeAlert_01_OpenApplication" started.	[MsgId: MMSG-16999]
+Action.c(8): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(19): web_url("signal") started  	[MsgId: MMSG-26355]
+Action.c(19): Connection to 10.100.22.24:8181 closed after being inactive for 83 seconds, exceeding the "HTTP Keep-Alive timeout" Runtime Setting (60 seconds). URL="http://10.100.22.24:8181/signal/"  	[MsgId: MMSG-27648]
+Action.c(19): Error -35048: No match found for the requested parameter "_csrf". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 4.	[MsgId: MMSG-10545]
+Starting action Action.	[MsgId: MMSG-15919]
+Action.c(5): Notify: Transaction "QualitativeAlert_01_OpenApplication" started.	[MsgId: MMSG-16999]
+Action.c(8): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(19): web_url("signal") started  	[MsgId: MMSG-26355]
+Action.c(19): Connection to 10.100.22.24:8181 closed after being inactive for 83 seconds, exceeding the "HTTP Keep-Alive timeout" Runtime Setting (60 seconds). URL="http://10.100.22.24:8181/signal/"  	[MsgId: MMSG-27648]
+Action.c(19): Error -35048: No match found for the requested parameter "_csrf". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

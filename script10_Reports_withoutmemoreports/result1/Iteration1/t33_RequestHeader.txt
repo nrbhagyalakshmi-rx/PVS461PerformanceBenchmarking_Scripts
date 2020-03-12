@@ -1,0 +1,16 @@
+POST /signal/report/requestReport HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://10.100.22.24:8181/signal/report/index
+Origin: http://10.100.22.24:8181
+X-CSRF-TOKEN: 2303a69e-dbae-4e68-9453-65ee1c182507
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0
+Accept-Language: en-US,en;q=0.5
+DNT: 1
+Accept-Encoding: gzip, deflate
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Connection: Keep-Alive
+Host: 10.100.22.24:8181
+Cookie: SESSION=a08c976e-d338-41a6-8678-0c439ce35e48
+Content-Length: 2351
+

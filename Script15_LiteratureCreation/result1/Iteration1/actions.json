@@ -1,0 +1,128 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: signal",
+                "infFile": "t2.inf",
+                "time": 1581666480210
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1581666481737
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: events",
+                "infFile": "t9.inf",
+                "time": 1581666483872
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: saveDashboardConfig",
+                "infFile": "t17.inf",
+                "time": 1581666508150
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Submit Data: searchViews",
+                "infFile": "t24.inf",
+                "time": 1581666534464
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Custom Request: getSelectedItem",
+                "infFile": "t25.inf",
+                "time": 1581666534773
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: getPreLevelProductParents",
+                "infFile": "t27.inf",
+                "time": 1581666534798
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: searchUserGroupList",
+                "infFile": "t29.inf",
+                "time": 1581666535135
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: searchUserGroupList_2",
+                "infFile": "t30.inf",
+                "time": 1581666535485
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Submit Data: run",
+                "infFile": "t31.inf",
+                "time": 1581666537471
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: info_3",
+                "infFile": "t32.inf",
+                "time": 1581666537782
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: dataTables_en.json",
+                "infFile": "t33.inf",
+                "time": 1581666538147
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: executionStatus",
+                "infFile": "t34.inf",
+                "time": 1581666538469
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: index",
+                "infFile": "t35.inf",
+                "time": 1581666564478
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "Literature_01_OpenApplication",
+                "rawStartTime": 1581666478935,
+                "rawEndTime": 1581666480247,
+                "thinkTime": 0.0,
+                "wastedTime": 0.11199665069580078
+            },
+            {
+                "transactionName": "Literature_02_Login",
+                "rawStartTime": 1581666480247,
+                "rawEndTime": 1581666487174,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07911372184753418
+            },
+            {
+                "transactionName": "QuantitativeAlert_03_NavigateLiteratureAlert",
+                "rawStartTime": 1581666507524,
+                "rawEndTime": 1581666510426,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05588936805725098
+            },
+            {
+                "transactionName": "QuantitativeAlert_04_CreateLiteratureAlertAlert",
+                "rawStartTime": 1581666535490,
+                "rawEndTime": 1581666538494,
+                "thinkTime": 0.0,
+                "wastedTime": 0.03914809226989746
+            },
+            {
+                "transactionName": "LiteratureAlert_05_Logout",
+                "rawStartTime": 1581666562327,
+                "rawEndTime": 1581666564483,
+                "thinkTime": 0.0,
+                "wastedTime": 0.01154327392578125
+            }
+        ]
+    }
+]

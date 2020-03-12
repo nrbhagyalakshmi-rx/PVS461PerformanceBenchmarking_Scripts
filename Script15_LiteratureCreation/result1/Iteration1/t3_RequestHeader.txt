@@ -1,0 +1,15 @@
+POST /signal/login/authenticate HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Referer: http://10.100.22.24:8181/signal/login/auth
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Cache-Control: max-age=0
+Origin: http://10.100.22.24:8181
+Upgrade-Insecure-Requests: 1
+User-Agent: Chrome WIN 79.0.3945.130 (e22de67c28798d98833a7137c0e22876237fc40a-refs/branch-heads/3945@{#1047}) channel(stable)
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: Keep-Alive
+Host: 10.100.22.24:8181
+Cookie: SESSION=246fd586-529d-46b1-a4a6-b1e4107b6de1; dtCookie=v_4_srv_1_sn_3BF9BC44689001E67D01D995518E32B9_perc_100000_ol_0_mul_1; rxVisitor=1581052348916JAS3UOPKNB68MUOURE5O3JLO9FH5PCGM; dtPC=3$52348909_958h-vFFODADAKNNMJREMWIDIJABPMBVIBBKGM; dtSa=true%7CC%7C-1%7CLog%20in%7C-%7C1581052446847%7C52348909_958%7Chttp%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2Flogin%2Fauth%7CLogin%7C1581052354003%7C%7C; dtLatC=1; rxvt=1581054154005|1581052348920
+Content-Length: 74
+

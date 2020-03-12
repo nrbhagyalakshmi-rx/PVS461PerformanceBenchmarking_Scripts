@@ -1,0 +1,128 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: signal",
+                "infFile": "t2.inf",
+                "time": 1579447995977
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1579447997326
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: en.json",
+                "infFile": "t4.inf",
+                "time": 1579447997732
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: events",
+                "infFile": "t8.inf",
+                "time": 1579447998942
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: info",
+                "infFile": "t9.inf",
+                "time": 1579447999254
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: create",
+                "infFile": "t15.inf",
+                "time": 1579448018103
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: searchViews",
+                "infFile": "t25.inf",
+                "time": 1579448033043
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Custom Request: getSelectedItem",
+                "infFile": "t26.inf",
+                "time": 1579448033352
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Submit Data: getPreLevelProductParents",
+                "infFile": "t27.inf",
+                "time": 1579448033658
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Submit Data: run",
+                "infFile": "t31.inf",
+                "time": 1579448036104
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: dataTables_en.json",
+                "infFile": "t32.inf",
+                "time": 1579448036427
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: info_3",
+                "infFile": "t33.inf",
+                "time": 1579448036727
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: executionStatus",
+                "infFile": "t34.inf",
+                "time": 1579448037060
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: index",
+                "infFile": "t37.inf",
+                "time": 1579448057420
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "QuantitativeAlert_01_OpenApplication",
+                "rawStartTime": 1579447994540,
+                "rawEndTime": 1579447995992,
+                "thinkTime": 0.0,
+                "wastedTime": 0.12225914001464844
+            },
+            {
+                "transactionName": "QuantitativeAlert_02_Login",
+                "rawStartTime": 1579447995993,
+                "rawEndTime": 1579448001915,
+                "thinkTime": 0.0,
+                "wastedTime": 0.6549555778503418
+            },
+            {
+                "transactionName": "QuantitativeAlert_03_NavigateQuantitativeAlert",
+                "rawStartTime": 1579448015125,
+                "rawEndTime": 1579448019124,
+                "thinkTime": 0.0,
+                "wastedTime": 0.32199855422973636
+            },
+            {
+                "transactionName": "QuantitativeAlert_04_CreateQuantitativeAlert",
+                "rawStartTime": 1579448034152,
+                "rawEndTime": 1579448037749,
+                "thinkTime": 0.0,
+                "wastedTime": 0.6832325763702393
+            },
+            {
+                "transactionName": "QuantitativeAlert_05_Logout",
+                "rawStartTime": 1579448055561,
+                "rawEndTime": 1579448057420,
+                "thinkTime": 0.0,
+                "wastedTime": 0.391697998046875
+            }
+        ]
+    }
+]

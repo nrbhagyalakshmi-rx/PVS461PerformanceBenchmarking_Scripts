@@ -1,0 +1,12 @@
+GET /signal/query/queryList?dataSource=pva&term=&page=1&max=30 HTTP/1.1
+Referer: http://10.100.22.24:8181/signal/singleCaseAlert/create
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Connection: Keep-Alive
+Host: 10.100.22.24:8181
+Cookie: SESSION=17add2ed-1516-47f4-bcbe-6475d7d4aa2e
+

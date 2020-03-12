@@ -1,0 +1,256 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: signal",
+                "infFile": "t2.inf",
+                "time": 1581069792802
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Custom Request: token",
+                "infFile": "t3.inf",
+                "time": 1581069793288
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Custom Request: CHES4QEStwFBUEE5MWJGVmNFemtkQlRjaU1GSUtpT01oY0lUa2RpVFRuTkpiSFdzcXE2MFdFU1ItRTgxcjc5VjVWNU9sQ2kzTVY1aEQ2Umk5S0NLdDR6Y0FRNTlSMXJ3Z2U0Y2J3OHdJaWZHOTJTekVPX20xdkkxMGFBWkFQazE3MnFDclZCOEtDSEFkd25oTEZjV3U0d0xmN0k1THZsemtiSXpsMF9qM2lFMWhKdlVCSm8wTDZaX28weFBlZVEa",
+                "infFile": "t4.inf",
+                "time": 1581069795348
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t5.inf",
+                "time": 1581069798415
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Submit Data: events",
+                "infFile": "t10.inf",
+                "time": 1581069799442
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Submit Data: saveDashboardConfig",
+                "infFile": "t19.inf",
+                "time": 1581069819689
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: review",
+                "infFile": "t20.inf",
+                "time": 1581069821094
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: details",
+                "infFile": "t29.inf",
+                "time": 1581069853741
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: viewColumnInfo_2",
+                "infFile": "t30.inf",
+                "time": 1581069854136
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: info_4",
+                "infFile": "t31.inf",
+                "time": 1581069854440
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: literatureSearchAlertList",
+                "infFile": "t32.inf",
+                "time": 1581069855173
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: literatureSearchAlertList_2",
+                "infFile": "t33.inf",
+                "time": 1581069872128
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: literatureSearchAlertList_3",
+                "infFile": "t34.inf",
+                "time": 1581069872596
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: literatureSearchAlertList_4",
+                "infFile": "t35.inf",
+                "time": 1581069873011
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Url: literatureSearchAlertList_5",
+                "infFile": "t36.inf",
+                "time": 1581069873386
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: literatureSearchAlertList_6",
+                "infFile": "t37.inf",
+                "time": 1581069887177
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Url: literatureSearchAlertList_7",
+                "infFile": "t38.inf",
+                "time": 1581069900634
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Url: index_2",
+                "infFile": "t40.inf",
+                "time": 1581069932627
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Url: dataTables_en.json",
+                "infFile": "t41.inf",
+                "time": 1581069932940
+            },
+            {
+                "stepId": "STEP20",
+                "stepName": "Url: info_5",
+                "infFile": "t42.inf",
+                "time": 1581069933225
+            },
+            {
+                "stepId": "STEP21",
+                "stepName": "Url: configurations",
+                "infFile": "t43.inf",
+                "time": 1581069933670
+            },
+            {
+                "stepId": "STEP22",
+                "stepName": "Url: executionStatus",
+                "infFile": "t44.inf",
+                "time": 1581069947262
+            },
+            {
+                "stepId": "STEP23",
+                "stepName": "Url: executionStatus_2",
+                "infFile": "t45.inf",
+                "time": 1581069947711
+            },
+            {
+                "stepId": "STEP24",
+                "stepName": "Url: info_6",
+                "infFile": "t46.inf",
+                "time": 1581069947996
+            },
+            {
+                "stepId": "STEP25",
+                "stepName": "Url: executionStatus_3",
+                "infFile": "t47.inf",
+                "time": 1581069963634
+            },
+            {
+                "stepId": "STEP26",
+                "stepName": "Url: index_3",
+                "infFile": "t48.inf",
+                "time": 1581069977145
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "01_OpenApplication",
+                "rawStartTime": 1581069791540,
+                "rawEndTime": 1581069792830,
+                "thinkTime": 0.0,
+                "wastedTime": 0.11768984794616699
+            },
+            {
+                "transactionName": "02_Login",
+                "rawStartTime": 1581069795348,
+                "rawEndTime": 1581069802056,
+                "thinkTime": 0.0,
+                "wastedTime": 0.044182538986206058
+            },
+            {
+                "transactionName": "03_TriggeredAlertsEVDASReview",
+                "rawStartTime": 1581069819328,
+                "rawEndTime": 1581069822272,
+                "thinkTime": 0.0,
+                "wastedTime": 0.02434849739074707
+            },
+            {
+                "transactionName": "04_TriggeredAlertsAdhocReview",
+                "rawStartTime": 1581069835117,
+                "rawEndTime": 1581069838201,
+                "thinkTime": 0.0,
+                "wastedTime": 0.020218610763549806
+            },
+            {
+                "transactionName": "05_TriggeredAlertsLiteratureReview",
+                "rawStartTime": 1581069851700,
+                "rawEndTime": 1581069855198,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04794669151306152
+            },
+            {
+                "transactionName": "06_FilterOnArticleId",
+                "rawStartTime": 1581069871665,
+                "rawEndTime": 1581069873389,
+                "thinkTime": 0.0,
+                "wastedTime": 0.036875247955322269
+            },
+            {
+                "transactionName": "07_RemoveFilter",
+                "rawStartTime": 1581069886265,
+                "rawEndTime": 1581069887177,
+                "thinkTime": 0.0,
+                "wastedTime": 0.008462190628051758
+            },
+            {
+                "transactionName": "08_SortOnAuthor",
+                "rawStartTime": 1581069899574,
+                "rawEndTime": 1581069900638,
+                "thinkTime": 0.0,
+                "wastedTime": 0.015033960342407227
+            },
+            {
+                "transactionName": "09_CheckAbstractView",
+                "rawStartTime": 1581069913812,
+                "rawEndTime": 1581069914167,
+                "thinkTime": 0.0,
+                "wastedTime": 0.010185956954956055
+            },
+            {
+                "transactionName": "11_AlertConfiguration-View Alerts",
+                "rawStartTime": 1581069931758,
+                "rawEndTime": 1581069933679,
+                "thinkTime": 0.0,
+                "wastedTime": 0.02672410011291504
+            },
+            {
+                "transactionName": "12_AlertConfiguration-View Execution Status",
+                "rawStartTime": 1581069946350,
+                "rawEndTime": 1581069948019,
+                "thinkTime": 0.0,
+                "wastedTime": 0.020786523818969728
+            },
+            {
+                "transactionName": "13_AlertConfiguration-View Execution Status Completed",
+                "rawStartTime": 1581069963016,
+                "rawEndTime": 1581069963635,
+                "thinkTime": 0.0,
+                "wastedTime": 0.005958080291748047
+            },
+            {
+                "transactionName": "11_Logout",
+                "rawStartTime": 1581069976044,
+                "rawEndTime": 1581069977147,
+                "thinkTime": 0.0,
+                "wastedTime": 0.008888006210327149
+            }
+        ]
+    }
+]

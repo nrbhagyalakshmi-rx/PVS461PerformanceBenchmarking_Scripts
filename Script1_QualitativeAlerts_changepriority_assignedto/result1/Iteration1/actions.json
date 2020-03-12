@@ -1,0 +1,137 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: signal",
+                "infFile": "t2.inf",
+                "time": 1583910716766
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1583910718066
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: events",
+                "infFile": "t8.inf",
+                "time": 1583910719984
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: saveDashboardConfig",
+                "infFile": "t17.inf",
+                "time": 1583910739464
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Submit Data: 21",
+                "infFile": "t26.inf",
+                "time": 1583910763174
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Submit Data: changePriorityOfAlert",
+                "infFile": "t27.inf",
+                "time": 1583910777495
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: changePriorityOfAlert_2",
+                "infFile": "t28.inf",
+                "time": 1583910796785
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: searchUserGroupList",
+                "infFile": "t29.inf",
+                "time": 1583910814792
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: changeAssignedToGroup",
+                "infFile": "t30.inf",
+                "time": 1583910815603
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: searchUserGroupList_2",
+                "infFile": "t31.inf",
+                "time": 1583910829816
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: changeAssignedToGroup_2",
+                "infFile": "t32.inf",
+                "time": 1583910830545
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: index",
+                "infFile": "t33.inf",
+                "time": 1583910849117
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "QualitativeReview_02_Login",
+                "rawStartTime": 1583910716790,
+                "rawEndTime": 1583910725855,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07688426971435547
+            },
+            {
+                "transactionName": "QualitativeReview_03_NavigateTriggeredAlertsQualitativeReview",
+                "rawStartTime": 1583910739096,
+                "rawEndTime": 1583910741155,
+                "thinkTime": 0.0,
+                "wastedTime": 0.019488811492919923
+            },
+            {
+                "transactionName": "QualitativeReview_04_ClickOnAlertName",
+                "rawStartTime": 1583910755113,
+                "rawEndTime": 1583910763189,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0348048210144043
+            },
+            {
+                "transactionName": "QualitativeReview_05_ChangePriorityNCAses",
+                "rawStartTime": 1583910776798,
+                "rawEndTime": 1583910777496,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0048029422760009769
+            },
+            {
+                "transactionName": "QualitativeReview_06_ChangePriorityNCases",
+                "rawStartTime": 1583910795137,
+                "rawEndTime": 1583910796785,
+                "thinkTime": 0.0,
+                "wastedTime": 0.005278825759887695
+            },
+            {
+                "transactionName": "QualitativeReview_07_ChangeAssignedToNCAses",
+                "rawStartTime": 1583910814793,
+                "rawEndTime": 1583910815603,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0062253475189208988
+            },
+            {
+                "transactionName": "QualitativeReview_08_ChangeAssignedToNCAses",
+                "rawStartTime": 1583910829819,
+                "rawEndTime": 1583910830548,
+                "thinkTime": 0.0,
+                "wastedTime": 0.005814075469970703
+            },
+            {
+                "transactionName": "QualitativeReview_09_Logout",
+                "rawStartTime": 1583910847939,
+                "rawEndTime": 1583910849120,
+                "thinkTime": 0.0,
+                "wastedTime": 0.00795602798461914
+            }
+        ]
+    }
+]

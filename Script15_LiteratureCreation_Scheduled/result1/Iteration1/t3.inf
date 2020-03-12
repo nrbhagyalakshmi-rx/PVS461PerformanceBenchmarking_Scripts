@@ -1,0 +1,18 @@
+[t3]
+FileName2=t3_1_OpenSans-Regular-55835483c304eaa8477fea2c36abba17.UNK
+RawStepEndTime=0
+RequestBodyFile=t3_RequestBody.txt
+RawStepName=authenticate
+ContentType=text/html
+URL1=http://10.100.22.24:8181/signal/
+URL2=http://10.100.22.24:8181/signal/assets/OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2?v=1.1.0
+URL3=http://10.100.22.24:8181/favicon.ico
+ResponseHeaderFile=t3_ResponseHeader.txt
+SnapshotXmlFile=snapshot_4.xml
+RequestHeaderFile=t3_RequestHeader.txt
+SaveSnapshotResources=1
+RawStepStartTime=1579488869855
+Total=3
+StepName=Submit Data: authenticate
+FileName1=t3.html
+FileName3=t3_0_favicon.ico

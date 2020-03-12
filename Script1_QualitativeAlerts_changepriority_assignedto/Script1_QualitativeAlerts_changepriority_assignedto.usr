@@ -1,0 +1,71 @@
+[General]
+Type=Multi
+DefaultCfg=default.cfg
+ParameterFile=Script1_QualitativeAlerts_changepriority_assignedto.prm
+GlobalParameterFile=
+NewFunctionHeader=1
+RunType=cci
+ActionLogicExt=action_logic
+LastActiveAction=Action
+MajorVersion=12
+MinorVersion=60
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+AdditionalTypes=QTWeb
+DevelopTool=Vugen
+LastModifyVer=12.60.0.971
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+LastCodeGenerationVer=12.60.0.971
+DisableRegenerate=0
+Encoding=ANSI
+Description=
+ScriptLocale=en-IN
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[RunLogicFiles]
+Default Profile=default.usp
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[ExtraFiles]
+globals.h=
+WebSocketCB.c=
+[Modified Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Recorded Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="QualitativeReview_02_Login__*delimiter*__QualitativeReview_03_NavigateTriggeredAlertsQualitativeReview__*delimiter*__QualitativeReview_04_ClickOnAlertName__*delimiter*__QualitativeReview_05_ChangePriorityNCAses__*delimiter*__QualitativeReview_06_ChangePriorityNCases__*delimiter*__QualitativeReview_07_ChangeAssignedToNCAses__*delimiter*__QualitativeReview_08_ChangeAssignedToNCAses__*delimiter*__QualitativeReview_09_Logout"
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=result1
+ActiveRunName=result1
+[Transactions]
+QualitativeReview_02_Login=
+QualitativeReview_03_NavigateTriggeredAlertsQualitativeReview=
+QualitativeReview_04_ClickOnAlertName=
+QualitativeReview_05_ChangePriorityNCAses=
+QualitativeReview_06_ChangePriorityNCases=
+QualitativeReview_07_ChangeAssignedToNCAses=
+QualitativeReview_08_ChangeAssignedToNCAses=
+QualitativeReview_09_Logout=
+[ExtraFilesToParse]
+WebSocketCB.c=

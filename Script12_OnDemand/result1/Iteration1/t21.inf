@@ -1,0 +1,13 @@
+[t21]
+SnapshotXmlFile=snapshot_20.xml
+ContentType=application/json
+StepName=Url: listConfig
+Total=1
+FileName1=t21.json
+RequestHeaderFile=t21_RequestHeader.txt
+ResponseHeaderFile=t21_ResponseHeader.txt
+RawStepEndTime=0
+RawStepName=listConfig
+RequestBodyFile=t21_RequestBody.txt
+RawStepStartTime=1581067913397
+URL1=http://10.100.22.24:8181/signal/singleOnDemandAlert/listConfig?adhocRun=true&draw=1&columns[0][data]=name&columns[0][name]=&columns[0][searchable]=true&columns[0][orderable]=true&columns[0][search][value]=&columns[0][search][regex]=false&columns[1][data]=description&columns[1][name]=&columns[1][searchable]=true&columns[1][orderable]=true&columns[1][search][value]=&columns[1][search][regex]=false&columns[2][data]=productSelection&columns[2][name]=&columns[2][searchable]=true&columns[2][orderable]=false&columns[2][search][value]=&columns[2][search][regex]=false&columns[3][data]=&columns[3][name]=&columns[3][searchable]=true&columns[3][orderable]=true&columns[3][search][value]=&columns[3][search][regex]=false&columns[4][data]=caseCount&columns[4][name]=&columns[4][searchable]=true&columns[4][orderable]=true&columns[4][search][value]=&columns[4][search][regex]=false&columns[5][data]=newCases&columns[5][name]=&columns[5][searchable]=true&columns[5][orderable]=true&columns[5][search][value]=&columns[5][search][regex]=false&columns[6][data]=closedCaseCount&columns[6][name]=&columns[6][searchable]=true&columns[6][orderable]=true&columns[6][search][value]=&columns[6][search][regex]=false&columns[7][data]=lastModified&columns[7][name]=&columns[7][searchable]=true&columns[7][orderable]=true&columns[7][search][value]=&columns[7][search][regex]=false&columns[8][data]=lastExecuted&columns[8][name]=&columns[8][searchable]=true&columns[8][orderable]=true&columns[8][search][value]=&columns[8][search][regex]=false&columns[9][data]=9&columns[9][name]=&columns[9][searchable]=true&columns[9][orderable]=false&columns[9][search][value]=&columns[9][search][regex]=false&order[0][column]=3&order[0][dir]=desc&start=0&length=50&search[value]=&search[regex]=false&_=1579490023177

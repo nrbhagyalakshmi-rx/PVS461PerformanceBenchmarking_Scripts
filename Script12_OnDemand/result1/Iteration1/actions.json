@@ -1,0 +1,135 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: signal",
+                "infFile": "t2.inf",
+                "time": 1581067887850
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1581067889424
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: en.json",
+                "infFile": "t4.inf",
+                "time": 1581067889724
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: events",
+                "infFile": "t8.inf",
+                "time": 1581067890721
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: adhocReview",
+                "infFile": "t17.inf",
+                "time": 1581067912472
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: listConfig",
+                "infFile": "t21.inf",
+                "time": 1581067913766
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: adhocReview_2",
+                "infFile": "t24.inf",
+                "time": 1581067930601
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: adhocReview_3",
+                "infFile": "t31.inf",
+                "time": 1581067948008
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: priorities_3",
+                "infFile": "t32.inf",
+                "time": 1581067948321
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: workflowState_3",
+                "infFile": "t33.inf",
+                "time": 1581067948627
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: dataTables_en.json",
+                "infFile": "t34.inf",
+                "time": 1581067948971
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: info_4",
+                "infFile": "t35.inf",
+                "time": 1581067949291
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: listAdhocConfig",
+                "infFile": "t36.inf",
+                "time": 1581067949650
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: index",
+                "infFile": "t39.inf",
+                "time": 1581067967407
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "OnDemand_01_OpenApplication",
+                "rawStartTime": 1581067886688,
+                "rawEndTime": 1581067887865,
+                "thinkTime": 0.0,
+                "wastedTime": 0.09615063667297363
+            },
+            {
+                "transactionName": "OnDemand_02_Login",
+                "rawStartTime": 1581067887865,
+                "rawEndTime": 1581067894826,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07489848136901856
+            },
+            {
+                "transactionName": "OnDemand_03_NavigateOnDemandQualitative",
+                "rawStartTime": 1581067911432,
+                "rawEndTime": 1581067914333,
+                "thinkTime": 0.0,
+                "wastedTime": 0.5352885303497315
+            },
+            {
+                "transactionName": "OnDemand_04_NavigateOnDemandQuantitative",
+                "rawStartTime": 1581067929253,
+                "rawEndTime": 1581067931731,
+                "thinkTime": 0.0,
+                "wastedTime": 0.7890465354919434
+            },
+            {
+                "transactionName": "OnDemand_05_NavigateOnDemandEVDAS",
+                "rawStartTime": 1581067946657,
+                "rawEndTime": 1581067950241,
+                "thinkTime": 0.0,
+                "wastedTime": 0.870492597579956
+            },
+            {
+                "transactionName": "OnDemand_06_Logout",
+                "rawStartTime": 1581067965947,
+                "rawEndTime": 1581067967407,
+                "thinkTime": 0.0,
+                "wastedTime": 0.3776673240661621
+            }
+        ]
+    }
+]

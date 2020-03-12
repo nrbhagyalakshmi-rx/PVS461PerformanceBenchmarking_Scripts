@@ -1,0 +1,13 @@
+[t7]
+SnapshotXmlFile=snapshot_6.xml
+ContentType=application/json
+StepName=Url: getProductByStatus
+Total=1
+FileName1=t7.json
+RequestHeaderFile=t7_RequestHeader.txt
+ResponseHeaderFile=t7_ResponseHeader.txt
+RawStepEndTime=0
+RawStepName=getProductByStatus
+RequestBodyFile=t7_RequestBody.txt
+RawStepStartTime=1578910571466
+URL1=http://10.100.22.24:8181/signal/dashboard/getProductByStatus?type=Aggregate Case Alert&_=1578898777580

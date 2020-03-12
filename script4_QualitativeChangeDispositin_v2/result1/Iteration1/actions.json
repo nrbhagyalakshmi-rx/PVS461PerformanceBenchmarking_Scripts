@@ -1,0 +1,105 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: signal",
+                "infFile": "t2.inf",
+                "time": 1581075829941
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1581075832622
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: events",
+                "infFile": "t11.inf",
+                "time": 1581075834268
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: saveDashboardConfig",
+                "infFile": "t17.inf",
+                "time": 1581075857843
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Submit Data: 68",
+                "infFile": "t26.inf",
+                "time": 1581075880138
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Submit Data: changeDisposition",
+                "infFile": "t27.inf",
+                "time": 1581076000048
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: 68_2",
+                "infFile": "t28.inf",
+                "time": 1581076003424
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Submit Data: 68_3",
+                "infFile": "t29.inf",
+                "time": 1581076006396
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: index",
+                "infFile": "t31.inf",
+                "time": 1581076023447
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "QualitativeReview_01_OpenApplication",
+                "rawStartTime": 1581075828676,
+                "rawEndTime": 1581075830014,
+                "thinkTime": 0.0,
+                "wastedTime": 0.1259622573852539
+            },
+            {
+                "transactionName": "QualitativeReview_02_Login",
+                "rawStartTime": 1581075830015,
+                "rawEndTime": 1581075840296,
+                "thinkTime": 0.0,
+                "wastedTime": 0.062416791915893558
+            },
+            {
+                "transactionName": "QualitativeReview_03_NavigateTriggeredAlertsQualitativeReview",
+                "rawStartTime": 1581075857244,
+                "rawEndTime": 1581075859243,
+                "thinkTime": 0.0,
+                "wastedTime": 0.023724794387817384
+            },
+            {
+                "transactionName": "QualitativeReview_04_ClickOnAlertName",
+                "rawStartTime": 1581075873359,
+                "rawEndTime": 1581075880148,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0337674617767334
+            },
+            {
+                "transactionName": "QualitativeReview_05_SelectNCasesandClickonDisposition",
+                "rawStartTime": 1581075893632,
+                "rawEndTime": 1581076006406,
+                "thinkTime": 0.0,
+                "wastedTime": 0.03563189506530762
+            },
+            {
+                "transactionName": "QualitativeReview_07_Logout",
+                "rawStartTime": 1581076022067,
+                "rawEndTime": 1581076023455,
+                "thinkTime": 0.0,
+                "wastedTime": 0.017740249633789064
+            }
+        ]
+    }
+]

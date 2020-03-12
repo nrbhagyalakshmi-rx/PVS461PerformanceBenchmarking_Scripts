@@ -1,0 +1,200 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: signal",
+                "infFile": "t2.inf",
+                "time": 1579497372689
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1579497374341
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: en.json",
+                "infFile": "t4.inf",
+                "time": 1579497374678
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: events",
+                "infFile": "t8.inf",
+                "time": 1579497375872
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: info",
+                "infFile": "t9.inf",
+                "time": 1579497376155
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Submit Data: searchViews",
+                "infFile": "t27.inf",
+                "time": 1579497450135
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: searchViews_2",
+                "infFile": "t28.inf",
+                "time": 1579497450833
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Custom Request: getSelectedItem",
+                "infFile": "t29.inf",
+                "time": 1579497451141
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Submit Data: getPreLevelProductParents",
+                "infFile": "t31.inf",
+                "time": 1579497451176
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: queryList",
+                "infFile": "t33.inf",
+                "time": 1579497451546
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: queryList_2",
+                "infFile": "t34.inf",
+                "time": 1579497451853
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: templateList",
+                "infFile": "t35.inf",
+                "time": 1579497452162
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: searchUserGroupList",
+                "infFile": "t36.inf",
+                "time": 1579497452571
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: searchUserGroupList_2",
+                "infFile": "t37.inf",
+                "time": 1579497452889
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Submit Data: run",
+                "infFile": "t38.inf",
+                "time": 1579497455394
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: info_3",
+                "infFile": "t39.inf",
+                "time": 1579497455702
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Url: dataTables_en.json",
+                "infFile": "t40.inf",
+                "time": 1579497456057
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Url: executionStatus",
+                "infFile": "t41.inf",
+                "time": 1579497456396
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Url: executionStatus_2",
+                "infFile": "t43.inf",
+                "time": 1579497471417
+            },
+            {
+                "stepId": "STEP20",
+                "stepName": "Url: executionStatus_3",
+                "infFile": "t44.inf",
+                "time": 1579497471727
+            },
+            {
+                "stepId": "STEP21",
+                "stepName": "Url: executionStatus_4",
+                "infFile": "t45.inf",
+                "time": 1579497472034
+            },
+            {
+                "stepId": "STEP22",
+                "stepName": "Url: executionStatus_5",
+                "infFile": "t46.inf",
+                "time": 1579497472342
+            },
+            {
+                "stepId": "STEP23",
+                "stepName": "Url: executionStatus_6",
+                "infFile": "t47.inf",
+                "time": 1579497472693
+            },
+            {
+                "stepId": "STEP24",
+                "stepName": "Url: executionStatus_7",
+                "infFile": "t48.inf",
+                "time": 1579497473115
+            },
+            {
+                "stepId": "STEP25",
+                "stepName": "Url: executionStatus_8",
+                "infFile": "t49.inf",
+                "time": 1579497473464
+            },
+            {
+                "stepId": "STEP26",
+                "stepName": "Url: index",
+                "infFile": "t51.inf",
+                "time": 1579497474700
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "QualitativeAlert_01_OpenApplication",
+                "rawStartTime": 1579497371263,
+                "rawEndTime": 1579497372703,
+                "thinkTime": 0.0,
+                "wastedTime": 0.1037440299987793
+            },
+            {
+                "transactionName": "QualitativeAlert_02_Login",
+                "rawStartTime": 1579497372703,
+                "rawEndTime": 1579497416432,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04895806312561035
+            },
+            {
+                "transactionName": "QualitativeAlert_03_NavigateQualitativeAlert",
+                "rawStartTime": 1579497432293,
+                "rawEndTime": 1579497435397,
+                "thinkTime": 0.0,
+                "wastedTime": 0.03641343116760254
+            },
+            {
+                "transactionName": "QualitativeAlert_04_CreateQualitativeAlert",
+                "rawStartTime": 1579497452892,
+                "rawEndTime": 1579497457009,
+                "thinkTime": 0.0,
+                "wastedTime": 0.6048222560882568
+            },
+            {
+                "transactionName": "QualitativeAlert_05_Logout",
+                "rawStartTime": 1579497473467,
+                "rawEndTime": 1579497474700,
+                "thinkTime": 0.0,
+                "wastedTime": 0.2790932846069336
+            }
+        ]
+    }
+]

@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Login</title>
+        <script type="text/javascript" src="/signal/ruxitagentjs_ICA2SVfqru_10185200212095618.js" data-dtconfig="app=ea7c4b59f27d43eb|srms=1,1,,,|uxrgcm=100,25,300,3;100,25,300,3|featureHash=ICA2SVfqru|dpvc=1|lastModification=1581626634353|dtVersion=10185200212095618|tp=500,50,0,1|rdnt=1|uxrgce=1|uxdcw=1500|bp=2|agentUri=/signal/ruxitagentjs_ICA2SVfqru_10185200212095618.js|reportUrl=/signal/rb_bf71031xra|rid=RID_826842747|rpid=1530683217"></script><link rel="stylesheet" href="/signal/assets/login-23162286b278bf1e48cb0201c9e9a644.css"/>
+        <link rel="stylesheet" href="/signal/assets/application-b3f48b83f9b7c2d3cbf01ec2a4664551.css"/>
+        <script type="text/javascript" src="/signal/assets/application-41e85b8b09a3fdf642c49a85a409c671.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <div id="loginStyle">
+                <form action='/signal/login/authenticate' method='POST' id="loginForm" role="form" autocomplete="off">
+                    <input type="hidden" name="_csrf" value="aece1277-ec96-41d4-ada4-0c00a018649a"/>
+                    <div id="loginTable">
+                        <div id="loginHeader">
+                            <div class="pvLogo">
+                                <img src="/signal/assets/pv-signal-logo-61161afba9a8a8e20ebe65b7f0973c2a.png" id="loginLogo"/>
+                            </div>
+                            <div class="header-lbl">
+                                Log in
+                                
+                            </div>
+                        </div>
+
+                        <div id="loginUserContainer">
+                            <input type="text" name="username" id="username" class="loginFieldUser" placeholder="Username" required autofocus>
+                        </div>
+
+                        <div id="loginPassContainer">
+                            <input type="password" name="password" id="password" class="loginFieldPass" placeholder="Password" required>
+                        </div>
+
+                        <div id="loginFooter">
+                            <button id="loginSubmit" type="submit">Log in</button>
+                        </div>
+
+                    </div>
+
+                    <div class="margin20Top">
+                        
+
+
+
+
+
+
+
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <script type='text/javascript'>
+            setInterval(function() {window.location.reload(true)}, 60000 * 15);
+            (function() {
+                document.forms['loginForm'].elements['j_username'].focus();
+                localStorage.removeItem("dashboardWidgetsConfig");
+                document.forms['loginForm'].elements['username'].focus();
+
+            })();
+        </script>
+    </body>
+</html>

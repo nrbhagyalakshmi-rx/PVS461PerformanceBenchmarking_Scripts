@@ -1,0 +1,13 @@
+Start auto log messages stack - Iteration 5.	[MsgId: MMSG-10545]
+Action.c(673): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(673): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(676): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(676): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(679): web_add_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(679): web_add_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+Action.c(682): web_custom_request("prepareICSRsReport") started  	[MsgId: MMSG-26355]
+Action.c(682): Retaining websocket connection of URI="ws://10.100.22.24:8181/signal/stomp/913/i1w8t2ho/websocket" (RelFrameId=1, Internal ID=167)  	[MsgId: MMSG-27634]
+Action.c(682): Error -27792: Failed to connect to server "10.100.22.24:8181": [10065] No Route to Host  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

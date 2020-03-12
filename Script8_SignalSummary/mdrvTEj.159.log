@@ -1,0 +1,1613 @@
+Action.c(19):     3\\u0022:\\u007b\\u0022visible\\u0022:true\\u002c\\u0022reportWidgetDetails\\u0022:\\u007b
+Action.c(19):     \\u0022id\\u0022:\\u0022pvWidgetChart-3\\u0022\\u002c\\u0022x\\u0022:0\\u002c\\u0022y\\u00
+Action.c(19):     22:21\\u002c\\u0022height\\u0022:7\\u002c\\u0022width\\u0022:6\\u007d\\u002c\\u0022content
+Action.c(19):     \\u0022:\\u007b\\u0022id\\u0022:\\u0022aggregate-chart\\u0022\\u002c\\u0022type\\u0022:\\u
+Action.c(19):     0022pvDashChart\\u0022\\u007d\\u002c\\u0022reportWidgetName\\u0022:\\u0022Quantitative Rev
+Action.c(19):     iew By Status\\u0022\\u007d\\u002c\\u0022inbox\\u0022:\\u007b\\u0022reportWidgetName\\u002
+Action.c(19):     2:\\u0022Inbox\\u0022\\u002c\\u0022reportWidgetDetails\\u0022:\\u007b\\u0022id\\u0022:\\u0
+Action.c(19):     022inbox\\u0022\\u007d\\u002c\\u0022visible\\u0022:true\\u007d\\u002c\\u0022isDirty\\u0022
+Action.c(19):     :true\\u007d";\n
+Action.c(19):         \r\n
+Action.c(19):     </script>\r\n
+Action.c(19):     \n
+Action.c(19):         <script type="text/javascript">\r\n
+Action.c(19):     \n
+Action.c(19):         window.action_select_values = JSON.parse("\\u007b\\u0022types\\u0022:\\u005b\\u007b\\u
+Action.c(19):     0022id\\u0022:6407\\u002c\\u0022value\\u0022:\\u0022AESM\\u0022\\u002c\\u0022text\\u0022:\\
+Action.c(19):     u0022AESM\\u0022\\u007d\\u002c\\u007b\\u0022id\\u0022:6771\\u002c\\u0022value\\u0022:\\u00
+Action.c(19):     22Auto Alert\\u0022\\u002c\\u0022text\\u0022:\\u0022Auto Alert\\u0022\\u007d\\u002c\\u007b
+Action.c(19):     \\u0022id\\u0022:6779\\u002c\\u0022value\\u0022:\\u0022Further Review\\u0022\\u002c\\u0022
+Action.c(19):     text\\u0022:\\u0022Further Review\\u0022\\u007d\\u005d\\u002c\\u0022configs\\u0022:\\u005b
+Action.c(19):     \\u007b\\u0022id\\u0022:6787\\u002c\\u0022value\\u0022:\\u0022Meeting\\u0022\\u007d\\u002c
+Action.c(19):     \\u007b\\u0022id\\u0022:6796\\u002c\\u0022value\\u0022:\\u0022Additional investigations\\u
+Action.c(19):     0022\\u007d\\u002c\\u007b\\u0022id\\u0022:6805\\u002c\\u0022value\\u0022:\\u0022Change to 
+Action.c(19):     RMP\\u0022\\u007d\\u002c\\u007b\\u0022id\\u0022:6814\\u002c\\u0022value\\u0022:\\u0022Chan
+Action.c(19):     ges to REMS\\u0022\\u007d\\u002c\\u007b\\u0022id\\u0022:6823\\u002c\\u0022value\\u0022:\\u
+Action.c(19):     0022Communication\\u0022\\u007d\\u002c\\u007b\\u0022id\\u0022:6832\\u002c\\u0022value\\u00
+Action.c(19):     22:\\u0022Exchange of Information\\u0022\\u007d\\u002c\\u007b\\u0022id\\u0022:6841\\u002c\\
+Action.c(19):     u0022value\\u0022:\\u0022Informed consent modification\\u0022\\u007d\\u002c\\u007b\\u0022i
+Action.c(19):     d\\u0022:6850\\u002c\\u0022value\\u0022:\\u0022Migrated Action\\u0022\\u007d\\u002c\\u007b
+Action.c(19):     \\u0022id\\u0022:6859\\u002c\\u0022value\\u0022:\\u0022Other\\u0022\\u007d\\u002c\\u007b\\
+Action.c(19):     u0022id\\u0022:6868\\u002c\\u0022value\\u0022:\\u0022Periodic Review\\u0022\\u007d\\u002c\\
+Action.c(19):     u007b\\u0022id\\u0022:6877\\u002c\\u0022value\\u0022:\\u0022Post-Authorization study\\u002
+Action.c(19):     2\\u007d\\u002c\\u007b\\u0022id\\u0022:6886\\u002c\\u0022value\\u0022:\\u0022Proposition o
+Action.c(19):     f Labeling update\\u0022\\u007d\\u002c\\u007b\\u0022id\\u0022:6895\\u002c\\u0022value\\u00
+Action.c(19):     22:\\u0022Reassessment\\u0022\\u007d\\u002c\\u007b\\u0022id\\u0022:6904\\u002c\\u0022value
+Action.c(19):     \\u0022:\\u0022Recall\\u0022\\u007d\\u002c\\u007b\\u0022id\\u0022:6913\\u002c\\u0022value\\
+Action.c(19):     u0022:\\u0022Review ICSRs\\u0022\\u007d\\u002c\\u007b\\u0022id\\u0022:6922\\u002c\\u0022va
+Action.c(19):     lue\\u0022:\\u0022Review literature\\u0022\\u007d\\u002c\\u007b\\u0022id\\u0022:6931\\u002
+Action.c(19):     c\\u0022value\\u0022:\\u0022Risk minimization measures\\u0022\\u007d\\u002c\\u007b\\u0022i
+Action.c(19):     d\\u0022:6940\\u002c\\u0022value\\u0022:\\u0022Technical Evaluation\\u0022\\u007d\\u005d\\
+Action.c(19):     u002c\\u0022allStatus\\u0022:\\u005b\\u007b\\u0022name\\u0022:\\u0022InProcess\\u0022\\u00
+Action.c(19):     2c\\u0022value\\u0022:\\u0022In Progress\\u0022\\u007d\\u002c\\u007b\\u0022name\\u0022:\\u
+Action.c(19):     0022Deleted\\u0022\\u002c\\u0022value\\u0022:\\u0022Deleted\\u0022\\u007d\\u002c\\u007b\\u
+Action.c(19):     0022name\\u0022:\\u0022New\\u0022\\u002c\\u0022value\\u0022:\\u0022New\\u0022\\u007d\\u002
+Action.c(19):     c\\u007b\\u0022name\\u0022:\\u0022Closed\\u0022\\u002c\\u0022value\\u0022:\\u0022Closed\\u
+Action.c(19):     0022\\u007d\\u002c\\u007b\\u0022name\\u0022:\\u0022ReOpened\\u0022\\u002c\\u0022value\\u00
+Action.c(19):     22:\\u0022Re-opened\\u0022\\u007d\\u005d\\u007d")\n
+Action.c(19):     \r\n
+Action.c(19):     </script>\r\n
+Action.c(19):     \n
+Action.c(19):         <script type="text/javascript" src="/signal/assets/app/pvs/actions/actions-23922c4ac69
+Action.c(19):     7e483177c985efb94f917.js" ></script>\n
+Action.c(19):         <script type="text/javascript" src="/signal/assets/spring-websocket-867783f03d5a800537
+Action.c(19):     2950a4b8cac2a4.js" ></script>\n
+Action.c(19):         <script type="text/javascript" src="/signal/assets/app/pvs/dashboard/dashboardWidget-2
+Action.c(19):     4248f37a4de46fe75c68afd1bc9dca6.js" ></script>\n
+Action.c(19):         <script type="text/javascript" src="/signal/assets/app/pvs/dashboard/dashboard-7c3ebe5
+Action.c(19):     08164986a823f76e4f031d18c.js" ></script>\n
+Action.c(19):         <script type="text/javascript" src="/signal/assets/vendorUi/highcharts/modules/no-data
+Action.c(19):     -to-display-fc44762af3aab44deb8317659be156a6.js" ></script>\n
+Action.c(19):         <script type="text/javascript" src="/signal/assets/vendorUi/fullcalendar.min-eadac4139
+Action.c(19):     211e13292deb9473e638d45.js" ></script>\n
+Action.c(19):         <script type="text/javascript" src="/signal/assets/vendorUi/gridstack/gridstack.min-82
+Action.c(19):     43969940fd3f8d9a2116948054084f.js" ></script>\n
+Action.c(19):         <script type="text/javascript" src="/signal/assets/vendorUi/gridstack/gridstack.jQuery
+Action.c(19):     UI.min-4850183e36adcd62a4e2c741ae857fc4.js" ></script>\n
+Action.c(19):         <link rel="stylesheet" href="/signal/assets/vendorUi/gridstack.min-82a5fabd01f65ac4b5e
+Action.c(19):     87078091be104.css"/>\n
+Action.c(19):         <link rel="stylesheet" href="/signal/assets/workflowModal-8863a855e0d38b1c16a0b929c87a
+Action.c(19):     1eb2.css"/>\n
+Action.c(19):         <link rel="stylesheet" href="/signal/assets/dashboard-7d6d721454def651262f344c8062d5e4
+Action.c(19):     .css"/>\n
+Action.c(19):         <script type="text/javascript" src="/signal/assets/app/pvs/date-time/bootstrap-datetim
+Action.c(19):     epicker-5aa81b54c1dd973165b56d66567b57d6.js" ></script>\n
+Action.c(19):         <link rel="stylesheet" href="/signal/assets/app/pvs/bootstrap-datetimepicker-c0f52e788
+Action.c(19):     c9b52855aeb720838b56db9.css"/>\n
+Action.c(19):     \n
+Action.c(19):         <link rel="stylesheet" href="/signal/assets/vendorUi/fullcalendar.min-537e31219634a1a5
+Action.c(19):     0bfc6c265c08a05f.css"/>\n
+Action.c(19):         <link rel="stylesheet" media="print" href="/signal/assets/vendorUi/fullcalendar.print-
+Action.c(19):     b8f18e9775afba153b4abfbc5f9baaf6.css"/>\n
+Action.c(19):     \n
+Action.c(19):         <r:layoutResources/>\n
+Action.c(19):         \n
+Action.c(19):         <script>\n
+Action.c(19):             $.getJSON('/signal/assets/i18n/' + userLocale + '.json', function (data) {\n
+Action.c(19):                 $.i18n.load(data);\n
+Action.c(19):     \n
+Action.c(19):             });\n
+Action.c(19):             var resizefunc = [];\n
+Action.c(19):             var lastVisitedUrl = localStorage.getItem('lastVisitedURL');\n
+Action.c(19):             localStorage.setItem('lastVisitedURL', document.URL.split('?')[0]);\n
+Action.c(19):         </script>\n
+Action.c(19):     \n
+Action.c(19):     </head>\n
+Action.c(19):     \n
+Action.c(19):     <body class="fixed-left">\n
+Action.c(19):     \n
+Action.c(19):     <!-- Begin page -->\n
+Action.c(19):     <div id="wrapper" class="enlarged forced">\n
+Action.c(19):         <!-- Top Bar Start -->\n
+Action.c(19):         \n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):         <script type="text/javascript" src="/signal/assets/spring-websocket-867783f03d5a800537
+Action.c(19):     2950a4b8cac2a4.js" ></script>\n
+Action.c(19):         <script type="text/javascript" src="/signal/assets/app/pvs/pushNotification-901fe923ae
+Action.c(19):     1e5cbf77d556f25e065418.js" ></script>\n
+Action.c(19):     \n
+Action.c(19):     <script type="text/javascript">\r\n
+Action.c(19):     \n
+Action.c(19):         var notificationURL = "\\u002fsignal\\u002finboxLog\\u002fforUser\\u002f8877";\n
+Action.c(19):         var notificationDeleteURL = "\\u002fsignal\\u002finboxLog\\u002fdeleteNotificationById
+Action.c(19):     ";\n
+Action.c(19):         var notificationMarkAsReadURL = "\\u002fsignal\\u002finboxLog\\u002fmarkAsRead";\n
+Action.c(19):         var notificationDeleteByUserURL = "\\u002fsignal\\u002finboxLog\\u002fdeleteNotificati
+Action.c(19):     onsForUserId";\n
+Action.c(19):         var notificationMarkAsReadByUserURL = "\\u002fsignal\\u002finboxLog\\u002fmarkAsReadNo
+Action.c(19):     tificationsForUserId";\n
+Action.c(19):         var notificationDashboardURL = "\\u002fsignal\\u002finboxLog\\u002findex";\n
+Action.c(19):         var notificationChannel ="";\n
+Action.c(19):         var notificationWSURL = "\\u002fsignalnull";\n
+Action.c(19):         var reportRedirectURL = "\\u002fsignal\\u002freport\\u002fcriteria";\n
+Action.c(19):         var filterDeleteUrl = "\\u002fsignal\\u002fadvancedFilter\\u002fdelete";\n
+Action.c(19):     \n
+Action.c(19):         var detailUrls = {};\n
+Action.c(19):         detailUrls["sca_reportRedirectURL"] =  "\\u002fsignal\\u002fsingleCaseAlert\\u002fdeta
+Action.c(19):     ils";\n
+Action.c(19):         detailUrls["sca_adhoc_reportRedirectURL"] =  "\\u002fsignal\\u002fsingleCaseAlert\\u00
+Action.c(19):     2fadhocDetails";\n
+Action.c(19):         detailUrls["aga_reportRedirectURL"] = "\\u002fsignal\\u002faggregateCaseAlert\\u002fde
+Action.c(19):     tails";\n
+Action.c(19):         detailUrls["aga_adhoc_reportRedirectURL"] = "\\u002fsignal\\u002faggregateCaseAlert\\u
+Action.c(19):     002fadhocDetails";\n
+Action.c(19):         detailUrls["evdas_reportRedirectURL"] = "\\u002fsignal\\u002fevdasAlert\\u002fdetails"
+Action.c(19):     ;\n
+Action.c(19):         detailUrls["evdas_adhoc_reportRedirectURL"] = "\\u002fsignal\\u002fevdasAlert\\u002fad
+Action.c(19):     hocDetails";\n
+Action.c(19):         detailUrls["LITERATURE_reportRedirectURL"] = "\\u002fsignal\\u002fliteratureAlert\\u00
+Action.c(19):     2fdetails";\n
+Action.c(19):         detailUrls["error_url"]  = "\\u002fsignal\\u002fconfiguration\\u002fexecutionStatus";\n
+Action.c(19):     \n
+Action.c(19):         var socketURL = "\\u002fsignal\\u002fstomp";\n
+Action.c(19):     \n
+Action.c(19):         $(document).ready(function () {\n
+Action.c(19):             var isAdmin = true;\n
+Action.c(19):             if(!isAdmin) {\n
+Action.c(19):                $('.mega-dropdown-menu').width("100px");\n
+Action.c(19):             }\n
+Action.c(19):     \n
+Action.c(19):         });\n
+Action.c(19):     \n
+Action.c(19):         $(document).on('click','.temp-redirect',function() {\n
+Action.c(19):             window.location.href = notificationDashboardURL;\n
+Action.c(19):         });\n
+Action.c(19):     \r\n
+Action.c(19):     </script>\r\n
+Action.c(19):     \n
+Action.c(19):     <div class="topbar">\n
+Action.c(19):         <!-- LOGO -->\n
+Action.c(19):         <div class="pull-left">\n
+Action.c(19):             <button class="button-menu-mobile open-left waves-effect" accesskey="b" data-toggl
+Action.c(19):     e="tooltip" title="Main Menu">\n
+Action.c(19):                 <i class="md md-menu"></i>\n
+Action.c(19):             </button>\n
+Action.c(19):             <span class="clearfix"></span>\n
+Action.c(19):         </div>\n
+Action.c(19):         <div class="left side-menu">\n
+Action.c(19):             <div class="sidebar-inner slimscrollleft">\n
+Action.c(19):                 <div id="sidebar-menu">\n
+Action.c(19):                     <ul>\n
+Action.c(19):                         <li><a href="/signal/" class="waves-effect waves-primary">\n
+Action.c(19):                             <i class="md md-dashboard"></i><span>Dashboard</span>\n
+Action.c(19):                         </a>\n
+Action.c(19):                         </li>\n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):                             <li class="has_sub">\n
+Action.c(19):                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">\n
+Action.c(19):                                     <i class="md md-settings-applications"></i><span>Alert Con
+Action.c(19):     figuration</span> <span class="menu-arrow"></span>\n
+Action.c(19):                                 </a>\n
+Action.c(19):                                 <ul class="list-unstyled">\n
+Action.c(19):     \n
+Action.c(19):                                 <!-- Single Case Creation menu -->\n
+Action.c(19):                                     \n
+Action.c(19):                                         \n
+Action.c(19):                                             <li class="divider"></li>\n
+Action.c(19):                                         \n
+Action.c(19):                                         <li><a href="/signal/singleCaseAlert/create">\n
+Action.c(19):                                             Qualitative Configuration</a></li>\n
+Action.c(19):                                     \n
+Action.c(19):                                 <!-- Aggregate Creation menu -->\n
+Action.c(19):                                     \n
+Action.c(19):                                         <li><a href="/signal/aggregateCaseAlert/create">\n
+Action.c(19):                                             Quantitative Configuration</a></li>\n
+Action.c(19):                                     \n
+Action.c(19):                                 <!-- Evdas Creation menu -->\n
+Action.c(19):                                     \n
+Action.c(19):                                         \n
+Action.c(19):     \n
+Action.c(19):                                             <li><a href="/signal/evdasAlert/create">\n
+Action.c(19):                                                 EVDAS Configuration</a>\n
+Action.c(19):                                             </li>\n
+Action.c(19):                                         \n
+Action.c(19):                                     \n
+Action.c(19):                                 <!-- Adhoc Creation menu -->\n
+Action.c(19):                                     \n
+Action.c(19):                                         <li><a href="/signal/adHocAlert/create">\n
+Action.c(19):                                             Ad-Hoc Configuration</a></li>\n
+Action.c(19):                                     \n
+Action.c(19):     \n
+Action.c(19):                                 <!-- Literature Alert Creation menu -->\n
+Action.c(19):                                         \n
+Action.c(19):                                             <li>\n
+Action.c(19):                                                 <a href="/signal/literatureAlert/create">\n
+Action.c(19):                                                     Literature Configuration\n
+Action.c(19):                                                 </a>\n
+Action.c(19):                                             </li>\n
+Action.c(19):                                         \n
+Action.c(19):     \n
+Action.c(19):                                 <!-- View alert menu option -->\n
+Action.c(19):                                     \n
+Action.c(19):                                         <li><a href="/signal/configuration/index">\n
+Action.c(19):                                             View Alerts</a></li>\n
+Action.c(19):                                     \n
+Action.c(19):     \n
+Action.c(19):                                 <!-- View execution status menu option -->\n
+Action.c(19):                                     \n
+Action.c(19):                                         <li><a href="/signal/configuration/executionStatus">\n
+Action.c(19):                                             View Execution Status</a></l
+Action.c(19): t=8505213ms: 12272-byte response body for "http://10.100.22.24:8181/signal/" (RelFrameId=1, Internal ID=122)
+Action.c(19):     i>\n
+Action.c(19):                                     \n
+Action.c(19):                                 </ul>\n
+Action.c(19):                             </li>\n
+Action.c(19):                         \n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):                             <li class="has_sub">\n
+Action.c(19):                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">\n
+Action.c(19):                                     <i class="md md-report-problem"></i><span>Triggered Alerts
+Action.c(19):     </span> <span class="menu-arrow"></span>\n
+Action.c(19):                                 </a>\n
+Action.c(19):                                 <ul class="list-unstyled">\n
+Action.c(19):                                     \n
+Action.c(19):                                         <li><a href="/signal/singleCaseAlert/review">Qualitati
+Action.c(19):     ve Review</a></li>\n
+Action.c(19):                                     \n
+Action.c(19):                                     \n
+Action.c(19):                                         <li><a href="/signal/aggregateCaseAlert/review">Quanti
+Action.c(19):     tative Review</a></li>\n
+Action.c(19):                                     \n
+Action.c(19):     \n
+Action.c(19):                                     \n
+Action.c(19):                                         \n
+Action.c(19):                                             <li><a href="/signal/evdasAlert/review">EVDAS Revi
+Action.c(19):     ew</a></li>\n
+Action.c(19):                                         \n
+Action.c(19):                                     \n
+Action.c(19):                                     \n
+Action.c(19):                                         <li><a href="/signal/adHocAlert/index">Ad-Hoc Review</
+Action.c(19):     a></li>\n
+Action.c(19):                                     \n
+Action.c(19):                                     \n
+Action.c(19):                                         <li>\n
+Action.c(19):                                             <a href="/signal/literatureAlert/details">\n
+Action.c(19):                                                 Literature Review\n
+Action.c(19):                                             </a>\n
+Action.c(19):                                         </li>\n
+Action.c(19):                                     \n
+Action.c(19):                                 </ul>\n
+Action.c(19):                             </li>\n
+Action.c(19):                         \n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):                             <li class="has_sub">\n
+Action.c(19):                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">\n
+Action.c(19):                                     <i class="md md-call-merge"></i><span>Signal Management<sp
+Action.c(19):     an class="menu-arrow"></span></span>\n
+Action.c(19):                                 </a>\n
+Action.c(19):                                 <ul class="list-unstyled">\n
+Action.c(19):                                     <li>\n
+Action.c(19):                                         <a href="/signal/validatedSignal/index" class="waves-e
+Action.c(19):     ffect waves-primary">\n
+Action.c(19):                                             Signal Summary\n
+Action.c(19):                                         </a>\n
+Action.c(19):                                     </li>\n
+Action.c(19):                                     <li>\n
+Action.c(19):                                         <a href="/signal/productSummary/index">\n
+Action.c(19):                                             Product Summary\n
+Action.c(19):                                         </a>\n
+Action.c(19):                                     </li>\n
+Action.c(19):                                     \n
+Action.c(19):                                 </ul>\n
+Action.c(19):                             </li>\n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):                             <li class="has_sub">\n
+Action.c(19):                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">\n
+Action.c(19):                                     <i class="md md-filter-list"></i>\n
+Action.c(19):                                     <span>Queries</span> <span class="menu-arrow"></span>\n
+Action.c(19):                                 </a>\n
+Action.c(19):                                 <ul class="list-unstyled">\n
+Action.c(19):                                     \n
+Action.c(19):                                         <li>\n
+Action.c(19):                                             <a href="http://10.100.22.24:8080/reports/query/lo
+Action.c(19):     ad">\n
+Action.c(19):                                                 Load Queries\n
+Action.c(19):                                             </a>\n
+Action.c(19):                                         </li>\n
+Action.c(19):                                     \n
+Action.c(19):                                     \n
+Action.c(19):                                         <li>\n
+Action.c(19):                                             <a href="http://10.100.22.24:8080/reports/query/in
+Action.c(19):     dex">\n
+Action.c(19):                                                 Query Library\n
+Action.c(19):                                             </a>\n
+Action.c(19):                                         </li>\n
+Action.c(19):                                     \n
+Action.c(19):                                     \n
+Action.c(19):                                         <li>\n
+Action.c(19):                                             <a href="http://10.100.22.24:8080/reports/query/cr
+Action.c(19):     eate">\n
+Action.c(19):                                                 New Query\n
+Action.c(19):                                             </a>\n
+Action.c(19):                                         </li>\n
+Action.c(19):                                     \n
+Action.c(19):                                 </ul>\n
+Action.c(19):                             </li>\n
+Action.c(19):                         \n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):                             \n
+Action.c(19):                                 <li class="has_sub">\n
+Action.c(19):                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+Action.c(19):     >\n
+Action.c(19):                                         <i class="md md-trending-up"></i><span>Data Analysis</
+Action.c(19):     span> <span class="menu-arrow"></span>\n
+Action.c(19):                                     </a>\n
+Action.c(19):                                     <ul class="list-unstyled">\n
+Action.c(19):                                         <li><a href="/signal/dataAnalysis/index">Analysis File
+Action.c(19):      Library</a></li>\n
+Action.c(19):                                         <li class="divider"></li>\n
+Action.c(19):                                         <li><a href="/signal/dataAnalysis/create">New Analysis
+Action.c(19):      File</a></li>\n
+Action.c(19):                                         <li class="divider"></li>\n
+Action.c(19):                                         \n
+Action.c(19):                                     </ul>\n
+Action.c(19):                                 </li>\n
+Action.c(19):                             \n
+Action.c(19):                         \n
+Action.c(19):     \n
+Action.c(19):                         <li><a href="/signal/report/index" class="waves-effect waves-primary">
+Action.c(19):     \n
+Action.c(19):                             <i class="md md-insert-chart"></i><span>Reporting</span>\n
+Action.c(19):                         </a>\n
+Action.c(19):                         </li>\n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):                             <li class="has_sub">\n
+Action.c(19):                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">\n
+Action.c(19):                                     <i class="md md-grid-on"></i><span>On Demand Run\n
+Action.c(19):                                 </span> <span class="menu-arrow"></span>\n
+Action.c(19):                                 </a>\n
+Action.c(19):                                 <ul class="list-unstyled">\n
+Action.c(19):                                     \n
+Action.c(19):                                         <li><a href="/signal/singleOnDemandAlert/adhocReview">
+Action.c(19):     Qualitative Review</a></li>\n
+Action.c(19):                                     \n
+Action.c(19):                                     \n
+Action.c(19):                                         <li><a href="/signal/aggregateOnDemandAlert/adhocRevie
+Action.c(19):     w">Quantitative Review</a></li>\n
+Action.c(19):                                     \n
+Action.c(19):                                     \n
+Action.c(19):                                         \n
+Action.c(19):                                             <li>\n
+Action.c(19):                                                 <a href="/signal/evdasOnDemandAlert/adhocRevie
+Action.c(19):     w">\n
+Action.c(19):                                                     EVDAS Review\n
+Action.c(19):                                                 </a>\n
+Action.c(19):                                             </li>\n
+Action.c(19):                                         \n
+Action.c(19):                                     \n
+Action.c(19):                                 </ul>\n
+Action.c(19):                             </li>\n
+Action.c(19):                         \n
+Action.c(19):     \n
+Action.c(19):                         <li class="has_sub">\n
+Action.c(19):                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">\n
+Action.c(19):                                 <i class="md md-event"></i><span>Tasks & Calendar<span class="
+Action.c(19):     menu-arrow"></span></span>\n
+Action.c(19):                             </a>\n
+Action.c(19):                             <ul class="list-unstyled">\n
+Action.c(19):                                 <li>\n
+Action.c(19):                                     <a href="/signal/action/index" class="waves-effect waves-p
+Action.c(19):     rimary">\n
+Action.c(19):                                         Action Items\n
+Action.c(19):                                     </a>\n
+Action.c(19):                                 </li>\n
+Action.c(19):                                 <li>\n
+Action.c(19):                                     <a href="/signal/calendar/index" class="waves-effect waves
+Action.c(19):     -primary">\n
+Action.c(19):                                         Calendar\n
+Action.c(19):                                     </a>\n
+Action.c(19):                                 </li>\n
+Action.c(19):                             </ul>\n
+Action.c(19):                         </li>\n
+Action.c(19):                     </ul>\n
+Action.c(19):                 </div>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="clearfix"></div>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):         <div class="topbar-left">\n
+Action.c(19):             <div class="pull-left logo">\n
+Action.c(19):                 <a href="/signal/"><img src="/signal/assets/pv-signal-logo-61161afba9a8a8e20eb
+Action.c(19):     e65b7f0973c2a.png" class="pvLogo"/></a>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):         <!-- Navbar -->\n
+Action.c(19):         <div class="navbar navbar-default" role="navigation">\n
+Action.c(19):             <div class="container">\n
+Action.c(19):                 <div class="">\n
+Action.c(19):                     <ul class="nav navbar-nav hidden-xs pull-left">\n
+Action.c(19):                         <li><a href="http://10.100.22.24:8080/reports" target="_blank" class="
+Action.c(19):     waves-effect">PV Reports</a></li>\n
+Action.c(19):                     </ul>\n
+Action.c(19):                     <ul class="nav navbar-nav navbar-right pull-right">\n
+Action.c(19):                         \n
+Action.c(19):                             <li class="hidden-xs">\n
+Action.c(19):                                 <span>Welcome bhagya!</span>\n
+Action.c(19):                             </li>\n
+Action.c(19):                             <li id="menuNotification" class="hidden-xs dropdown mega-dropdown"
+Action.c(19):     >\n
+Action.c(19):     \n
+Action.c(19):                                 <a href="#" data-target="#" class="dropdown-toggle waves-effec
+Action.c(19):     t waves-light pv-head-noti-icon" data-toggle="dropdown" aria-expanded="true" accesskey="i"
+Action.c(19):     >\n
+Action.c(19):                                      <i class="glyphicon glyphicon-inbox" style="font-size: 24
+Action.c(19):     px; margin-top:19px;padding-top: 1px"></i>\n
+Action.c(19):                                 </a>\n
+Action.c(19):                                 <ul id="notificationContainer" class="dropdown-menu dropdown-m
+Action.c(19):     enu-lg notification-menu">\n
+Action.c(19):                                     <li id="notificationHeader" class="notifi-title"></li>\n
+Action.c(19):                                     <li id="notificationRows" class="ajax"></li>\n
+Action.c(19):                                     <div class="text-right m-t-10">\n
+Action.c(19):                                         <a href="/signal/inboxLog/index" class="btn btn-primar
+Action.c(19):     y temp-redirect dpv-head-noti-icon box-inline" tabindex="0" accesskey="m" title="Open Inbo
+Action.c(19):     x">Inbox</a>\n
+Action.c(19):                                         <a href="javascript:void(0);" id="clearNotifications" 
+Action.c(19):     class="btn btn-default box-inline" userId="8877" tabindex="0" title="Clear All" accesskey=
+Action.c(19):     "e">Clear all</a>\n
+Action.c(19):                                     </div>\n
+Action.c(19):                                 </ul>\n
+Action.c(19):     \n
+Action.c(19):                             </li>\n
+Action.c(19):     \n
+Action.c(19):                             <li class="hidden-xs dropdown mega-dropdown">\n
+Action.c(19):                                 <a href="#" data-target="#" class="dropdown-toggle waves-effec
+Action.c(19):     t waves-light"\n
+Action.c(19):                                    data-toggle="dropdown" aria-expanded="true" accesskey="t">\n
+Action.c(19):                                     <i class="md md-settings"></i></a>\n
+Action.c(19):                                 <ul class="dropdown-menu mega-dropdown-menu" role="menu">\n
+Action.c(19):                                     \n
+Action.c(19):                                         <li class="col-sm-4">\n
+Action.c(19):                                             <ul>\n
+Action.c(19):                                                 <li class="dropdown-header"><i class="fa fa-us
+Action.c(19):     er-circle fa-fw"></i> User Management</li>\n
+Action.c(19):                                                 <li id="userManagement"><a href="/signal/user/
+Action.c(19):     index">User Management</a></li>\n
+Action.c(19):                                                 <li id="roleManagement"><a href="/signal/role/
+Action.c(19):     index">Role Management</a></li>\n
+Action.c(19):                                                 <li id="groupManagement"><a href="/signal/grou
+Action.c(19):     p/index">Group Management</a></li>\n
+Action.c(19):                                     \n
+Action.c(19):                                                 <li id="menuPreference"><a href="/signal/prefe
+Action.c(19):     rence/index">User Preferences</a></li>\n
+Action.c(19):                                     \n
+Action.c(19):                                                 <li class="dropdown-header"><i class="fa fa-sl
+Action.c(19):     iders fa-fw"></i> Workflow Management</li>\n
+Action.c(19):                                                 <li id="menuWorkflowRule"><a href="/signal/wor
+Action.c(19):     kflowRule/index">Workflow Rule</a></li>\n
+Action.c(19):                                                 <li id="menuDisposition"><a href="/signal/disp
+Action.c(19):     osition/list">Disposition</a></li>\n
+Action.c(19):                                                 <li id="menuPriority"><a href="/signal/priorit
+Action.c(19):     y/list">Priority</a> </li>\n
+Action.c(19):                                                 <li id="menuPriority"><a href="/signal/justifi
+Action.c(19):     cation/index">Justification</a> </li>\n
+Action.c(19):                                             </ul>\n
+Action.c(19):                                         </li>\n
+Action.c(19):                                         <li class="col-sm-4">\n
+Action.c(19):                                             <ul>\n
+Action.c(19):                                                 <li class="dropdown-header"><i class="fa fa-ta
+Action.c(19):     sks fa-fw"></i> Business Configuration</li>\n
+Action.c(19):                                                 <li id="menuBusinessConfig">\n
+Action.c(19):                                                     <a href="/signal/businessConfiguration/ind
+Action.c(19):     ex">\n
+Action.c(19):                                                         Business Rule\n
+Action.c(19):                                                     </a>\n
+Action.c(19):                                                 </li>\n
+Action.c(19):                                 
+Action.c(19): t=8505231ms: 312-byte response body for "http://10.100.22.24:8181/signal/" (RelFrameId=1, Internal ID=122)
+Action.c(19):                     <li id="safetyGroupManagement">\n
+Action.c(19):                                                     <a href="/signal/safetyGroup/index">\n
+Action.c(19):                                                         Safety Lead Config\n
+Action.c(19):                                                     </a>\n
+Action.c(19):                                                 </li>\n
+Action.c(19):          
+Action.c(19): t=8505425ms: 1260-byte response body for "http://10.100.22.24:8181/signal/" (RelFrameId=1, Internal ID=122)
+Action.c(19):                                            <li id="alertStopList">\n
+Action.c(19):                                                     <a href="/signal/alertStopList/index">\n
+Action.c(19):                                                         Alert Stop List\n
+Action.c(19):                                                     </a>\n
+Action.c(19):                                                 </li>\n
+Action.c(19):                                                 <li id="emergingSafetyIssues">\n
+Action.c(19):                                                     <a href="/signal/emergingIssue/index">\n
+Action.c(19):                                                         Important Events\n
+Action.c(19):                                                     </a>\n
+Action.c(19):                                                 </li>\n
+Action.c(19):                                                 \n
+Action.c(19):                                                 <li id="productGrouping">\n
+Action.c(19):                                                     <a href="/signal/productGroup/index">\n
+Action.c(19):                                                         Product Grouping\n
+Action.c(19):                                                     </a>\n
+Action.c(19):                                                 </li>\n
+Action.c(19):                                                 <li class="dropdown-header"><i class="fa fa-fi
+Action.c(19):     le-text-o fa-fw"></i> Action Template</li>\n
+Action.c(19):                                                 <li id="menuActionTemplate">\n
+Action.c(19):                               
+Action.c(19): t=8505427ms: 1260-byte response body for "http://10.100.22.24:8181/signal/" (RelFrameId=1, Internal ID=122)
+Action.c(19):                           <a href="/signal/actionTemplate/index">\n
+Action.c(19):                                                         Action Template\n
+Action.c(19):                                                     </a>\n
+Action.c(19):                                                 </li>\n
+Action.c(19):                                                 <li id="menuActionType">\n
+Action.c(19):                                                     <a href="/signal/actionType/list">\n
+Action.c(19):                                                         Action Type\n
+Action.c(19):                                                     </a>\n
+Action.c(19):                                                 </li>\n
+Action.c(19):                                                 <li id="menuActionConfig">\n
+Action.c(19):                                                     <a href="/signal/actionConfiguration/list"
+Action.c(19):     >\n
+Action.c(19):                                                         Action Configuration\n
+Action.c(19):                                                     </a>\n
+Action.c(19):                                                 </li>\n
+Action.c(19):                                                 <li id="productIngredientsMapping">\n
+Action.c(19):                                                     <a href="/signal/productIngredientsMapping
+Action.c(19):     /index">\n
+Action.c(19):                                                         Product/Ingredients Mapping\n
+Action.c(19):                                                     </a>\n
+Action.c(19):                                                 </li>\n
+Action.c(19):            
+Action.c(19): t=8505429ms: 8812-byte response body for "http://10.100.22.24:8181/signal/" (RelFrameId=1, Internal ID=122)
+Action.c(19):                                      </ul>\n
+Action.c(19):                                         </li>\n
+Action.c(19):                                         <li class="col-sm-4">\n
+Action.c(19):                                             <ul>\n
+Action.c(19):                                                 <li class="dropdown-header"><i class="fa fa-ge
+Action.c(19):     ar fa-fw"></i> System Configuration</li>\n
+Action.c(19):                                                 \n
+Action.c(19):                                                 <li id="auditLog">\n
+Action.c(19):                                                     <a href="/signal/auditLogEvent/index">\n
+Action.c(19):                                                         Audit Log\n
+Action.c(19):                                                     </a>\n
+Action.c(19):                                                 </li>\n
+Action.c(19):                                                 \n
+Action.c(19):                                                     \n
+Action.c(19):                                                         <li id="evdasDataUpload">\n
+Action.c(19):                                                             <a href="/signal/evdasData/index">
+Action.c(19):     EVDAS Data Upload</a>\n
+Action.c(19):                                                         </li>\n
+Action.c(19):                                                     \n
+Action.c(19):                                                 \n
+Action.c(19):                                                 <li id="dmsConfigurationLink">\n
+Action.c(19):                                                     <a href="/signal/controlPanel/index">DMS C
+Action.c(19):     onfiguration</a>\n
+Action.c(19):                                                 </li>\n
+Action.c(19):                                                 \n
+Action.c(19):                                                 \n
+Action.c(19):                                                     <li id="substanceFrequencyViewer">\n
+Action.c(19):                                                         <a href="/signal/substanceFrequency/in
+Action.c(19):     dex">Substance Frequency Viewer</a>\n
+Action.c(19):                                                     </li>\n
+Action.c(19):                                                 \n
+Action.c(19):                                                 <li id="tagsList"><a href="/signal/alertTag/in
+Action.c(19):     dex">Tags</a></li>\n
+Action.c(19):     \n
+Action.c(19):                                                 \n
+Action.c(19):     \n
+Action.c(19):                                                 \n
+Action.c(19):                                                 \n
+Action.c(19):                                                         <li id="mailNotifiaction">\n
+Action.c(19):                                                             <a href="/signal/emailNotification
+Action.c(19):     /edit">Email Configuration</a>\n
+Action.c(19):                                                         </li>\n
+Action.c(19):                                                 \n
+Action.c(19):                                                 \n
+Action.c(19):                                                     <li class="dropdown-header"><i class="fa f
+Action.c(19):     a-wrench fa-fw"></i> System Management</li>\n
+Action.c(19):                                                     <li><a href="/signal/monitoring">Monitorin
+Action.c(19):     g</a></li>\n
+Action.c(19):                                                     <li><a href="/signal/quartz">Jobs Monitori
+Action.c(19):     ng</a></li>\n
+Action.c(19):                                                 \n
+Action.c(19):                                                 \n
+Action.c(19):                                                     <a href="/signal/logout/index" id="MI-logo
+Action.c(19):     ut" title="Logout" tabindex="0" accesskey="q">\n
+Action.c(19):                                                         <div tabindex="0" class="logout">\n
+Action.c(19):                                                             <i class="fa fa-power-off fa-fw"><
+Action.c(19):     /i>\n
+Action.c(19):                                                             Logout\n
+Action.c(19):                                                         </div>\n
+Action.c(19):                                                     </a>\n
+Action.c(19):                                                 \n
+Action.c(19):                                             </ul>\n
+Action.c(19):                                         </li>\n
+Action.c(19):                                 </ul>\n
+Action.c(19):                             </li>\n
+Action.c(19):                         \n
+Action.c(19):                     </ul>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     </div>\n
+Action.c(19):     <style>\n
+Action.c(19):         .mega-dropdown-menu{\n
+Action.c(19):             width:650px;\n
+Action.c(19):             padding: 5px 0px;\n
+Action.c(19):             box-shadow: darkcyan;\n
+Action.c(19):             border-bottom : 4px solid #ccc;\n
+Action.c(19):             border-radius: 2px;\n
+Action.c(19):         }\n
+Action.c(19):         .mega-dropdown-menu > li > ul {\n
+Action.c(19):             padding: 0px;\n
+Action.c(19):             margin: 0;\n
+Action.c(19):         }\n
+Action.c(19):     \n
+Action.c(19):         .mega-dropdown-menu > li > ul > li {\n
+Action.c(19):             list-style: none;\n
+Action.c(19):             padding-left: 8px;\n
+Action.c(19):             border-bottom: 1px dotted #eee;\n
+Action.c(19):         }\n
+Action.c(19):         .mega-dropdown-menu > li > ul > li:last-child {\n
+Action.c(19):             list-style: none;\n
+Action.c(19):             padding-left: 8px;\n
+Action.c(19):             border-bottom: 0px dotted #eee;\n
+Action.c(19):         }\n
+Action.c(19):         .mega-dropdown-menu > li > ul > li > a,\n
+Action.c(19):         .mega-dropdown-menu > li > ul > li > span {\n
+Action.c(19):             display: block;\n
+Action.c(19):             padding: 7px 10px;\n
+Action.c(19):             clear: both;\n
+Action.c(19):             font-weight: 500;\n
+Action.c(19):             line-height: 1.428571429;\n
+Action.c(19):             color: #656565;\n
+Action.c(19):             white-space: normal;\n
+Action.c(19):             font-size: 13px;\n
+Action.c(19):         }\n
+Action.c(19):         .mega-dropdown-menu > li ul > li > a:hover,\n
+Action.c(19):         .mega-dropdown-menu > li ul > li > a:focus{\n
+Action.c(19):             text-decoration: none;\n
+Action.c(19):             color: #444;\n
+Action.c(19):             background-color: #eee;\n
+Action.c(19):         }\n
+Action.c(19):         .mega-dropdown-menu .dropdown-header{\n
+Action.c(19):             color: #099ddd;\n
+Action.c(19):             font-size: 13.5px;\n
+Action.c(19):             font-weight: bold;\n
+Action.c(19):         }\n
+Action.c(19):         .mega-dropdown-menu .logout{\n
+Action.c(19):             color: #428bca;\n
+Action.c(19):             font-size: 15px;\n
+Action.c(19):             font-weight: 600;\n
+Action.c(19):             text-decoration: none;\n
+Action.c(19):         }\n
+Action.c(19):     </style>\n
+Action.c(19):     \n
+Action.c(19):         \n
+Action.c(19):         <!-- Top Bar End -->\n
+Action.c(19):         <!-- ========== Left Sidebar Start ========== -->\n
+Action.c(19):         \n
+Action.c(19):         <!-- Top Bar End -->\n
+Action.c(19):     \n
+Action.c(19):         <!-- Left Sidebar Start -->\n
+Action.c(19):         \n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):         <!-- Left Sidebar End -->\n
+Action.c(19):     \n
+Action.c(19):         <!-- ============================================================== -->\n
+Action.c(19):         <!-- Start right Content here -->\n
+Action.c(19):         <!-- ============================================================== -->\n
+Action.c(19):         <div class="content-page">\n
+Action.c(19):             <!-- Start content -->\n
+Action.c(19):             <div id="mainContent" class="content">\n
+Action.c(19):                 <div class="container">\n
+Action.c(19):                     \n
+Action.c(19):     <div class="pv-dashboard">\n
+Action.c(19):         <div class="row">\n
+Action.c(19):             <div class="col-sm-12">\n
+Action.c(19):                 <div class="page-title-box">\n
+Action.c(19):                     <div class="fixed-page-head">\n
+Action.c(19):                         <div class="page-head-lt">\n
+Action.c(19):                             <h5>Dashboard</h5>\n
+Action.c(19):                         </div>\n
+Action.c(19):                         <div class="pull-right nav-right page-head-rt text-right ic-md open">\n
+Action.c(19):                             <span>\n
+Action.c(19):                                 <a href="#" class="pv-ic pv-dash-inbox-icon hide" title="Show 
+Action.c(19):     My Inbox">\n
+Action.c(19):                                     <i class="md md-inbox"></i>\n
+Action.c(19):                                 </a>\n
+Action.c(19):                             </span>\n
+Action.c(19):                             <span id="pvi-dash-topMinWidget">\n
+Action.c(19):                                 <a href="#" class="btn btn-no-bg right-bar-toggle" data-backdr
+Action.c(19):     op="true"\n
+Action.c(19):                                    style="display: none;">\n
+Action.c(19):                                     <i class="md md-add"></i>\n
+Action.c(19):                                 </a>\n
+Action.c(19):                             </span>\n
+Action.c(19):                         </div>\n
+Action.c(19):                     </div>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     \n
+Action.c(19):         <div class="row" id="rx-widgets">\n
+Action.c(19):             <div id="inbox" class="sidebarDashboard col-sm-12 pv-dashWidget" style="display:no
+Action.c(19):     ne;">\n
+Action.c(19):                 <div class="panel panel-default chart-panel">\n
+Action.c(19):                     <div class="panel-heading panel-title pv-sec-heading">\n
+Action.c(19):                         <div class="rxmain-container-header-label">\n
+Action.c(19):                             <label>My Inbox</label>\n
+Action.c(19):     \n
+Action.c(19):                             <div class="pull-right">\n
+Action.c(19):                                 <a tabindex="0" href="#" class="close-widget-inbox" title="Hid
+Action.c(19):     e Widget"><i class="md md-close"></i></a>\n
+Action.c(19):                             </div>\n
+Action.c(19):                         </div>\n
+Action.c(19):                     </div>\n
+Action.c(19):     \n
+Action.c(19):                     <div class="panel-body pv-sec-bg">\n
+Action.c(19):                         \n
+Action.c(19):     \n
+Action.c(19):                                 <div id="my-single" class="col-sm-2">\n
+Action.c(19):                                     <div class="widget-simple-chart text-center card-box pv-in
+Action.c(19):     ner-shadow-box">\n
+Action.c(19):                                         <h5 class="text-muted">Qualitative Review</h5>\n
+Action.c(19):     \n
+Action.c(19):                                         <h1 class="text-blue p-t-0"><a\n
+Action.c(19):                                                 href="/signal/singleCaseAlert/details?callingS
+Action.c(19):     creen=dashboard"\n
+Action.c(19):                                                 onclick="return checkCount(this)" class="text-
+Action.c(19):     blue"><span class="counter">0</span></a></h1>\n
+Action.c(19):                                     </div>\n
+Action.c(19):                                 </div>\n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):                         \n
+Action.c(19):     \n
+Action.c(19):                                 <div id="my-aggregate" class="col-sm-2">\n
+Action.c(19):                                     <div class="widget-simple-chart text-center card-box pv-in
+Action.c(19):     ner-shadow-box">\n
+Action.c(19):                                         <h5 class="text-muted">Quantitative Review</h5>\n
+Action.c(19):                                         <h1 class="text-red p-t-0">\n
+Action.c(19):                                             <a href="/signal/aggregateCaseAlert/details?callin
+Action.c(19):     gScreen=dashboard" onclick="return checkCount(this)" class="text-red">\n
+Action.c(19):                                                 <span class="counter">0</span>\n
+Action.c(19):                                             </a>\n
+Action.c(19):                                         </h1>\n
+Action.c(19):                                     </div>\n
+Action.c(19):                                 </div>\n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):                         \n
+Action.c(19):                                 <div id="my-adhoc" class="col-sm-2">\n
+Action.c(19):                                     <div class="widget-simple-chart text-center card-box pv-in
+Action.c(19):     ner-shadow-
+Action.c(19): t=8505450ms: 12272-byte response body for "http://10.100.22.24:8181/signal/" (RelFrameId=1, Internal ID=122)
+Action.c(19):     box">\n
+Action.c(19):                                         <h5 class="text-muted">Ad hoc Review</h5>\n
+Action.c(19):     \n
+Action.c(19):                                         <h1 class="text-success p-t-0"><a\n
+Action.c(19):                                                 href="/signal/adHocAlert/index?callingScreen=d
+Action.c(19):     ashboard"\n
+Action.c(19):                                                 onclick="return checkCount(this)" class="text-
+Action.c(19):     success"><span class="counter">0</span></a></h1>\n
+Action.c(19):                                     </div>\n
+Action.c(19):                                 </div>\n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):                             \n
+Action.c(19):                                 <div id="evdasReview" class="col-sm-2">\n
+Action.c(19):                                     <div class="widget-simple-chart text-center card-box pv-in
+Action.c(19):     ner-shadow-box">\n
+Action.c(19):                                         <h5 class="text-muted">EVDAS Review</h5>\n
+Action.c(19):     \n
+Action.c(19):                                         <h1 class="text-pink p-t-0"><a\n
+Action.c(19):                                                 href="/signal/evdasAlert/details?callingScreen
+Action.c(19):     =dashboard"\n
+Action.c(19):                                                 onclick="return checkCount(this)" class="text-
+Action.c(19):     pink"><span\n
+Action.c(19):                                                     class="counter">0</span></a></h1>\n
+Action.c(19):                                     </div>\n
+Action.c(19):                                 </div>\n
+Action.c(19):                             \n
+Action.c(19):                         \n
+Action.c(19):                         \n
+Action.c(19):     \n
+Action.c(19):                             <div id="signals" class="col-sm-2">\n
+Action.c(19):                                 <div class="widget-simple-chart text-center card-box pv-inner-
+Action.c(19):     shadow-box">\n
+Action.c(19):                                     <h5 class="text-muted">Signals</h5>\n
+Action.c(19):     \n
+Action.c(19):                                     <h1 class="text-purple p-t-0"><a\n
+Action.c(19):                                             href="/signal/validatedSignal/index?callingScreen=
+Action.c(19):     dashboard"\n
+Action.c(19):                                             onclick="return checkCount(this)" class="text-purp
+Action.c(19):     le"><span\n
+Action.c(19):                                                 class="counter">0</span></a></h1>\n
+Action.c(19):                                 </div>\n
+Action.c(19):                             </div>\n
+Action.c(19):     \n
+Action.c(19):                         \n
+Action.c(19):                         <div id="actionItems" class="col-sm-2">\n
+Action.c(19):                             <div class="widget-simple-chart text-center card-box pv-inner-shad
+Action.c(19):     ow-box">\n
+Action.c(19):                                 <h5 class="text-muted">Action Items</h5>\n
+Action.c(19):     \n
+Action.c(19):                                 <h1 class="text-orange p-t-0"><a href="/signal/action/list" cl
+Action.c(19):     ass="text-orange" onclick="return checkCount(this)"><span\n
+Action.c(19):                                         class="counter">0</span></a></h1>\n
+Action.c(19):                             </div>\n
+Action.c(19):                         </div>\n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):                     </div>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):             <div id="mainDashboard" class="mainDashboard col-sm-12 grid-stack">\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     </div>\n
+Action.c(19):     \n
+Action.c(19):     <!-- Right Sidebar -->\n
+Action.c(19):     <div class="side-bar right-bar pv-dashboard-config-panel">\n
+Action.c(19):         <div class="nicescroll p-0">\n
+Action.c(19):             <div class="col-sm-12 p-0">\n
+Action.c(19):                 <div class="panel-group" id="accordionDashConfig">\n
+Action.c(19):                     <div class="panel panel-default hide" id="pvDashChart">\n
+Action.c(19):                         <div class="panel-heading panel-sub-heading">\n
+Action.c(19):                             <h5 class="panel-title"> <a data-toggle="collapse" href="#collapse
+Action.c(19):     Chart">Charts <i class="fa fa-bar-chart pull-right" aria-hidden="true"></i></a> </h5>\n
+Action.c(19):                         </div>\n
+Action.c(19):                         <div id="collapseChart" class="panel-collapse collapse in">\n
+Action.c(19):                             <ul class="list-group">\n
+Action.c(19):                             </ul>\n
+Action.c(19):                         </div>\n
+Action.c(19):                     </div>\n
+Action.c(19):                     <div class="panel panel-default hide" id="pvDashReports">\n
+Action.c(19):                         <div class="panel-heading panel-sub-heading">\n
+Action.c(19):                             <h5 class="panel-title"> <a data-toggle="collapse" href="#collapse
+Action.c(19):     Report">Reports <i class="fa fa-file-text pull-right" aria-hidden="true"></i></a> </h5>\n
+Action.c(19):                         </div>\n
+Action.c(19):                         <div id="collapseReport" class="panel-collapse collapse in">\n
+Action.c(19):                             <ul class="list-group">\n
+Action.c(19):                             </ul>\n
+Action.c(19):                         </div>\n
+Action.c(19):                     </div>\n
+Action.c(19):                     <div class="panel panel-default hide" id="pvDashCalendar">\n
+Action.c(19):                         <div class="panel-heading panel-sub-heading">\n
+Action.c(19):                             <h5 class="panel-title"> <a href="#collapseCalendar" data-target-w
+Action.c(19):     idget="pvWidgetCalendar-1">Calender <i class="fa fa-calendar pull-right" aria-hidden="true
+Action.c(19):     "></i></a></h5>\n
+Action.c(19):                         </div>\n
+Action.c(19):                         <div id="collapseCalendar" class="panel-collapse collapse in">\n
+Action.c(19):                             <ul class="list-group">\n
+Action.c(19):     \n
+Action.c(19):                             </ul>\n
+Action.c(19):                         </div>\n
+Action.c(19):                     </div>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     </div>\n
+Action.c(19):     <!-- /Right-bar -->\n
+Action.c(19):     \n
+Action.c(19):     <div class="modal fade" id="action-edit-modal" role="dialog"\n
+Action.c(19):          aria-hidden="true">\n
+Action.c(19):         <div class="modal-dialog modal-lg">\n
+Action.c(19):             <div class="modal-content">\n
+Action.c(19):                 <div class="modal-header">\n
+Action.c(19):                     <button type="button" class="close" data-dismiss="modal" aria-label="Close
+Action.c(19):     "><span\n
+Action.c(19):                             aria-hidden="true">&times;</span></button>\n
+Action.c(19):                     <h4 class="modal-title" id="">Edit Action</h4>\n
+Action.c(19):                 </div>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="modal-body clearfix">\n
+Action.c(19):                     <div id="action-editor-container">\n
+Action.c(19):                     </div>\n
+Action.c(19):                 </div>\n
+Action.c(19):                 <input type="hidden" id="actionMeetingId" value=""\n
+Action.c(19):                        class="action-meeting-id"/>\n
+Action.c(19):                 <div class="modal-footer">\n
+Action.c(19):                     <div class="buttons ">\n
+Action.c(19):                         <button class="button  btn btn-primary" id="update-bt">Update</button>
+Action.c(19):     \n
+Action.c(19):                         <button class="button btn btn-default " id="cancel-bt">Cancel</button>
+Action.c(19):     \n
+Action.c(19):                     </div>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     </div>\n
+Action.c(19):     <script type="text/javascript" src="/signal/assets/app/pvs/calendar-fc6eda81299841e4d5296e
+Action.c(19):     64fa1ce858.js" ></script>\n
+Action.c(19):     <div class="modal fade" id="meetingMinutesModal" tabindex="-1" role="dialog" aria-labelled
+Action.c(19):     by="productDictionaryLabel"\n
+Action.c(19):          aria-hidden="true">\n
+Action.c(19):         <div class="modal-dialog modal-lg">\n
+Action.c(19):             <div class="modal-content">\n
+Action.c(19):                 <div class="modal-header">\n
+Action.c(19):                     <button type="button" class="close" data-dismiss="modal" aria-label="Close
+Action.c(19):     ">\n
+Action.c(19):                         <span aria-hidden="true">&times;</span>\n
+Action.c(19):                     </button>\n
+Action.c(19):                     <h4 class="modal-title" id="createModalLabel">Add Minutes</h4>\n
+Action.c(19):                 </div>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="modal-body clearfix">\n
+Action.c(19):                     \n
+Action.c(19):                     \n
+Action.c(19):                     <form action="/signal/meeting/save" method="post" name="meetingModalForm" 
+Action.c(19):     id="meetingModalForm" >\n
+Action.c(19):                         <input type="hidden" name="create-url" value="/signal/meeting/save" id
+Action.c(19):     ="create-url" />\n
+Action.c(19):                         <input type="hidden" name="appType" id="appType" value="Signal Managem
+Action.c(19):     ent" />\n
+Action.c(19):                         <input type="hidden" name="alertId" id="alertId" value="" />\n
+Action.c(19):                         \n
+Action.c(19):     <input type="hidden" name="id" value="" id="id" />\n
+Action.c(19):     <input type="hidden" name="version" value="" id="version" />\n
+Action.c(19):     <input type="hidden" name="alertId" value="" class="alertId" id="alertId" />\n
+Action.c(19):     <input type="hidden" name="findMeetingTimesUrl" value="/signal/meeting/findMeetingTimes" i
+Action.c(19):     d="findMeetingTimesUrl" />\n
+Action.c(19):     <style>\n
+Action.c(19):     .input-group-addon {\n
+Action.c(19):         border-radius: 26px;\n
+Action.c(19):         border: 1px solid #eeeeee;\n
+Action.c(19):     }\n
+Action.c(19):     \n
+Action.c(19):     .selectTimeSlot {\n
+Action.c(19):         float: right;\n
+Action.c(19):     }\n
+Action.c(19):     \n
+Action.c(19):     .meeting-slot-container {\n
+Action.c(19):         color: #8a6d3b;\n
+Action.c(19):         background-color: #fcf8e3;\n
+Action.c(19):         border-color: #faebcc;\n
+Action.c(19):         border-radius: 5px;\n
+Action.c(19):     }\n
+Action.c(19):     \n
+Action.c(19):     .modal-footer {\n
+Action.c(19):         background: #ffffff;\n
+Action.c(19):     }\n
+Action.c(19):     </style>\n
+Action.c(19):     <script>\n
+Action.c(19):     \n
+Action.c(19):         try {\n
+Action.c(19):             $('.timepicker1').timepicker({\n
+Action.c(19):                 showMeridian: false\n
+Action.c(19):             });\n
+Action.c(19):     \n
+Action.c(19):             $("#due-date-picker-meeting-minutes").datepicker('setDate', new Date());\n
+Action.c(19):     \n
+Action.c(19):             $("#isRecurringMeeting").on("click", function () {\n
+Action.c(19):                 var meetingDate = $("#meetingDate").val();\n
+Action.c(19):                 var meetingTime = $("#meetingTime").val();\n
+Action.c(19):                 var prefTimezone = $("#timezoneFromServer").val();\n
+Action.c(19):                 var momentDate;\n
+Action.c(19):                 if (meetingDate) {\n
+Action.c(19):                     momentDate = moment(meetingDate + ' ' + meetingTime).format("YYYY-MM-DDTHH
+Action.c(19):     :mm:ss.sTZD");\n
+Action.c(19):                 } else {\n
+Action.c(19):                     momentDate = (new Date()).toISOString();\n
+Action.c(19):                 }\n
+Action.c(19):                 var timeZoneData = null;\n
+Action.c(19):                 if (typeof prefTimezone != "undefined" && prefTimezone != null) {\n
+Action.c(19):                     timeZoneData = prefTimezone.split(",");\n
+Action.c(19):                 }\n
+Action.c(19):     \n
+Action.c(19):                 if (timeZoneData) {\n
+Action.c(19):                     var name = timeZoneData[0].split(":")[1].trim();\n
+Action.c(19):                     var offset = timeZoneData[1].substring(8).trim();\n
+Action.c(19):                     $('#myScheduler').scheduler('value', {\n
+Action.c(19):                         startDateTime: momentDate,\n
+Action.c(19):                         timeZone: {\n
+Action.c(19):                             name: name,\n
+Action.c(19):                             offset: offset\n
+Action.c(19):                         }\n
+Action.c(19):                     })\n
+Action.c(19):                 }\n
+Action.c(19):             });\n
+Action.c(19):         } catch (err) {\n
+Action.c(19):     \n
+Action.c(19):         }\n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):     </script>\n
+Action.c(19):     \n
+Action.c(19):     <div class="col-lg-12">\n
+Action.c(19):         <div class="row form-group">\n
+Action.c(19):             <div class="col-lg-4">\n
+Action.c(19):                 <label>\n
+Action.c(19):                     Meeting Title\n
+Action.c(19):                     <span class="required-indicator">*</span>\n
+Action.c(19):                 </label>\n
+Action.c(19):                 <input type="text" name="meetingTitle" id="meetingTitle" class="form-control c
+Action.c(19):     lear-field">\n
+Action.c(19):             </div>\n
+Action.c(19):     \n
+Action.c(19):             <div class="col-lg-4">\n
+Action.c(19):                 <label>\n
+Action.c(19):                     Meeting Owner\n
+Action.c(19):                     <span class="required-indicator">*</span>\n
+Action.c(19):                 </label>\n
+Action.c(19):                 <select class="form-control clear-field" name="meetingOwner" id="meetingOwner"
+Action.c(19):      >\r\n
+Action.c(19):     <option value="8877" >bhagya</option>\r\n
+Action.c(19):     <option value="168152" >Dominique Michalec</option>\r\n
+Action.c(19):     <option value="226" >PVS Admin</option>\r\n
+Action.c(19):     <option value="33391" >Rishabh Srivastava</option>\r\n
+Action.c(19):     <option value="258" >Signal Dev</option>\r\n
+Action.c(19):     <option value="8119" >somya</option>\r\n
+Action.c(19):     <option value="288" >System</option>\r\n
+Action.c(19):     <option value="33538" >Vikash Yadav</option>\r\n
+Action.c(19):     </select>\n
+Action.c(19):             </div>\n
+Action.c(19):     \n
+Action.c(19):             <div class="col-lg-4">\n
+Action.c(19):                 <label>\n
+Action.c(19):                     Meeting Attendees\n
+Action.c(19):                     <span class="required-indicator">*</span>\n
+Action.c(19):                 </label>\n
+Action.c(19):                 <select name="meetingAttendees" id="meetingAttendees-meeting-minutes" multiple
+Action.c(19):     ="true" class="form-control select2-active clear-field meetingAttendees" >\r\n
+Action.c(19):     <option value="8877" >bhagya</option>\r\n
+Action.c(19):     <option value="168152" >Dominique Michalec</option>\r\n
+Action.c(19):     <option value="226" >PVS Admin</option>\r\n
+Action.c(19):     <option value="33391" >Rishabh Srivastava</option>\r\n
+Action.c(19):     <option value="258" >Signal Dev</option>\r\n
+Action.c(19):     <option value="8119" >somya</option>\r\n
+Action.c(19):     <option value="288" >System</option>\r\n
+Action.c(19):     <option value="33538" >Vikash Yadav</option>\r\n
+Action.c(19):     </select>\n
+Action.c(19):             </div>\n
+Action.c(19):     \n
+Action.c(19):         </div>\n
+Action.c(19):     \n
+Action.c(19):         <div class="row form-group">\n
+Action.c(19):     \n
+Action.c(19):             <div class="col-lg-4">\n
+Action.c(19):                 <label>\n
+Action.c(19):                     Date\n
+Action.c(19):                     <span class="required-indicator">*</span>\n
+Action.c(19):                 </label>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="fuelux">\n
+Action.c(19):                     <div class="datepicker form-group" data-initialize="datepicker" id="due-da
+Action.c(19):     te-picker-meeting-minutes">\n
+Action.c(19):                         <div class="input-group">\n
+Action.c(19):                             <input placeholder="Meeting Date" name="dueDate" readonly\n
+Action.c(19):                                    class="form-control input-sm meetingDate clear-field" id="m
+Action.c(19):     eetingDate" type="text"\n
+Action.c(19):                                    data-date=""\n
+Action.c(19):                                    value=""/>\n
+Action.c(19):                             <div class="input-group-btn">\n
+Action.c(19):         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">\n
+Action.c(19):             <span class="glyphicon glyphicon-calendar"></span>\n
+Action.c(19):             <span class="sr-only">Toggle Calendar</span>\n
+Action.c(19):         </button>\n
+Action.c(19):     \n
+Action.c(19):         <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu"
+Action.c(19):     >\n
+Action.c(19):             <div class="datepicker-calendar">\n
+Action.c(19):                 <div class="datepicker-calendar-header">\n
+Action.c(19):                     <button type="button" class="prev"><span class="glyphicon glyphicon-chevro
+Action.c(19):     n-left"></span><span\n
+Action.c(19):                             class="sr-only">Previous Monthh</span></button>\n
+Action.c(19):                     <button type="button" class="next"><span class="glyphicon glyphicon-chevro
+Action.c(19):     n-right"></span><span\n
+Action.c(19):                             class="sr-only">Next Month</span></button>\n
+Action.c(19):                     <button type="button" class="title">\n
+Action.c(19):                         <span class="month">\n
+Action.c(19):                             <span data-month="0">January</span>\n
+Action.c(19):                             <span data-month="1">February</span>\n
+Action.c(19):                             <span data-month="2">March</span>\n
+Action.c(19):                             <span data-month="3">April</span>\n
+Action.c(19):                             <span data-month="4"
+Action.c(19): t=8505472ms: 12280-byte response body for "http://10.100.22.24:8181/signal/" (RelFrameId=1, Internal ID=122)
+Action.c(19):     >May</span>\n
+Action.c(19):                             <span data-month="5">June</span>\n
+Action.c(19):                             <span data-month="6">July</span>\n
+Action.c(19):                             <span data-month="7">August</span>\n
+Action.c(19):                             <span data-month="8">September</span>\n
+Action.c(19):                             <span data-month="9">October</span>\n
+Action.c(19):                             <span data-month="10">November</span>\n
+Action.c(19):                             <span data-month="11">December</span>\n
+Action.c(19):                         </span> <span class="year"></span>\n
+Action.c(19):                     </button>\n
+Action.c(19):                 </div>\n
+Action.c(19):                 <table class="datepicker-calendar-days">\n
+Action.c(19):                     <thead>\n
+Action.c(19):                     <tr>\n
+Action.c(19):                         <th>Su</th>\n
+Action.c(19):                         <th>Mo</th>\n
+Action.c(19):                         <th>Tu</th>\n
+Action.c(19):                         <th>We</th>\n
+Action.c(19):                         <th>Th</th>\n
+Action.c(19):                         <th>Fr</th>\n
+Action.c(19):                         <th>Sa</th>\n
+Action.c(19):                     </tr>\n
+Action.c(19):                     </thead>\n
+Action.c(19):                     <tbody></tbody>\n
+Action.c(19):                 </table>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="datepicker-calendar-footer">\n
+Action.c(19):                     <button type="button" class="datepicker-today">Today</button>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):     \n
+Action.c(19):             <div class="datepicker-wheels" aria-hidden="true">\n
+Action.c(19):                 <div class="datepicker-wheels-month">\n
+Action.c(19):                     <h2 class="header">Month</h2>\n
+Action.c(19):                     <ul>\n
+Action.c(19):                         <li data-month="0"><button type="button">Jan</button></li>\n
+Action.c(19):                         <li data-month="1"><button type="button">Feb</button></li>\n
+Action.c(19):                         <li data-month="2"><button type="button">Mar</button></li>\n
+Action.c(19):                         <li data-month="3"><button type="button">Apr</button></li>\n
+Action.c(19):                         <li data-month="4"><button type="button">May</button></li>\n
+Action.c(19):                         <li data-month="5"><button type="button">Jun</button></li>\n
+Action.c(19):                         <li data-month="6"><button type="button">Jul</button></li>\n
+Action.c(19):                         <li data-month="7"><button type="button">Aug</button></li>\n
+Action.c(19):                         <li data-month="8"><button type="button">Sep</button></li>\n
+Action.c(19):                         <li data-month="9"><button type="button">Oct</button></li>\n
+Action.c(19):                         <li data-month="10"><button type="button">Nov</button></li>\n
+Action.c(19):                         <li data-month="11"><button type="button">Dec</button></li>\n
+Action.c(19):                     </ul>\n
+Action.c(19):                 </div>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="datepicker-wheels-year">\n
+Action.c(19):                     <h2 class="header">Year</h2>\n
+Action.c(19):                     <ul></ul>\n
+Action.c(19):                 </div>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="datepicker-wheels-footer clearfix">\n
+Action.c(19):                     <button type="button" class="btn datepicker-wheels-back"><span\n
+Action.c(19):                             class="glyphicon glyphicon-arrow-left"></span><span class="sr-only
+Action.c(19):     ">Return to Calendar</span>\n
+Action.c(19):                     </button>\n
+Action.c(19):                     <button type="button" class="btn datepicker-wheels-select">Select <span\n
+Action.c(19):                             class="sr-only">Month and Year</span></button>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     </div>\n
+Action.c(19):     \n
+Action.c(19):                         </div>\n
+Action.c(19):                     </div>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):     \n
+Action.c(19):             <div class="col-lg-4">\n
+Action.c(19):                 <label>\n
+Action.c(19):                     Start Time\n
+Action.c(19):                     <span class="required-indicator">*</span>\n
+Action.c(19):                 </label>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="input-group bootstrap-timepicker timepicker">\n
+Action.c(19):                     <input placeholder="MeetingTime" id="meetingTime" readonly\n
+Action.c(19):                            class="timepicker1 meetingTime form-control clear-field" type="text
+Action.c(19):     ">\n
+Action.c(19):                     <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></
+Action.c(19):     span>\n
+Action.c(19):     \n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):     \n
+Action.c(19):             <div class="col-lg-4">\n
+Action.c(19):                 <label>\n
+Action.c(19):                     Duration\n
+Action.c(19):                     <span class="required-indicator">*</span>\n
+Action.c(19):                 </label>\n
+Action.c(19):                 <select name="duration" id="duration" class="form-control clear-field">\n
+Action.c(19):                     <option value="5">5 min</option>\n
+Action.c(19):                     <option value="10">10 min</option>\n
+Action.c(19):                     <option value="15">15 min</option>\n
+Action.c(19):                     <option value="30">30 min</option>\n
+Action.c(19):                     <option value="45">45 min</option>\n
+Action.c(19):                     <option value="60">1 hour</option>\n
+Action.c(19):                     <option value="90">1.5 hour</option>\n
+Action.c(19):                     <option value="120">2 hour</option>\n
+Action.c(19):                     <option value="180">3 hour</option>\n
+Action.c(19):                     <option value="240">4 hour</option>\n
+Action.c(19):                     <option value="300">5 hour</option>\n
+Action.c(19):                     <option value="360">6 hour</option>\n
+Action.c(19):                     <option value="420">7 hour</option>\n
+Action.c(19):                     <option value="480">8 hour</option>\n
+Action.c(19):                     <option value="540">9 hour</option>\n
+Action.c(19):                     <option value="600">10 hour</option>\n
+Action.c(19):                     <option value="660">11 hour</option>\n
+Action.c(19):                     <option value="720">12 hour</option>\n
+Action.c(19):                     <option value="780">13 hour</option>\n
+Action.c(19):                     <option value="840">14 hour</option>\n
+Action.c(19):                     <option value="900">15 hour</option>\n
+Action.c(19):                     <option value="960">16 hour</option>\n
+Action.c(19):                     <option value="1020">17 hour</option>\n
+Action.c(19):                     <option value="1080">18 hour</option>\n
+Action.c(19):                     <option value="1140">19 hour</option>\n
+Action.c(19):                     <option value="1200">20 hour</option>\n
+Action.c(19):                     <option value="1260">21 hour</option>\n
+Action.c(19):                     <option value="1320">22 hour</option>\n
+Action.c(19):                     <option value="1380">23 hour</option>\n
+Action.c(19):                     <option value="1440">24 hour</option>\n
+Action.c(19):                 </select>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     \n
+Action.c(19):         <div class="row recurrence-checkbox-container">\n
+Action.c(19):             <div class="col-md-6">\n
+Action.c(19):                 <label><input type="checkbox" id="isRecurringMeeting" class="isRecurringMeetin
+Action.c(19):     g" name="isRecurringMeeting"\n
+Action.c(19):                               value="true"/>Recurrence\n
+Action.c(19):                 </label>\n
+Action.c(19):             </div>\n
+Action.c(19):             \n
+Action.c(19):         </div>\n
+Action.c(19):     \n
+Action.c(19):         <div class="meetingSuggestionContainer collapse" style="margin: 20px">\n
+Action.c(19):             <div class="row form-group">\n
+Action.c(19):         <div class="col-lg-4">\n
+Action.c(19):             <label>\n
+Action.c(19):                 Start Date\n
+Action.c(19):                 <span class="required-indicator">*</span>\n
+Action.c(19):             </label>\n
+Action.c(19):             <div class="fuelux">\n
+Action.c(19):                 <div class="datepicker form-group" data-initialize="datepicker" id="fmt-start-
+Action.c(19):     date-picker-meeting-minutes">\n
+Action.c(19):                     <div class="input-group">\n
+Action.c(19):                         <input name="fmtStartDate"\n
+Action.c(19):                                class="form-control input-sm" id="fmtStartDate-meeting-minutes"
+Action.c(19):      type="text"\n
+Action.c(19):                                data-date=""\n
+Action.c(19):                                value=""/>\n
+Action.c(19):                         <div class="input-group-btn">\n
+Action.c(19):         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">\n
+Action.c(19):             <span class="glyphicon glyphicon-calendar"></span>\n
+Action.c(19):             <span class="sr-only">Toggle Calendar</span>\n
+Action.c(19):         </button>\n
+Action.c(19):     \n
+Action.c(19):         <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu"
+Action.c(19):     >\n
+Action.c(19):             <div class="datepicker-calendar">\n
+Action.c(19):                 <div class="datepicker-calendar-header">\n
+Action.c(19):                     <button type="button" class="prev"><span class="glyphicon glyphicon-chevro
+Action.c(19):     n-left"></span><span\n
+Action.c(19):                             class="sr-only">Previous Monthh</span></button>\n
+Action.c(19):                     <button type="button" class="next"><span class="glyphicon glyphicon-chevro
+Action.c(19):     n-right"></span><span\n
+Action.c(19):                             class="sr-only">Next Month</span></button>\n
+Action.c(19):                     <button type="button" class="title">\n
+Action.c(19):                         <span class="month">\n
+Action.c(19):                             <span data-month="0">January</span>\n
+Action.c(19):                             <span data-month="1">February</span>\n
+Action.c(19):                             <span data-month="2">March</span>\n
+Action.c(19):                             <span data-month="3">April</span>\n
+Action.c(19):                             <span data-month="4">May</span>\n
+Action.c(19):                             <span data-month="5">June</span>\n
+Action.c(19):                             <span data-month="6">July</span>\n
+Action.c(19):                             <span data-month="7">August</span>\n
+Action.c(19):                             <span data-month="8">September</span>\n
+Action.c(19):                             <span data-month="9">October</span>\n
+Action.c(19):                             <span data-month="10">November</span>\n
+Action.c(19):                             <span data-month="11">December</span>\n
+Action.c(19):                         </span> <span class="year"></span>\n
+Action.c(19):                     </button>\n
+Action.c(19):                 </div>\n
+Action.c(19):                 <table class="datepicker-calendar-days">\n
+Action.c(19):                     <thead>\n
+Action.c(19):                     <tr>\n
+Action.c(19):                         <th>Su</th>\n
+Action.c(19):                         <th>Mo</th>\n
+Action.c(19):                         <th>Tu</th>\n
+Action.c(19):                         <th>We</th>\n
+Action.c(19):                         <th>Th</th>\n
+Action.c(19):                         <th>Fr</th>\n
+Action.c(19):                         <th>Sa</th>\n
+Action.c(19):                     </tr>\n
+Action.c(19):                     </thead>\n
+Action.c(19):                     <tbody></tbody>\n
+Action.c(19):                 </table>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="datepicker-calendar-footer">\n
+Action.c(19):                     <button type="button" class="datepicker-today">Today</button>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):     \n
+Action.c(19):             <div class="datepicker-wheels" aria-hidden="true">\n
+Action.c(19):                 <div class="datepicker-wheels-month">\n
+Action.c(19):                     <h2 class="header">Month</h2>\n
+Action.c(19):                     <ul>\n
+Action.c(19):                         <li data-month="0"><button type="button">Jan</button></li>\n
+Action.c(19):                         <li data-month="1"><button type="button">Feb</button></li>\n
+Action.c(19):                         <li data-month="2"><button type="button">Mar</button></li>\n
+Action.c(19):                         <li data-month="3"><button type="button">Apr</button></li>\n
+Action.c(19):                         <li data-month="4"><button type="button">May</button></li>\n
+Action.c(19):                         <li data-month="5"><button type="button">Jun</button></li>\n
+Action.c(19):                         <li data-month="6"><button type="button">Jul</button></li>\n
+Action.c(19):                         <li data-month="7"><button type="button">Aug</button></li>\n
+Action.c(19):                         <li data-month="8"><button type="button">Sep</button></li>\n
+Action.c(19):                         <li data-month="9"><button type="button">Oct</button></li>\n
+Action.c(19):                         <li data-month="10"><button type="button">Nov</button></li>\n
+Action.c(19):                         <li data-month="11"><button type="button">Dec</button></li>\n
+Action.c(19):                     </ul>\n
+Action.c(19):                 </div>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="datepicker-wheels-year">\n
+Action.c(19):                     <h2 class="header">Year</h2>\n
+Action.c(19):                     <ul></ul>\n
+Action.c(19):                 </div>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="datepicker-wheels-footer clearfix">\n
+Action.c(19):                     <button type="button" class="btn datepicker-wheels-back"><span\n
+Action.c(19):                             class="glyphicon glyphicon-arrow-left"></span><span class="sr-only
+Action.c(19):     ">Return to Calendar</span>\n
+Action.c(19):                     </button>\n
+Action.c(19):                     <button type="button" class="btn datepicker-wheels-select">Select <span\n
+Action.c(19):                             class="sr-only">Month and Year</span></button>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     </div>\n
+Action.c(19):     \n
+Action.c(19):                     </div>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     \n
+Action.c(19):         <div class="col-lg-4">\n
+Action.c(19):             <label>\n
+Action.c(19):                 End Date\n
+Action.c(19):                 <span class="required-indicator">*</span>\n
+Action.c(19):             </label>\n
+Action.c(19):             <div class="fuelux">\n
+Action.c(19):                 <div class="datepicker form-group" data-initialize="datepicker" id="fmt-start-
+Action.c(19):     date-picker-meeting-minutes">\n
+Action.c(19):                     <div class="input-group">\n
+Action.c(19):                         <input name="fmtEndDate"\n
+Action.c(19):                                class="form-control input-sm" id="fmtEndDate-meeting-minutes" t
+Action.c(19):     ype="text"\n
+Action.c(19):                                data-date=""\n
+Action.c(19):                                value=""/>\n
+Action.c(19):                         <div class="input-group-btn">\n
+Action.c(19):         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">\n
+Action.c(19):             <span class="glyphicon glyphicon-calendar"></span>\n
+Action.c(19):             <span class="sr-only">Toggle Calendar</span>\n
+Action.c(19):         </button>\n
+Action.c(19):     \n
+Action.c(19):         <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu"
+Action.c(19):     >\n
+Action.c(19):             <div class="datepicker-calendar">\n
+Action.c(19):                 <div class="datepicker-calendar-header">\n
+Action.c(19):                     <button type="button" class="prev"><span class="glyphicon glyphicon-chevro
+Action.c(19):     n-left"></span><span\n
+Action.c(19):                             class="sr-only">Previous Monthh</span></button>\n
+Action.c(19):                     <button type="button" class="next"><span class="glyphicon glyphicon-chevro
+Action.c(19):     n-right"></span><span\n
+Action.c(19):                             class="sr-only">Next Month</span></button>\n
+Action.c(19):                     <button type="button" class="title">\n
+Action.c(19):                         <span class="month">\n
+Action.c(19):                             <span data-month="0">January</span>\n
+Action.c(19):                             <span data-month="1">February</span>\n
+Action.c(19):                             <span data-month="2">March</span>\n
+Action.c(19):                             <span data-month="3">April</span>\n
+Action.c(19):                           
+Action.c(19): t=8505491ms: 5963-byte response body for "http://10.100.22.24:8181/signal/" (RelFrameId=1, Internal ID=122)
+Action.c(19):       <span data-month="4">May</span>\n
+Action.c(19):                             <span data-month="5">June</span>\n
+Action.c(19):                             <span data-month="6">July</span>\n
+Action.c(19):                             <span data-month="7">August</span>\n
+Action.c(19):                             <span data-month="8">September</span>\n
+Action.c(19):                             <span data-month="9">October</span>\n
+Action.c(19):                             <span data-month="10">November</span>\n
+Action.c(19):                             <span data-month="11">December</span>\n
+Action.c(19):                         </span> <span class="year"></span>\n
+Action.c(19):                     </button>\n
+Action.c(19):                 </div>\n
+Action.c(19):                 <table class="datepicker-calendar-days">\n
+Action.c(19):                     <thead>\n
+Action.c(19):                     <tr>\n
+Action.c(19):                         <th>Su</th>\n
+Action.c(19):                         <th>Mo</th>\n
+Action.c(19):                         <th>Tu</th>\n
+Action.c(19):                         <th>We</th>\n
+Action.c(19):                         <th>Th</th>\n
+Action.c(19):                         <th>Fr</th>\n
+Action.c(19):                         <th>Sa</th>\n
+Action.c(19):                     </tr>\n
+Action.c(19):                     </thead>\n
+Action.c(19):                     <tbody></tbody>\n
+Action.c(19):                 </table>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="datepicker-calendar-footer">\n
+Action.c(19):                     <button type="button" class="datepicker-today">Today</button>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):     \n
+Action.c(19):             <div class="datepicker-wheels" aria-hidden="true">\n
+Action.c(19):                 <div class="datepicker-wheels-month">\n
+Action.c(19):                     <h2 class="header">Month</h2>\n
+Action.c(19):                     <ul>\n
+Action.c(19):                         <li data-month="0"><button type="button">Jan</button></li>\n
+Action.c(19):                         <li data-month="1"><button type="button">Feb</button></li>\n
+Action.c(19):                         <li data-month="2"><button type="button">Mar</button></li>\n
+Action.c(19):                         <li data-month="3"><button type="button">Apr</button></li>\n
+Action.c(19):                         <li data-month="4"><button type="button">May</button></li>\n
+Action.c(19):                         <li data-month="5"><button type="button">Jun</button></li>\n
+Action.c(19):                         <li data-month="6"><button type="button">Jul</button></li>\n
+Action.c(19):                         <li data-month="7"><button type="button">Aug</button></li>\n
+Action.c(19):                         <li data-month="8"><button type="button">Sep</button></li>\n
+Action.c(19):                         <li data-month="9"><button type="button">Oct</button></li>\n
+Action.c(19):                         <li data-month="10"><button type="button">Nov</button></li>\n
+Action.c(19):                         <li data-month="11"><button type="button">Dec</button></li>\n
+Action.c(19):                     </ul>\n
+Action.c(19):                 </div>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="datepicker-wheels-year">\n
+Action.c(19):                     <h2 class="header">Year</h2>\n
+Action.c(19):                     <ul></ul>\n
+Action.c(19):                 </div>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="datepicker-wheels-footer clearfix">\n
+Action.c(19):                     <button type="button" class="btn datepicker-wheels-back"><span\n
+Action.c(19):                             class="glyphicon glyphicon-arrow-left"></span><span class="sr-only
+Action.c(19):     ">Return to Calendar</span>\n
+Action.c(19):                     </button>\n
+Action.c(19):                     <button type="button" class="btn datepicker-wheels-select">Select <span\n
+Action.c(19):                             class="sr-only">Month and Year</span></button>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     </div>\n
+Action.c(19):     \n
+Action.c(19):                     </div>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     \n
+Action.c(19):         <div class="col-lg-4">\n
+Action.c(19):             <a class="findMeetingTimes btn btn-primary user-action" data-text="meeting-minutes
+Action.c(19):     " style="float:right;">Search</a>\n
+Action.c(19):         </div>\n
+Action.c(19):     \n
+Action.c(19):     </div>\n
+Action.c(19):     \n
+Action.c(19):     <div class="time-slot-container">\n
+Action.c(19):     </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     \n
+Action.c(19):         <div class="collapse schedular-container schedular-container-meeting-minutes">\n
+Action.c(19):         </div>\n
+Action.c(19):     \n
+Action.c(19):         <div class="row">\n
+Action.c(19):             \n
+Action.c(19):                 <div class="col-lg-12 form-group meetingMinutes">\n
+Action.c(19):                     <label>\n
+Action.c(19):                         Meeting Minutes\n
+Action.c(19):                     </label>\n
+Action.c(19):                     <textarea style="height: 150px" class="col-lg-4 form-control meetingMinute
+Action.c(19):     s" name="meetingMinutes" id="meetingMinutes" ></textarea>\n
+Action.c(19):                 </div>\n
+Action.c(19):             \n
+Action.c(19):         </div>\n
+Action.c(19):     \n
+Action.c(19):         <div class="row">\n
+Action.c(19):     \n
+Action.c(19):             <div class="col-lg-12 form-group">\n
+Action.c(19):                 <label>\n
+Action.c(19):                     Agenda\n
+Action.c(19):                 </label>\n
+Action.c(19):                 <textarea style="height: 150px" class="col-lg-4 form-control clear-field" name
+Action.c(19):     ="meetingAgenda" id="meetingAgenda" ></textarea>\n
+Action.c(19):             </div>\n
+Action.c(19):     \n
+Action.c(19):             <div class="row">\n
+Action.c(19):                 <div class="col-lg-12 form-group">\n
+Action.c(19):                     <label for="attachments">\n
+Action.c(19):                         Add Attachments\n
+Action.c(19):                     </label>\n
+Action.c(19):     \n
+Action.c(19):                     <div class="rxmain-container attachment">\n
+Action.c(19):                         <div class="rxmain-container-inner">\n
+Action.c(19):     \n
+Action.c(19):                             <div class="">\n
+Action.c(19):                                 <div class="container-fluid attachments">\n
+Action.c(19):         \n
+Action.c(19):             \n
+Action.c(19):             \n
+Action.c(19):         \n
+Action.c(19):     \n
+Action.c(19):         \n
+Action.c(19):     \n
+Action.c(19):         \n
+Action.c(19):             \n
+Action.c(19):         \n
+Action.c(19):         \n
+Action.c(19):             \n
+Action.c(19):         \n
+Action.c(19):         <div class="row">\n
+Action.c(19):             <div class="col-xs-12">\n
+Action.c(19):                 <input multiple class="multi" type="file" name="attachments" id="attachments"/
+Action.c(19):     >\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):         \n
+Action.c(19):     \n
+Action.c(19):             \n
+Action.c(19):             \n
+Action.c(19):                     \n
+Action.c(19):             \n
+Action.c(19):     \n
+Action.c(19):             \n
+Action.c(19):                 \n
+Action.c(19):                     \n
+Action.c(19):                             \n
+Action.c(19):                 \n
+Action.c(19):             \n
+Action.c(19):         \n
+Action.c(19):         <div class="attachment-body">\n
+Action.c(19):     \n
+Action.c(19):         </div>\n
+Action.c(19):     </div>\n
+Action.c(19):                             </div>\n
+Action.c(19):                         </div>\n
+Action.c(19):                     </div>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):     \n
+Action.c(19):         </div>\n
+Action.c(19):     \n
+Action.c(19):     </div>\n
+Action.c(19):     \n
+Action.c(19):                     </form>\n
+Action.c(19):                 </div>\n
+Action.c(19):     \n
+Action.c(19):                 <div class="modal-footer">\n
+Action.c(19):                     <div class="buttons ">\n
+Action.c(19):                         <button type="button" class="btn btn-default" data-dismiss="modal">Clo
+Action.c(19):     se</button>\n
+Action.c(19):                         <button type="button" class="btn btn-primary id-element update-meeting
+Action.c(19):     " data-id="">Update</button>\n
+Action.c(19):                     </div>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):         </div>\n
+Action.c(19):     </div>\n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):     \n
+Action.c(19):                     <r:layoutResources/>\n
+Action.c(19):                 </div>\n
+Action.c(19):             </div>\n
+Action.c(19):             <!-- End content -->\n
+Action.c(19):     \n
+Action.c(19):             \n
+Action.c(19):             \n
+Action.c(19):             \n
+Action.c(19):         </div>\n
+Action.c(19):         <!-- ============================================================== -->\n
+Action.c(19):         <!-- End Right content here -->\n
+Action.c(19):         <!-- ============================================================== -->\n
+Action.c(19):     </div>\n
+Action.c(19):     <script type="text/javascript" src="/signal/assets/app/jquery.core-9088768891f7d43af5ab8c8
+Action.c(19):     d642e5301.js" ></script>\n
+Action.c(19):     <script type="text/javascript" src="/signal/assets/app/jquery.app-1aff8addfae2d2b238c1047c
+Action.c(19):     506c75b4.js" ></script>\n
+Action.c(19):     \n
+Action.c(19):     </body>\n
+Action.c(19):     </html>\n
+Action.c(19): Notify: Saving Parameter "_csrf = ".	[MsgId: MMSG-13798]
+Action.c(19): Error -35048: No match found for the requested parameter "_csrf". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+Action.c(19): web_url("signal") highest severity level was "ERROR", 78676 body bytes, 305 header bytes  	[MsgId: MMSG-26388]
+Action.c(19): Notify: Transaction "Signalsummary_01_OpenApplication" ended with a "Fail" status (Duration: 1.0858 Wasted Time: 0.0006).	[MsgId: MMSG-16871]
+Action.c(19): Notify: Transaction "Signalsummary_01_OpenApplication" has 0 error message(s).	[MsgId: MMSG-16818]
+Ending action Action.	[MsgId: MMSG-15918]
+Action was aborted.	[MsgId: MMSG-10694]
+Ending Vuser...	[MsgId: MMSG-15966]
+Starting action vuser_end.	[MsgId: MMSG-15919]
+Ending action vuser_end.	[MsgId: MMSG-15918]
+Vuser Terminated.	[MsgId: MMSG-15963]
+Vuser 2 (thread 15080), ended OK."	[MsgId: MMSG-10695]

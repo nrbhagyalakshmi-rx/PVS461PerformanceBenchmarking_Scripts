@@ -1,0 +1,1885 @@
+Action.c(599):     SMQ Broad\\u002cSMQ Narrow",\n
+Action.c(599):                 dicColumnCount: 6,\n
+Action.c(599):                 selectUrl: "\\u002fsignal\\u002feventDictionary\\u002fgetSelectedEvent",\n
+Action.c(599):                 preLevelParentsUrl: "\\u002fsignal\\u002feventDictionary\\u002fgetPreLevelEven
+Action.c(599):     tParents",\n
+Action.c(599):                 searchUrl: "\\u002fsignal\\u002feventDictionary\\u002fsearchEvents"\n
+Action.c(599):             };\n
+Action.c(599):     \n
+Action.c(599):             options.product = {\n
+Action.c(599):                 levelNames: "Therapeutic drug class\\u002cActive Moiety\\u002cProduct Active M
+Action.c(599):     oiety\\u002cActive Ingredient\\u002cProduct Active Ingredient\\u002cProduct Name\\u002cApp
+Action.c(599):     lication Number\\u002cUser Assignment\\u002cIND Reviewer",\n
+Action.c(599):                 dicColumnCount: 9,\n
+Action.c(599):                 selectUrl: "\\u002fsignal\\u002fproductDictionary\\u002fgetSelectedItem",\n
+Action.c(599):                 preLevelParentsUrl: "\\u002fsignal\\u002fproductDictionary\\u002fgetPreLevelPr
+Action.c(599):     oductParents",\n
+Action.c(599):                 searchUrl: "\\u002fsignal\\u002fproductDictionary\\u002fsearchViews"\n
+Action.c(599):             };\n
+Action.c(599):             intializeDictionaries(options);\n
+Action.c(599):     \r\n
+Action.c(599):     </script>\r\n
+Action.c(599):     \n
+Action.c(599):     \n
+Action.c(599):     <div class="modal fade" id="eventModal" data-backdrop="static" tabindex="-1" role="dialog"
+Action.c(599):     \n
+Action.c(599):          aria-labelledby="eventDictionaryLabel"\n
+Action.c(599):          aria-hidden="true">\n
+Action.c(599):         <div class="modal-dialog modal-lg">\n
+Action.c(599):             <div class="modal-content">\n
+Action.c(599):                 <div class="modal-header">\n
+Action.c(599):                     <button type="button" class="close" data-dismiss="modal" aria-label="Close
+Action.c(599):     "><span\n
+Action.c(599):                             aria-hidden="true">&times;</span></button>\n
+Action.c(599):                     <h4 class="modal-title" id="eventDictionaryLabel">Event Dictionary</h4>\n
+Action.c(599):                 </div>\n
+Action.c(599):     \n
+Action.c(599):                 <div class="modal-body">\n
+Action.c(599):                     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-1 padding-md-bottom">\n
+Action.c(599):             SMQ\n
+Action.c(599):         </div>\n
+Action.c(599):         <div class="col-xs-11 padding-md-bottom">\n
+Action.c(599):             \n
+Action.c(599):                 <select id="eventSmqSelect" class="eventSmq form-control" style="width: 100%">
+Action.c(599):     </select>\n
+Action.c(599):             \n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-5 padding-md-bottom">\n
+Action.c(599):             <div class="checkbox checkbox-primary">\n
+Action.c(599):                 <input type="hidden" name="_event_exactSearch" /><input type="checkbox" name="
+Action.c(599):     event_exactSearch" id="event_exactSearch"  />\n
+Action.c(599):                 <label for="event_exactSearch">\n
+Action.c(599):                     Exact Search\n
+Action.c(599):                 </label>\n
+Action.c(599):             </div>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-2">\n
+Action.c(599):             <label>SOC<i tabindex="0"\n
+Action.c(599):                     class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"\n
+Action.c(599):                     data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):             <input level="1" class="searchEvents form-control" type="text">\n
+Action.c(599):     \n
+Action.c(599):         </div>\n
+Action.c(599):         <div class="col-xs-2">\n
+Action.c(599):             <label>HLGT<i tabindex="0"\n
+Action.c(599):                     class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"\n
+Action.c(599):                     data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):             <input level="2" class="searchEvents form-control" type="text">\n
+Action.c(599):     \n
+Action.c(599):         </div>\n
+Action.c(599):         <div class="col-xs-2">\n
+Action.c(599):             <label>HLT<i tabindex="0"\n
+Action.c(599):                     class="fa fa-pencil-square-o copy-n-paste modal-link hidden" data-toggle="
+Action.c(599):     modal"\n
+Action.c(599):                     data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):             <input level="3" class="searchEvents form-control" type="text">\n
+Action.c(599):     \n
+Action.c(599):         </div>\n
+Action.c(599):         <div class="col-xs-2">\n
+Action.c(599):             <label>PT<i tabindex="0"\n
+Action.c(599):                     class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"\n
+Action.c(599):                     data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):             <input level="4" class="searchEvents form-control" type="text">\n
+Action.c(599):     \n
+Action.c(599):         </div>\n
+Action.c(599):         <div class="col-xs-2">\n
+Action.c(599):             <label>LLT<i tabindex="0"\n
+Action.c(599):                     class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"\n
+Action.c(599):                     data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):             <input level="5" class="searchEvents form-control" type="text">\n
+Action.c(599):     \n
+Action.c(599):         </div>\n
+Action.c(599):         <div class="col-xs-2">\n
+Action.c(599):             <label>Synonyms<i tabindex="0"\n
+Action.c(599):                     class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"\n
+Action.c(599):                     data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):             <input level="6" class="searchEvents form-control" type="text">\n
+Action.c(599):     \n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-12">\n
+Action.c(599):             \n
+Action.c(599):             <column-view style="height: 200px;" id="columnView" ondata="source" path="0" dicti
+Action.c(599):     onary_type="event" columns_name="SOC,HLGT,HLT,PT,LLT,Synonyms" ></column-view>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     \n
+Action.c(599):     <div class="row selectedEventDictionaryValue">\n
+Action.c(599):         <div class="col-xs-1">\n
+Action.c(599):             <label>Selected:</label>\n
+Action.c(599):         </div>\n
+Action.c(599):         <div class="col-xs-10">\n
+Action.c(599):             <div class="row">\n
+Action.c(599):                 <div class="col-xs-1">\n
+Action.c(599):                     <label>SOC</label>\n
+Action.c(599):                 </div>\n
+Action.c(599):                 <div class="col-xs-11 eventDictionaryValue level1 ulSOC"></div>\n
+Action.c(599):             </div>\n
+Action.c(599):             <div class="row">\n
+Action.c(599):                 <div class="col-xs-1">\n
+Action.c(599):                     <label>HLGT</label>\n
+Action.c(599):                 </div>\n
+Action.c(599):                 <div class="col-xs-11 eventDictionaryValue level2 ulHLGT"></div>\n
+Action.c(599):             </div>\n
+Action.c(599):             <div class="row">\n
+Action.c(599):                 <div class="col-xs-1">\n
+Action.c(599):                     <label>HLT</label>\n
+Action.c(599):                 </div>\n
+Action.c(599):                 <div class="col-xs-11 eventDictionaryValue level3 ulHLT"></div>\n
+Action.c(599):             </div>\n
+Action.c(599):             <div class="row">\n
+Action.c(599):                 <div class="col-xs-1">\n
+Action.c(599):                     <label>PT</label>\n
+Action.c(599):                 </div>\n
+Action.c(599):                 <div class="col-xs-11 eventDictionaryValue level4 ulPT"></div>\n
+Action.c(599):             </div>\n
+Action.c(599):             <div class="row">\n
+Action.c(599):                 <div class="col-xs-1">\n
+Action.c(599):                     <label>LLT</label>\n
+Action.c(599):                 </div>\n
+Action.c(599):                 <div class="col-xs-11 eventDictionaryValue level5 ulLLT"></div>\n
+Action.c(599):             </div>\n
+Action.c(599):             <div class="row">\n
+Action.c(599):                 <div class="col-xs-1">\n
+Action.c(599):                     <label>Synonyms</label>\n
+Action.c(599):                 </div>\n
+Action.c(599):                 <div class="col-xs-11 eventDictionaryValue level6 ulSynonyms"></div>\n
+Action.c(599):             </div>\n
+Action.c(599):             <div class="row">\n
+Action.c(599):                 <div class="col-xs-1">\n
+Action.c(599):                     <div style="width: 100px">\n
+Action.c(599):                     <label>SMQ Broad</label>\n
+Action.c(599):                     </div>\n
+Action.c(599):                 </div>\n
+Action.c(599):                 <div class="col-xs-11 eventDictionaryValue level7 ulSmqb"></div>\n
+Action.c(599):             </div>\n
+Action.c(599):             <div class="row">\n
+Action.c(599):                 <div class="col-xs-1">\n
+Action.c(599):                     <div style="width: 100px">\n
+Action.c(599):                     <label>SMQ Narrow</label>\n
+Action.c(599):                     </div>\n
+Action.c(599):                 </div>\n
+Action.c(599):                 <div class="col-xs-11 eventDictionaryValue level8 ulSmqn"></div>\n
+Action.c(599):             </div>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-12">\n
+Action.c(599):             \n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <style>\n
+Action.c(599):     .eventDictionaryColWidth {\n
+Action.c(599):         width: calc(100%/6);\n
+Action.c(599):     }\n
+Action.c(599):     </style>\n
+Action.c(599):                 </div>\n
+Action.c(599):     \n
+Action.c(599):                 <div class="modal-footer">\n
+Action.c(599):                     <div class="errorMessage" hidden="hidden">Cannot add to different levels.<
+Action.c(599):     /div>\n
+Action.c(599):     \n
+Action.c(599):                     <div class="loading" style="display:none"><img src="/signal/assets/select2
+Action.c(599):     -spinner-7b9776076d5fceef4993b55c9383dedd.gif" height="16" width="16"/></div>\n
+Action.c(599):                     \n
+Action.c(599):                     <button type="button" class="btn btn-default clearEventValues" accesskey="
+Action.c(599):     *">Clear</button>\n
+Action.c(599):                     <button type="button" class="btn btn-primary addEventValues" accesskey="%"
+Action.c(599):     >Add</button>\n
+Action.c(599):                     <button type="button" class="btn btn-primary addAllEventValues" accesskey=
+Action.c(599):     "^">Add All</button>\n
+Action.c(599):                     <button type="button" class="btn btn-default addAllEvents" data-dismiss="m
+Action.c(599):     odal" accesskey="&">Close</button>\n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="modal fade" id="productModal" data-backdrop="static" tabindex="-1" role="dialo
+Action.c(599):     g"\n
+Action.c(599):          aria-labelledby="productDictionaryLabel"\n
+Action.c(599):          aria-hidden="true">\n
+Action.c(599):         <div class="modal-dialog modal-lg">\n
+Action.c(599):             <div class="modal-content">\n
+Action.c(599):                 <div class="modal-header">\n
+Action.c(599):                     <button type="button" class="close" data-dismiss="modal" aria-label="Close
+Action.c(599):     "><span\n
+Action.c(599):                             aria-hidden="true">&times;</span></button>\n
+Action.c(599):                     <h4 class="modal-title" id="productDictionaryLabel">Product Dictionary</h4
+Action.c(599):     >\n
+Action.c(599):                 </div>\n
+Action.c(599):     \n
+Action.c(599):                 <div class="modal-body">\n
+Action.c(599):                     \n
+Action.c(599):     \n
+Action.c(599):     <div class="scrollableView1 p-b-10">\n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>OTC?</label>\n
+Action.c(599):     \n
+Action.c(599):                 <div>\n
+Action.c(599):                     \n
+Action.c(599):                         \n
+Action.c(599):                             <select level="10" name="filter0"\n
+Action.c(599):                                     class="form-control searchProducts additionalCriteria dict
+Action.c(599):     ionary-select"\n
+Action.c(599):                                     data-url="/signal/productDictionary/getFilterList?name=LmP
+Action.c(599):     rodDicFilter100"></select>\n
+Action.c(599):                     \n
+Action.c(599):                     \n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):     \n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Dosage Formulation</label>\n
+Action.c(599):     \n
+Action.c(599):                 <div>\n
+Action.c(599):                     \n
+Action.c(599):                         \n
+Action.c(599):                             <select level="11" name="filter1"\n
+Action.c(599):                                     class="form-control searchProducts additionalCriteria dict
+Action.c(599):     ionary-select"\n
+Action.c(599):                                 
+Action.c(408): t=857391ms: 12272-byte response body for "http://10.100.22.24:8181/signal/validatedSignal/details?id=10171" (RelFrameId=1, Internal ID=111)   [issued at Action.c(599)]
+Action.c(599):         data-url="/signal/productDictionary/getFilterList?name=LmProdDicFilter101"></select>\n
+Action.c(599):                     \n
+Action.c(599):                     \n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):     \n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Marketing Category</label>\n
+Action.c(599):     \n
+Action.c(599):                 <div>\n
+Action.c(599):                     \n
+Action.c(599):                         \n
+Action.c(599):                             <select level="12" name="filter2"\n
+Action.c(599):                                     class="form-control searchProducts additionalCriteria dict
+Action.c(599):     ionary-select"\n
+Action.c(599):                                     data-url="/signal/productDictionary/getFilterList?name=LmP
+Action.c(599):     rodDicFilter102"></select>\n
+Action.c(599):                     \n
+Action.c(599):                     \n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):     \n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Marketing Status</label>\n
+Action.c(599):     \n
+Action.c(599):                 <div>\n
+Action.c(599):                     \n
+Action.c(599):                         \n
+Action.c(599):                             <select level="13" name="filter3"\n
+Action.c(599):                                     class="form-control searchProducts additionalCriteria dict
+Action.c(599):     ionary-select"\n
+Action.c(599):                                     data-url="/signal/productDictionary/getFilterList?name=LmP
+Action.c(599):     rodDicFilter103"></select>\n
+Action.c(599):                     \n
+Action.c(599):                     \n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):     \n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Manufacturer Labeler Name</label>\n
+Action.c(599):     \n
+Action.c(599):                 <div>\n
+Action.c(599):                     \n
+Action.c(599):                         \n
+Action.c(599):                             <select level="14" name="filter4"\n
+Action.c(599):                                     class="form-control searchProducts additionalCriteria dict
+Action.c(599):     ionary-select"\n
+Action.c(599):                                     data-url="/signal/productDictionary/getFilterList?name=LmP
+Action.c(599):     rodDicFilter104"></select>\n
+Action.c(599):                     \n
+Action.c(599):                     \n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):     \n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>New Biologics (NB)</label>\n
+Action.c(599):     \n
+Action.c(599):                 <div>\n
+Action.c(599):                     \n
+Action.c(599):                         \n
+Action.c(599):                             <select level="15" name="filter5"\n
+Action.c(599):                                     class="form-control searchProducts additionalCriteria dict
+Action.c(599):     ionary-select"\n
+Action.c(599):                                     data-url="/signal/productDictionary/getFilterList?name=LmP
+Action.c(599):     rodDicFilter105"></select>\n
+Action.c(599):                     \n
+Action.c(599):                     \n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):     \n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Synonym</label>\n
+Action.c(599):     \n
+Action.c(599):                 <div>\n
+Action.c(599):                     \n
+Action.c(599):                         \n
+Action.c(599):                             <select level="16" name="filter6"\n
+Action.c(599):                                     class="form-control searchProducts additionalCriteria dict
+Action.c(599):     ionary-select"\n
+Action.c(599):                                     data-url="/signal/productDictionary/getFilterList?name=LmP
+Action.c(599):     rodDicFilter106"></select>\n
+Action.c(599):                     \n
+Action.c(599):                     \n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):     \n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Sender Organization Name</label>\n
+Action.c(599):     \n
+Action.c(599):                 <div>\n
+Action.c(599):                     \n
+Action.c(599):                         \n
+Action.c(599):                             <select level="17" name="filter7"\n
+Action.c(599):                                     class="form-control searchProducts additionalCriteria dict
+Action.c(599):     ionary-select"\n
+Action.c(599):                                     data-url="/signal/productDictionary/getFilterList?name=LmP
+Action.c(599):     rodDicFilter107"></select>\n
+Action.c(599):                     \n
+Action.c(599):                     \n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):     \n
+Action.c(599):         \n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-5 padding-md-bottom">\n
+Action.c(599):             <div class="checkbox checkbox-primary">\n
+Action.c(599):                 <input type="hidden" name="_product_exactSearch" /><input type="checkbox" name
+Action.c(599):     ="product_exactSearch" id="product_exactSearch"  />\n
+Action.c(599):                 <label for="product_exactSearch">\n
+Action.c(599):                     Exact Search\n
+Action.c(599):                 </label>\n
+Action.c(599):             </div>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="m-b-15 scroll-hidden scrollableView1">\n
+Action.c(599):     \n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Therapeutic drug class<i tabindex="0"\n
+Action.c(599):                         class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="mod
+Action.c(599):     al"\n
+Action.c(599):                         data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):                 <input level="1"\n
+Action.c(599):                        class="searchProducts form-control "\n
+Action.c(599):                        type="text">\n
+Action.c(599):             </div>\n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Active Moiety<i tabindex="0"\n
+Action.c(599):                         class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="mod
+Action.c(599):     al"\n
+Action.c(599):                         data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):                 <input level="2"\n
+Action.c(599):                        class="searchProducts form-control "\n
+Action.c(599):                        type="text">\n
+Action.c(599):             </div>\n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Product Active Moiety<i tabindex="0"\n
+Action.c(599):                         class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="mod
+Action.c(599):     al"\n
+Action.c(599):                         data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):                 <input level="3"\n
+Action.c(599):                        class="searchProducts form-control "\n
+Action.c(599):                        type="text">\n
+Action.c(599):             </div>\n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Active Ingredient<i tabindex="0"\n
+Action.c(599):                         class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="mod
+Action.c(599):     al"\n
+Action.c(599):                         data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):                 <input level="4"\n
+Action.c(599):                        class="searchProducts form-control "\n
+Action.c(599):                        type="text">\n
+Action.c(599):             </div>\n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Product Active Ingredient<i tabindex="0"\n
+Action.c(599):                         class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="mod
+Action.c(599):     al"\n
+Action.c(599):                         data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):                 <input level="5"\n
+Action.c(599):                        class="searchProducts form-control "\n
+Action.c(599):                        type="text">\n
+Action.c(599):             </div>\n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Product Name<i tabindex="0"\n
+Action.c(599):                         class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="mod
+Action.c(599):     al"\n
+Action.c(599):                         data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):                 <input level="6"\n
+Action.c(599):                        class="searchProducts form-control productColumn"\n
+Action.c(599):                        type="text">\n
+Action.c(599):             </div>\n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>Application Number<i tabindex="0"\n
+Action.c(599):                         class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="mod
+Action.c(599):     al"\n
+Action.c(599):                         data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):                 <input level="7"\n
+Action.c(599):                        class="searchProducts form-control "\n
+Action.c(599):                        type="text">\n
+Action.c(599):             </div>\n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>User Assignment<i tabindex="0"\n
+Action.c(599):                         class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="mod
+Action.c(599):     al"\n
+Action.c(599):                         data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):                 <input level="8"\n
+Action.c(599):                        class="searchProducts form-control "\n
+Action.c(599):                        type="text">\n
+Action.c(599):             </div>\n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):             <div class="prodDictFilterCol">\n
+Action.c(599):                 <label>IND Reviewer<i tabindex="0"\n
+Action.c(599):                         class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="mod
+Action.c(599):     al"\n
+Action.c(599):                         data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):                 <input level="9"\n
+Action.c(599):                        class="searchProducts form-control "\n
+Action.c(599):                        type="text">\n
+Action.c(599):             </div>\n
+Action.c(599):         \n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-12">\n
+Action.c(599):             <column-view id="columnView1" class="scrollableView2" ondata="source" path="0" dic
+Action.c(599):     ="product"\n
+Action.c(599):                          dictionary_type="product" columns_name="Therapeutic drug class,Active
+Action.c(599):      Moiety,Product Active Moiety,Active Ingredient,Product Active Ingredient,Product Name,App
+Action.c(599):     lication Number,User Assignment,IND Reviewer"></column-view>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     \n
+Action.c(599):     <div class="row selectedProductDictionaryValue">\n
+Action.c(599):         <div class="col-xs-1">\n
+Action.c(599):             <label>Selected:</label>\n
+Action.c(599):         </div>\n
+Action.c(599):     \n
+Action.c(599):         <div class="col-xs-10">\n
+Action.c(599):             \n
+Action.c(599):                 <div class="row">\n
+Action.c(599):                     <div class="col-xs-3">\n
+Action.c(599):                         <label>Therapeutic drug class</label>\n
+Action.c(599):                     </div>\n
+Action.c(599):     \n
+Action.c(599):                     <div class="col-xs-9 productDictionaryValue level1"></div>\n
+Action.c(599):                 </div>\n
+Action.c(599):             \n
+Action.c(599):                 <div class="row">\n
+Action.c(599):                     <div class="col-xs-3">\n
+Action.c(599):                         <label>Active Moiety</label>\n
+Action.c(599):                     </div>\n
+Action.c(599):     \n
+Action.c(599):                     <div class="col-xs-9 productDictionaryValue level2"></div>\n
+Action.c(599):                 </div>\n
+Action.c(599):             \n
+Action.c(599):                 <div class="row">\n
+Action.c(599):                     <div class="col-xs-3">\n
+Action.c(599):                         <label>Product Active Moiety</label>\n
+Action.c(599):                     </div>\n
+Action.c(599):     \n
+Action.c(599):                     <div class="col-xs-9 productDictionaryValue level3"></div>\n
+Action.c(599):                 </div>\n
+Action.c(599):             \n
+Action.c(599):                 <div class="row">\n
+Action.c(599):                     <div class="col-xs-3">\n
+Action.c(599):                         <label>Active Ingredient</label>\n
+Action.c(599):                     </div>\n
+Action.c(599):     \n
+Action.c(599):                     <div class="col-xs-9 productDictionaryValue level4"></div>\n
+Action.c(599):                 </div>\n
+Action.c(599):             \n
+Action.c(599):                 <div class="row">\n
+Action.c(599):                     <div class="col-xs-3">\n
+Action.c(599):                         <label>Product Active Ingredient</label>\n
+Action.c(599):                     </div>\n
+Action.c(599):     \n
+Action.c(599):                     <div class="col-xs-9 productDictionaryValue level5"></div>\n
+Action.c(599):                 </div>\n
+Action.c(599):             \n
+Action.c(599):                 <div class="row">\n
+Action.c(599):                     <div class="col-xs-3">\n
+Action.c(599):                         <label>Product Name</label>\n
+Action.c(599):                     </div>\n
+Action.c(599):     \n
+Action.c(599):                     <div class="col-xs-9 productDictionaryValue level6"></div>\n
+Action.c(599):                 </div>\n
+Action.c(599):             \n
+Action.c(599):                 <div class="row">\n
+Action.c(599):                     <div class="col-xs-3">\n
+Action.c(599):                         <label>Application Number</label>\n
+Action.c(599):                     </div>\n
+Action.c(599):     \n
+Action.c(599):                     <div class="col-xs-9 productDictionaryValue level7"></div>\n
+Action.c(599):                 </div>\n
+Action.c(599):             \n
+Action.c(599):                 <div class="row">\n
+Action.c(599):                     <div class="col-xs-3">\n
+Action.c(599):                         <label>User Assignment</label>\n
+Action.c(599):                     </div>\n
+Action.c(599):     \n
+Action.c(599):                     <div class="col-xs-9 productDictionaryValue level8"></div>\n
+Action.c(599):                 </div>\n
+Action.c(599):             \n
+Action.c(599):                 <div class="row">\n
+Action.c(599):                     <div class="col-xs-3">\n
+Action.c(599):                         <label>IND Reviewer</label>\n
+Action.c(599):                     </div>\n
+Action.c(599):     \n
+Action.c(599):                     <div class="col-xs-9 productDictionaryValue level9"></div>\n
+Action.c(599):                 </div>\n
+Action.c(599):             \n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-12">\n
+Action.c(599):             \n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     <script type="text/javascript" src="/signal/assets/plugin/dictionary/productDictionary-eea
+Action.c(599):     adfef73b9e8aa3d5bbccd020fbe0e.js" ></script>\n
+Action.c(599):     <style>\n
+Action.c(599):      .prodDictFilterColCalc ,.productDictionaryColWidthCalc {\n
+Action.c(599):         width: calc(100% /9);\n
+Action.c(599):     }\n
+Action.c(599):      .prodDictSearchColCalc {\n
+Action.c(599):          width: calc(100% /8);\n
+Action.c(599):      }\n
+Action.c(599):     </style>\n
+Action.c(599):                 </div>\n
+Action.c(599):     \n
+Action.c(599):                 <div class="modal-footer">\n
+Action.c(599):                     <div class="loading" style="display:none"><img src="/signal/assets/select2
+Action.c(599):     -spinner-7b9776076d5fceef4993b55c9383dedd.gif" height="16" width="16"/></div>\n
+Action.c(599):                     \n
+Action.c(599):                     <button type="button" class="btn btn-default clearProductValues" accesskey
+Action.c(599):     ="$">Clear</button>\n
+Action.c(599):                     <button type="button" class="btn btn-primary addProductValues" accesskey="
+Action.c(599):     !">Add</button>\n
+Action.c(599):                     <button type="button" class="btn btn-primary addAllProductValues" accesske
+Action.c(599):     y="@">Add All</button>\n
+Action.c(599):                     <button type="button" class="btn btn-default addAllProducts" data-dismiss=
+Action.c(599):     "modal" accesskey="#">Close</button>\n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="modal fade" id="studyModal" data-backdrop="static" tabindex="-1" role="dialog"
+Action.c(599):     \n
+Action.c(599):          aria-labelledby="studyDictionaryLabel"\n
+Action.c(599):          aria-hidden="true">\n
+Action.c(599):         <div class="modal-dialog modal-lg">\n
+Action.c(599):             <div class="modal-content">\n
+Action.c(599):                 <div class="modal-header">\n
+Action.c(599):                     <button type="button" class="close" data-dismiss="modal" aria-label="Close
+Action.c(599):     "><span\n
+Action.c(599):                             aria-hidden="true">&times;</span></button>\n
+Action.c(599):                     <h4 class="modal-title" id="studyDictionaryLabel">Study Dictionary</h4>\n
+Action.c(599):                 </div>\n
+Action.c(599):     \n
+Action.c(599):                 <div class="modal-body">\n
+Action.c(599):                     <div class="row">\n
+Action.c(599):         <div class="col-xs-5 padding-md-bottom">\n
+Action.c(599):             <div class="checkbox checkbox-primary">\n
+Action.c(599):                 <input type="hidden" name="_study_exactSearch" /><input type="checkbox" name="
+Action.c(599):     study_exactSearch" id="study_exactSearch"  />\n
+Action.c(599):                 <label for="study_exactSearch">\n
+Action.c(599):                     Exact Search\n
+Action.c(599):                 </label>\n
+Action.c(599):             </div>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-6">\n
+Action.c(599):             \n
+Action.c(599):     <script type="text/javascript" src="/signal/assets/plugin/dictionary/studyDrugs-9650caca7b
+Action.c(599):     2eaad47de57af7bbefe066.js" ></script>\n
+Action.c(599):     <script
+Action.c(408): t=857407ms: 5640-byte response body for "http://10.100.22.24:8181/signal/validatedSignal/details?id=10171" (RelFrameId=1, Internal ID=111)   [issued at Action.c(599)]
+Action.c(599):     >\n
+Action.c(599):         $(document).ready(function () {\n
+Action.c(599):             var productsListUrl = "/signal/studyDictionary/getProductsList";\n
+Action.c(599):             showStudyDrugsWidget(productsListUrl);\n
+Action.c(599):             bindImpCheckboxEvent();\n
+Action.c(599):         });\n
+Action.c(599):     </script>\n
+Action.c(599):     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-10">\n
+Action.c(599):             <label>Study Drug</label>\n
+Action.c(599):             <input level="3" ref_level="2" class="searchStudies form-control" type="hidden" id
+Action.c(599):     ="studyDrugsInput"/>\n
+Action.c(599):     \n
+Action.c(599):             <div>\n
+Action.c(599):                 \n
+Action.c(599):                     <select name="studyDrugs" id="studyDrugs" value="" class="searchStudies fo
+Action.c(599):     rm-control"></select>\n
+Action.c(599):                 \n
+Action.c(599):             </div>\n
+Action.c(599):         </div>\n
+Action.c(599):     \n
+Action.c(599):         <div class="col-xs-2">\n
+Action.c(599):             <label>&nbsp;</label>\n
+Action.c(599):     \n
+Action.c(599):             <div class="checkbox checkbox-primary">\n
+Action.c(599):                 <input type="hidden" name="_study_imp" /><input type="checkbox" name="study_im
+Action.c(599):     p" id="study_imp"  />\n
+Action.c(599):                 <label for="study_imp">\n
+Action.c(599):                     IMP\n
+Action.c(599):                 </label>\n
+Action.c(599):             </div>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):         </div>\n
+Action.c(599):     \n
+Action.c(599):         <div class="col-xs-6">\n
+Action.c(599):             \n
+Action.c(599):     <script type="text/javascript" src="/signal/assets/plugin/dictionary/studyCompounds-d1264a
+Action.c(599):     c301b89c2be214faf502830ceb.js" ></script>\n
+Action.c(599):     \n
+Action.c(599):     <label>Clinical Reference Number</label>\n
+Action.c(599):     <input level="4" ref_level="2" class="searchStudies form-control" type="hidden" id="studyC
+Action.c(599):     ompoundsInput"/>\n
+Action.c(599):     \n
+Action.c(599):     <div>\n
+Action.c(599):         \n
+Action.c(599):             <select name="studyCompounds" id="studyCompounds" value="" class="searchStudies fo
+Action.c(599):     rm-control"></select>\n
+Action.c(599):         \n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <script>\n
+Action.c(599):         $(document).ready(function () {\n
+Action.c(599):             var compoundsListUrl = "/signal/studyDictionary/getCompoundsList";\n
+Action.c(599):             showStudyCompoundsWidget(compoundsListUrl);\n
+Action.c(599):         });\n
+Action.c(599):     </script>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-6">\n
+Action.c(599):             <label>Project Number<i tabindex="0"\n
+Action.c(599):                     class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"\n
+Action.c(599):                     data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):             <input level="1" class="searchStudies form-control" type="text">\n
+Action.c(599):     \n
+Action.c(599):         </div>\n
+Action.c(599):     \n
+Action.c(599):         <div class="col-xs-6">\n
+Action.c(599):             <label>Study Number<i tabindex="0"\n
+Action.c(599):                     class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"\n
+Action.c(599):                     data-target="#copyAndPasteDicModal"></i></label>\n
+Action.c(599):             <input level="2" class="searchStudies form-control" type="text">\n
+Action.c(599):     \n
+Action.c(599):         </div>\n
+Action.c(599):     \n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-12">\n
+Action.c(599):             <column-view style="height: 200px;" id="columnView1" ondata="source" path="0"\n
+Action.c(599):                          dictionary_type="study" columns_name="ProtocolNumber,StudyNumber"></c
+Action.c(599):     olumn-view>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     \n
+Action.c(599):     <div class="row selectedStudyDictionaryValue">\n
+Action.c(599):         <div class="col-xs-1">\n
+Action.c(599):             <label>Selected:</label>\n
+Action.c(599):         </div>\n
+Action.c(599):     \n
+Action.c(599):         <div class="col-xs-10">\n
+Action.c(599):             <div class="row">\n
+Action.c(599):                 <div class="col-xs-3">\n
+Action.c(599):                     <label>Project Number</label>\n
+Action.c(599):                 </div>\n
+Action.c(599):     \n
+Action.c(599):                 <div class="col-xs-9 studyDictionaryValue level1"></div>\n
+Action.c(599):             </div>\n
+Action.c(599):     \n
+Action.c(599):             <div class="row">\n
+Action.c(599):                 <div class="col-xs-3">\n
+Action.c(599):                     <label>Study Number</label>\n
+Action.c(599):                 </div>\n
+Action.c(599):     \n
+Action.c(599):                 <div class="col-xs-9 studyDictionaryValue level2"></div>\n
+Action.c(599):             </div>\n
+Action.c(599):     \n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div class="row">\n
+Action.c(599):         <div class="col-xs-12">\n
+Action.c(599):             \n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <style>\n
+Action.c(599):     .studyDictionaryColWidth {\n
+Action.c(599):         width: calc(100% /2);\n
+Action.c(599):     }\n
+Action.c(599):     </style>\n
+Action.c(599):                 </div>\n
+Action.c(599):     \n
+Action.c(599):                 <div class="modal-footer">\n
+Action.c(599):                     <div class="loading" style="display:none"><img src="/signal/assets/select2
+Action.c(599):     -spinner-7b9776076d5fceef4993b55c9383dedd.gif" height="16" width="16"/></div>\n
+Action.c(599):                     \n
+Action.c(599):                     <button type="button" class="btn btn-default clearStudyValues" accesskey="
+Action.c(599):     +">Clear</button>\n
+Action.c(599):                     <button type="button" class="btn btn-primary addStudyValues" accesskey="("
+Action.c(599):     >Add</button>\n
+Action.c(599):                     <button type="button" class="btn btn-primary addAllStudyValues" accesskey=
+Action.c(599):     ")">Add All</button>\n
+Action.c(599):                     <button type="button" class="btn btn-default addAllStudies" data-dismiss="
+Action.c(599):     modal" accesskey="_">Close</button>\n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):         \n
+Action.c(599):     \n
+Action.c(599):         <div class="modal fade" id="textarea-ext1" class="textarea-ext1" tabindex="-1" role="d
+Action.c(599):     ialog"\n
+Action.c(599):          aria-labelledby="textareaLabel"\n
+Action.c(599):          aria-hidden="true">\n
+Action.c(599):         <div class="modal-dialog modal-lg">\n
+Action.c(599):             <div class="modal-content">\n
+Action.c(599):                 <div class="modal-header">\n
+Action.c(599):                     <button type="button" class="close" data-dismiss="modal" aria-label="Close
+Action.c(599):     "><span\n
+Action.c(599):                             aria-hidden="true">&times;</span></button>\n
+Action.c(599):                     <h4 class="modal-title">Description</h4>\n
+Action.c(599):                 </div>\n
+Action.c(599):     \n
+Action.c(599):                 <div class="modal-body">\n
+Action.c(599):                     <div class="form-group">\n
+Action.c(599):                         <textarea class="form-control textAreaValue text-ext-size"></textarea>
+Action.c(599):     \n
+Action.c(599):                     </div>\n
+Action.c(599):                 </div>\n
+Action.c(599):     \n
+Action.c(599):                 <div class="modal-footer">\n
+Action.c(599):                     <button type="button" class="btn btn-primary updateTextarea">Update</butto
+Action.c(599):     n>\n
+Action.c(599):                     <button type="button" class="btn btn-default" data-dismiss="modal"\n
+Action.c(599):                             accesskey="q">Cancel</button>\n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):         </div>\n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     </div>\n
+Action.c(599):     \n
+Action.c(599):     <div id="hiddenform" ></div>\n
+Action.c(599):     \n
+Action.c(599):                     <r:layoutResources/>\n
+Action.c(599):                 </div>\n
+Action.c(599):             </div>\n
+Action.c(599):             <!-- End content -->\n
+Action.c(599):     \n
+Action.c(599):             \n
+Action.c(599):             \n
+Action.c(599):             \n
+Action.c(599):         </div>\n
+Action.c(599):         <!-- ============================================================== -->\n
+Action.c(599):         <!-- End Right content here -->\n
+Action.c(599):         <!-- ============================================================== -->\n
+Action.c(599):     </div>\n
+Action.c(599):     <script type="text/javascript" src="/signal/assets/app/jquery.core-9088768891f7d43af5ab8c8
+Action.c(599):     d642e5301.js" ></script>\n
+Action.c(599):     <script type="text/javascript" src="/signal/assets/app/jquery.app-1aff8addfae2d2b238c1047c
+Action.c(599):     506c75b4.js" ></script>\n
+Action.c(599):     \n
+Action.c(599):     </body>\n
+Action.c(599):     </html>\n
+Action.c(599): Registered web_reg_find successful for "Text=Validated Signals" (count=1)  	[MsgId: MMSG-26364]
+Action.c(599): web_concurrent_end was successful, 524003 body bytes, 3665 header bytes  	[MsgId: MMSG-26386]
+Action.c(605): Notify: Transaction "Signalsummary_04_ClickOnaSignal" ended with a "Pass" status (Duration: 2.2613 Wasted Time: 0.0008).	[MsgId: MMSG-16871]
+Action.c(607): lr_think_time: 16.05 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(611): Notify: Transaction "Signalsummary_05_UpdateComments" started.	[MsgId: MMSG-16999]
+Action.c(613): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(613): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(616): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(616): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(616): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(619): web_add_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(619): Notify: Parameter Substitution: parameter "_csrf" =  "4ddd9948-74d3-43d2-a8a2-b4e085463e55"	[MsgId: MMSG-13992]
+Action.c(619): web_add_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+Action.c(622): web_submit_data("update") started  	[MsgId: MMSG-26355]
+Action.c(622): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(622): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(622): Warning: The string '"name":"AMIODARONE","id":"155265923"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(622): Warning: The string '"name":"Electrocardiogram abnormal","id":"10014363"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(622): Notify: Parameter Substitution: parameter "_csrf" =  "4ddd9948-74d3-43d2-a8a2-b4e085463e55"	[MsgId: MMSG-13992]
+Action.c(622): t=858624ms: 256-byte response headers for "http://10.100.22.24:8181/signal/validatedSignal/update" (RelFrameId=1, Internal ID=173)
+Action.c(622):     HTTP/1.1 200 \r\n
+Action.c(622):     X-Frame-Options: DENY\r\n
+Action.c(622):     X-Application-Context: application:production:7171\r\n
+Action.c(622):     Cache-Control: no-cache, no-store\r\n
+Action.c(622):     Pragma: no-cache\r\n
+Action.c(622):     Content-Type: application/json;charset=UTF-8\r\n
+Action.c(622):     Transfer-Encoding: chunked\r\n
+Action.c(622):     Date: Mon, 25 Nov 2019 09:44:06 GMT\r\n
+Action.c(622):     \r\n
+Action.c(622): t=858624ms: 100-byte response body for "http://10.100.22.24:8181/signal/validatedSignal/update" (RelFrameId=1, Internal ID=173)
+Action.c(622):     {"code":null,"data":"Signal Information has been updated successfully","message":null,"sta
+Action.c(622):     tus":true}
+Action.c(622): web_submit_data("update") was successful, 100 body bytes, 256 header bytes  	[MsgId: MMSG-26386]
+Action.c(657): Notify: Transaction "Signalsummary_05_UpdateComments" ended with a "Pass" status (Duration: 0.2759).	[MsgId: MMSG-16873]
+Action.c(659): lr_think_time: 13.87 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(611): Notify: Transaction "Signalsummary_05_UpdateComments" started.	[MsgId: MMSG-16999]
+Action.c(613): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(613): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(616): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(616): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(616): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(619): web_add_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(619): Notify: Parameter Substitution: parameter "_csrf" =  "7dcdb974-dc99-4fe5-becd-a98a22767d20"	[MsgId: MMSG-13992]
+Action.c(619): web_add_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+Action.c(622): web_submit_data("update") started  	[MsgId: MMSG-26355]
+Action.c(622): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(622): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(622): Warning: The string '"name":"AMIODARONE","id":"155265923"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(622): Warning: The string '"name":"Electrocardiogram abnormal","id":"10014363"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(622): Notify: Parameter Substitution: parameter "_csrf" =  "7dcdb974-dc99-4fe5-becd-a98a22767d20"	[MsgId: MMSG-13992]
+Action.c(622): t=865816ms: 256-byte response headers for "http://10.100.22.24:8181/signal/validatedSignal/update" (RelFrameId=1, Internal ID=217)
+Action.c(622):     HTTP/1.1 200 \r\n
+Action.c(622):     X-Frame-Options: DENY\r\n
+Action.c(622):     X-Application-Context: application:production:7171\r\n
+Action.c(622):     Cache-Control: no-cache, no-store\r\n
+Action.c(622):     Pragma: no-cache\r\n
+Action.c(622):     Content-Type: application/json;charset=UTF-8\r\n
+Action.c(622):     Transfer-Encoding: chunked\r\n
+Action.c(622):     Date: Mon, 25 Nov 2019 09:44:13 GMT\r\n
+Action.c(622):     \r\n
+Action.c(622): t=865822ms: 100-byte response body for "http://10.100.22.24:8181/signal/validatedSignal/update" (RelFrameId=1, Internal ID=217)
+Action.c(622):     {"code":null,"data":"Signal Information has been updated successfully","message":null,"sta
+Action.c(622):     tus":true}
+Action.c(622): web_submit_data("update") was successful, 100 body bytes, 256 header bytes  	[MsgId: MMSG-26386]
+Action.c(657): Notify: Transaction "Signalsummary_05_UpdateComments" ended with a "Pass" status (Duration: 0.2855).	[MsgId: MMSG-16873]
+Action.c(659): lr_think_time: 16.96 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(669): lr_think_time: 12.59 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(611): Notify: Transaction "Signalsummary_05_UpdateComments" started.	[MsgId: MMSG-16999]
+Action.c(613): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(613): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(616): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(616): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(616): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(619): web_add_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(619): Notify: Parameter Substitution: parameter "_csrf" =  "d9be51f6-581f-4ba4-8193-3e853cf55293"	[MsgId: MMSG-13992]
+Action.c(619): web_add_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+Action.c(622): web_submit_data("update") started  	[MsgId: MMSG-26355]
+Action.c(622): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(622): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(622): Warning: The string '"name":"AMIODARONE","id":"155265923"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(622): Warning: The string '"name":"Electrocardiogram abnormal","id":"10014363"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(622): Notify: Parameter Substitution: parameter "_csrf" =  "d9be51f6-581f-4ba4-8193-3e853cf55293"	[MsgId: MMSG-13992]
+Action.c(622): t=873754ms: 256-byte response headers for "http://10.100.22.24:8181/signal/validatedSignal/update" (RelFrameId=1, Internal ID=129)
+Action.c(622):     HTTP/1.1 200 \r\n
+Action.c(622):     X-Frame-Options: DENY\r\n
+Action.c(622):     X-Application-Context: application:production:7171\r\n
+Action.c(622):     Cache-Control: no-cache, no-store\r\n
+Action.c(622):     Pragma: no-cache\r\n
+Action.c(622):     Content-Type: application/json;charset=UTF-8\r\n
+Action.c(622):     Transfer-Encoding: chunked\r\n
+Action.c(622):     Date: Mon, 25 Nov 2019 09:44:21 GMT\r\n
+Action.c(622):     \r\n
+Action.c(622): t=873756ms: 100-byte response body for "http://10.100.22.24:8181/signal/validatedSignal/update" (RelFrameId=1, Internal ID=129)
+Action.c(622):     {"code":null,"data":"Signal Information has been updated successfully","message":null,"sta
+Action.c(622):     tus":true}
+Action.c(622): web_submit_data("update") was successful, 100 body bytes, 256 header bytes  	[MsgId: MMSG-26386]
+Action.c(657): Notify: Transaction "Signalsummary_05_UpdateComments" ended with a "Pass" status (Duration: 0.2855).	[MsgId: MMSG-16873]
+Action.c(659): lr_think_time: 17.50 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(669): lr_think_time: 15.10 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(671): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(671): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(671): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(674): web_add_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(674): Notify: Parameter Substitution: parameter "_csrf" =  "4ddd9948-74d3-43d2-a8a2-b4e085463e55"	[MsgId: MMSG-13992]
+Action.c(674): web_add_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+Action.c(677): web_submit_data("graphReport") started  	[MsgId: MMSG-26355]
+Action.c(677): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(677): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(677): Warning: The string '"name":"AMIODARONE","id":"155265923"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(677): Warning: The string '"name":"Electrocardiogram abnormal","id":"10014363"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(669): lr_think_time: 16.00 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(671): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(671): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(671): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(674): web_add_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(674): Notify: Parameter Substitution: parameter "_csrf" =  "7dcdb974-dc99-4fe5-becd-a98a22767d20"	[MsgId: MMSG-13992]
+Action.c(674): web_add_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+Action.c(677): web_submit_data("graphReport") started  	[MsgId: MMSG-26355]
+Action.c(677): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(677): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(677): Warning: The string '"name":"AMIODARONE","id":"155265923"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(677): Warning: The string '"name":"Electrocardiogram abnormal","id":"10014363"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(677): t=898356ms: 256-byte response headers for "http://10.100.22.24:8181/signal/validatedSignal/graphReport" (RelFrameId=1, Internal ID=174)
+Action.c(677):     HTTP/1.1 200 \r\n
+Action.c(677):     X-Frame-Options: DENY\r\n
+Action.c(677):     X-Application-Context: application:production:7171\r\n
+Action.c(677):     Cache-Control: no-cache, no-store\r\n
+Action.c(677):     Pragma: no-cache\r\n
+Action.c(677):     Content-Type: application/json;charset=UTF-8\r\n
+Action.c(677):     Transfer-Encoding: chunked\r\n
+Action.c(677):     Date: Mon, 25 Nov 2019 09:44:45 GMT\r\n
+Action.c(677):     \r\n
+Action.c(677): t=898356ms: 998-byte response body for "http://10.100.22.24:8181/signal/validatedSignal/graphReport" (RelFrameId=1, Internal ID=174)
+Action.c(677):     {"code":200,"data":{"age-grp-over-time-chart":[{"name":"N/A","data":[{"name":"2018-JAN","y
+Action.c(677):     ":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name"
+Action.c(677):     :"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG",
+Action.c(677):     "y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"nam
+Action.c(677):     e":"2018-DEC","y":0}]}],"seriousness-over-time-chart":[{"data":[{"name":"2018-JAN","y":0},
+Action.c(677):     {"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"201
+Action.c(677):     8-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0
+Action.c(677):     },{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2
+Action.c(677):     018-DEC","y":0}],"name":"Death"},{"data":[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y"
+Action.c(677):     :0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{"name":
+Action.c(677):     "2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","
+Action.c(677):     y":0},{"
+Action.c(677): t=898357ms: 8982-byte response body for "http://10.100.22.24:8181/signal/validatedSignal/graphReport" (RelFrameId=1, Internal ID=174)
+Action.c(677):     name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name":"Life-
+Action.c(677):     threatening"},{"data":[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-M
+Action.c(677):     AR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{
+Action.c(677):     "name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018
+Action.c(677):     -OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name":"Others"},{"data"
+Action.c(677):     :[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2
+Action.c(677):     018-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y"
+Action.c(677):     :0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":
+Action.c(677):     "2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name":"Intervention Required"},{"data":[{"na
+Action.c(677):     me":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-AP
+Action.c(677):     R","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"
+Action.c(677):     name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-
+Action.c(677):     NOV","y":0},{"name":"2018-DEC","y":0}],"name":"Hospitalized"},{"data":[{"name":"2018-JAN",
+Action.c(677):     "y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"nam
+Action.c(677):     e":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG
+Action.c(677):     ","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"n
+Action.c(677):     ame":"2018-DEC","y":0}],"name":"Prolong Hospitlization"},{"data":[{"name":"2018-JAN","y":0
+Action.c(677):     },{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2
+Action.c(677):     018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y"
+Action.c(677):     :0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":
+Action.c(677):     "2018-DEC","y":0}],"name":"Disability"},{"data":[{"name":"2018-JAN","y":0},{"name":"2018-F
+Action.c(677):     EB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{
+Action.c(677):     "name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018
+Action.c(677):     -SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}
+Action.c(677):     ],"name":"Congenital Anomaly"},{"data":[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0
+Action.c(677):     },{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2
+Action.c(677):     018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","y"
+Action.c(677):     :0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name":
+Action.c(677):     "Medically Significant"}],"country-over-time-chart":[{"name":"N/A","data":[{"name":"2018-J
+Action.c(677):     AN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{
+Action.c(677):     "name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018
+Action.c(677):     -AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0}
+Action.c(677):     ,{"name":"2018-DEC","y":0}]}],"gender-over-time-chart":[{"name":"N/A","data":[{"name":"201
+Action.c(677):     8-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0
+Action.c(677):     },{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2
+Action.c(677):     018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y"
+Action.c(677):     :0},{"name":"2018-DEC","y":0}]}],"outcome-over-time-chart":[{"name":"N/A","data":[{"name":
+Action.c(677):     "2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","
+Action.c(677):     y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name
+Action.c(677):     ":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV"
+Action.c(677):     ,"y":0},{"name":"2018-DEC","y":0}]}],"seriousness-count-pie-chart":[{"name":"N/A","data":[
+Action.c(677):     {"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"201
+Action.c(677):     8-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0
+Action.c(677):     },{"name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2
+Action.c(677):     018-NOV","y":0},{"name":"2018-DEC","y":0}]}],"systemOrganClass":{"socs":["Blood and lympha
+Action.c(677):     tic system disorders","Cardiac disorders","Congenital, familial and genetic disorders","Ea
+Action.c(677):     r and labyrinth disorders","Endocrine disorders","Eye disorders","Gastrointestinal disorde
+Action.c(677):     rs","General disorders and administration site conditions","Hepatobiliary disorders","Immu
+Action.c(677):     ne system disorders","Infections and infestations","Injury, poisoning and procedural compl
+Action.c(677):     ications","Investigations","Metabolism and nutrition disorders","Musculoskeletal and conne
+Action.c(677):     ctive tissue disorders","Neoplasms benign, malignant and unspecified (incl cysts and polyp
+Action.c(677):     s)","Nervous system disorders","Pregnancy, puerperium and perinatal conditions","Psychiatr
+Action.c(677):     ic disorders","Renal and urinary disorders","Reproductive system and breast disorders","Re
+Action.c(677):     spiratory, thoracic and mediastinal disorders","Skin and subcutaneous tissue disorders","S
+Action.c(677):     ocial circumstances","Surgical and medical procedures","Vascular disorders","Product issue
+Action.c(677):     s"],"years":["2018-JAN","2018-FEB","2018-MAR","2018-APR","2018-MAY","2018-JUN","2018-JUL",
+Action.c(677):     "2018-AUG","2018-SEP","2018-OCT","2018-NOV","2018-DEC"],"data":[[0,0,0],[0,1,0],[0,2,0],[0
+Action.c(677):     ,3,0],[0,4,0],[0,5,0],[0,6,0],[0,7,0],[0,8,0],[0,9,0],[0,10,0],[0,11,0],[0,12,0],[0,13,0],
+Action.c(677):     [0,14,0],[0,15,0],[0,16,0],[0,17,0],[0,18,0],[0,19,0],[0,20,0],[0,21,0],[0,22,0],[0,23,0],
+Action.c(677):     [0,24,0],[0,25,0],[0,26,0],[1,0,0],[1,1,0],[1,2,0],[1,3,0],[1,4,0],[1,5,0],[1,6,0],[1,7,0]
+Action.c(677):     ,[1,8,0],[1,9,0],[1,10,0],[1,11,0],[1,12,0],[1,13,0],[1,14,0],[1,15,0],[1,16,0],[1,17,0],[
+Action.c(677):     1,18,0],[1,19,0],[1,20,0],[1,21,0],[1,22,0],[1,23,0],[1,24,0],[1,25,0],[1,26,0],[2,0,0],[2
+Action.c(677):     ,1,0],[2,2,0],[2,3,0],[2,4,0],[2,5,0],[2,6,0],[2,7,0],[2,8,0],[2,9,0],[2,10,0],[2,11,0],[2
+Action.c(677):     ,12,0],[2,13,0],[2,14,0],[2,15,0],[2,16,0],[2,17,0],[2,18,0],[2,19,0],[2,20,0],[2,21,0],[2
+Action.c(677):     ,22,0],[2,23,0],[2,24,0],[2,25,0],[2,26,0],[3,0,0],[3,1,0],[3,2,0],[3,3,0],[3,4,0],[3,5,0]
+Action.c(677):     ,[3,6,0],[3,7,0],[3,8,0],[3,9,0],[3,10,0],[3,11,0],[3,12,0],[3,13,0],[3,14,0],[3,15,0],[3,
+Action.c(677):     16,0],[3,17,0],[3,18,0],[3,19,0],[3,20,0],[3,21,0],[3,22,0],[3,23,0],[3,24,0],[3,25,0],[3,
+Action.c(677):     26,0],[4,0,0],[4,1,0],[4,2,0],[4,3,0],[4,4,0],[4,5,0],[4,6,0],[4,7,0],[4,8,0],[4,9,0],[4,1
+Action.c(677):     0,0],[4,11,0],[4,12,0],[4,13,0],[4,14,0],[4,15,0],[4,16,0],[4,17,0],[4,18,0],[4,19,0],[4,2
+Action.c(677):     0,0],[4,21,0],[4,22,0],[4,23,0],[4,24,0],[4,25,0],[4,26,0],[5,0,0],[5,1,0],[5,2,0],[5,3,0]
+Action.c(677):     ,[5,4,0],[5,5,0],[5,6,0],[5,7,0],[5,8,0],[5,9,0],[5,10,0],[5,11,0],[5,12,0],[5,13,0],[5,14
+Action.c(677):     ,0],[5,15,0],[5,16,0],[5,17,0],[5,18,0],[5,19,0],[5,20,0],[5,21,0],[5,22,0],[5,23,0],[5,24
+Action.c(677):     ,0],[5,25,0],[5,26,0],[6,0,0],[6,1,0],[6,2,0],[6,3,0],[6,4,0],[6,5,0],[6,6,0],[6,7,0],[6,8
+Action.c(677):     ,0],[6,9,0],[6,10,0],[6,11,0],[6,12,0],[6,13,0],[6,14,0],[6,15,0],[6,16,0],[6,17,0],[6,18,
+Action.c(677):     0],[6,19,0],[6,20,0],[6,21,0],[6,22,0],[6,23,0],[6,24,0],[6,25,0],[6,26,0],[7,0,0],[7,1,0]
+Action.c(677):     ,[7,2,0],[7,3,0],[7,4,0],[7,5,0],[7,6,0],[7,7,0],[7,8,0],[7,9,0],[7,10,0],[7,11,0],[7,12,0
+Action.c(677):     ],[7,13,0],[7,14,0],[7,15,0],[7,16,0],[7,17,0],[7,18,0],[7,19,0],[7,20,0],[7,21,0],[7,22,0
+Action.c(677):     ],[7,23,0],[7,24,0],[7,25,0],[7,26,0],[8,0,0],[8,1,0],[8,2,0],[8,3,0],[8,4,0],[8,5,0],[8,6
+Action.c(677):     ,0],[8,7,0],[8,8,0],[8,9,0],[8,10,0],[8,11,0],[8,12,0],[8,13,0],[8,14,0],[8,15,0],[8,16,0]
+Action.c(677):     ,[8,17,0],[8,18,0],[8,19,0],[8,20,0],[8,21,0],[8,22,0],[8,23,0],[8,24,0],[8,25,0],[8,26,0]
+Action.c(677):     ,[9,0,0],[9,1,0],[9,2,0],[9,3,0],[9,4,0],[9,5,0],[9,6,0],[9,7,0],[9,8,0],[9,9,0],[9,10,0],
+Action.c(677):     [9,11,0],[9,12,0],[9,13,0],[9,14,0],[9,15,0],[9,16,0],[9,17,0],[9,18,0],[9,19,0],[9,20,0],
+Action.c(677):     [9,21,0],[9,22,0],[9,23,0],[9,24,0],[9,25,0],[9,26,0],[10,0,0],[10,1,0],[10,2,0],[10,3,0],
+Action.c(677):     [10,4,0],[10,5,0],[10,6,0],[10,7,0],[10,8,0],[10,9,0],[10,10,0],[10,11,0],[10,12,0],[10,13
+Action.c(677):     ,0],[10,14,0],[10,15,0],[10,16,0],[10,17,0],[10,18,0],[10,19,0],[10,20,0],[10,21,0],[10,22
+Action.c(677):     ,0],[10,23,0],[10,24,0],[10,25,0],[10,26,0],[11,0,0],[11,1,0],[11,2,0],[11,3,0],[11,4,0],[
+Action.c(677):     11,5,0],[11,6,0],[11,7,0],[11,8,0],[11,9,0],[11,10,0],[11,11,0],[11,12,0],[11,13,0],[11,14
+Action.c(677):     ,0],[11,15,0],[11,16,0],[11,17,0],[11,18,0],[11,19,0],[11,20,0],[11,21,0],[11,22,0],[11,23
+Action.c(677):     ,0],[11,24,0],[11,25,0],[11,26,0]]},"assessmentDetailView":"<div>\\n    <div>\\n        <t
+Action.c(677):     able class=\\"table table-striped bs-example fixHeader-table text-center\\" id=\\"pvTopHea
+Action.c(677):     d\\">\\n            <thead>\\n            <tr>\\n                <th class=\\"headRow text
+Action.c(677):     -left\\">Characteristics<\\u002fth>\\n                <th class=\\"headRow text-left\\"><d
+Action.c(677):     iv class=\\"col-md-6\\">Category<\\u002fdiv>\\n\\n                    <div class=\\"col-md
+Action.c(677):     -6\\">Number (%)<\\u002fdiv><\\u002fth>\\n            <\\u002ftr>\\n            <\\u002fth
+Action.c(677):     ead>\\n            <tbody>\\n            \\n                <tr>\\n                    <td
+Action.c(677):      class=\\"text-left\\">-<\\u002ftd>\\n                    <td class=\\"text-left\\">\\n   
+Action.c(677):                          <div class=\\"col-md-6\\">-<\\u002fdiv>\\n\\n                        
+Action.c(677):     <div class=\\"col-md-6\\">\\n                            <span>-<\\u002fspan>\\n          
+Action.c(677):                   <\\u002fdiv>\\n                    <\\u002ftd>\\n                <\\u002ftr>
+Action.c(677):     \\n            \\n            <\\u002ftbody>\\n        <\\u002ftable>\\n    <\\u002fdiv>\\
+Action.c(677):     n<\\u002fdiv>"},"message":null,"status":true}
+Action.c(677): web_submit_data("graphReport") was successful, 9980 body bytes, 256 header bytes  	[MsgId: MMSG-26386]
+Action.c(694): Notify: Transaction "Signalsummary_07_NavigateActivityLogTab" started.	[MsgId: MMSG-16999]
+Action.c(696): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(696): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(699): web_url("10171_3") started  	[MsgId: MMSG-26355]
+Action.c(699): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(699): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(699): t=898629ms: 256-byte response headers for "http://10.100.22.24:8181/signal/activity/activitiesBySignal/10171?_=1573114232634" (RelFrameId=1, Internal ID=175)
+Action.c(699):     HTTP/1.1 200 \r\n
+Action.c(699):     X-Frame-Options: DENY\r\n
+Action.c(699):     X-Application-Context: application:production:7171\r\n
+Action.c(699):     Cache-Control: no-cache, no-store\r\n
+Action.c(699):     Pragma: no-cache\r\n
+Action.c(699):     Content-Type: application/json;charset=UTF-8\r\n
+Action.c(699):     Transfer-Encoding: chunked\r\n
+Action.c(699):     Date: Mon, 25 Nov 2019 09:44:45 GMT\r\n
+Action.c(699):     \r\n
+Action.c(699): t=898630ms: 1493-byte response body for "http://10.100.22.24:8181/signal/activity/activitiesBySignal/10171?_=1573114232634" (RelFrameId=1, Internal ID=175)
+Action.c(699):     [{"alertName":null,"alertId":null,"activity_id":10314,"type":"SignalUpdated","details":"Co
+Action.c(699):     mments on HA Signal Status changed from ' ' to 'comments' for signal 'Signal_Perf_Performa
+Action.c(699):     nce'<br>","performedBy":"bhagya","timestamp":"07-Nov-2019 07:58:40","justification":null,"
+Action.c(699):     caseNumber":null,"suspect":null,"eventName":null,"currentAssignment":"bhagya","currentAssi
+Action.c(699):     gnmentDept":[],"performedByDept":[]},{"alertName":null,"alertId":null,"activity_id":10345,
+Action.c(699):     "type":"SignalUpdated","details":"Comments on HA Signal Status changed from 'comments' to 
+Action.c(699):     'commentscommentscomments' for signal 'Signal_Perf_Performance'<br>","performedBy":"bhagya
+Action.c(699):     ","timestamp":"07-Nov-2019 08:11:11","justification":null,"caseNumber":null,"suspect":null
+Action.c(699):     ,"eventName":null,"currentAssignment":"bhagya","currentAssignmentDept":[],"performedByDept
+Action.c(699):     ":[]},{"alertName":null,"alertId":null,"activity_id":10337,"type":"ActionCreated","details
+Action.c(699):     ":"Action 'Additional investigations' created","performedBy":"bhagya","timestamp":"07-Nov-
+Action.c(699):     2019 08:03:44","justification":null,"caseNumber":null,"suspect":null,"eventName":null,"cur
+Action.c(699):     rentAssignment":"bhagya","currentAssignmentDept":[],"performedByDept":[]},{"alertName":nul
+Action.c(699):     l,"alertId":null,"activity_id":10331,"type":"AttachmentAdded","details":"Attachment '[ciom
+Action.c(699):     s_scanned.pdf]' is added","performedBy":"bhagya","timestamp":"07-Nov-2019 08:03:05","justi
+Action.c(699):     fication":null,"caseNumber":null,"suspect":null,"eventName":null,"currentAssignment":"bhag
+Action.c(699):     ya","currentAssignmentDept":[],"performedByDept":[]}]
+Action.c(699): web_url("10171_3") was successful, 1493 body bytes, 256 header bytes  	[MsgId: MMSG-26386]
+Action.c(708): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(708): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(713): Notify: Transaction "Signalsummary_07_NavigateActivityLogTab" ended with a "Pass" status (Duration: 0.2717).	[MsgId: MMSG-16873]
+Action.c(715): lr_think_time: 16.41 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(671): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(671): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(671): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(674): web_add_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(674): Notify: Parameter Substitution: parameter "_csrf" =  "d9be51f6-581f-4ba4-8193-3e853cf55293"	[MsgId: MMSG-13992]
+Action.c(674): web_add_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+Action.c(677): web_submit_data("graphReport") started  	[MsgId: MMSG-26355]
+Action.c(677): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(677): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(677): Warning: The string '"name":"AMIODARONE","id":"155265923"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(677): Warning: The string '"name":"Electrocardiogram abnormal","id":"10014363"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+Action.c(677): t=911896ms: 256-byte response headers for "http://10.100.22.24:8181/signal/validatedSignal/graphReport" (RelFrameId=1, Internal ID=218)
+Action.c(677):     HTTP/1.1 200 \r\n
+Action.c(677):     X-Frame-Options: DENY\r\n
+Action.c(677):     X-Application-Context: application:production:7171\r\n
+Action.c(677):     Cache-Control: no-cache, no-store\r\n
+Action.c(677):     Pragma: no-cache\r\n
+Action.c(677):     Content-Type: application/json;charset=UTF-8\r\n
+Action.c(677):     Transfer-Encoding: chunked\r\n
+Action.c(677):     Date: Mon, 25 Nov 2019 09:44:59 GMT\r\n
+Action.c(677):     \r\n
+Action.c(677): t=911899ms: 9980-byte response body for "http://10.100.22.24:8181/signal/validatedSignal/graphReport" (RelFrameId=1, Internal ID=218)
+Action.c(677):     {"code":200,"data":{"age-grp-over-time-chart":[{"name":"N/A","data":[{"name":"2018-JAN","y
+Action.c(677):     ":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name"
+Action.c(677):     :"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG",
+Action.c(677):     "y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"nam
+Action.c(677):     e":"2018-DEC","y":0}]}],"seriousness-over-time-chart":[{"data":[{"name":"2018-JAN","y":0},
+Action.c(677):     {"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"201
+Action.c(677):     8-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0
+Action.c(677):     },{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2
+Action.c(677):     018-DEC","y":0}],"name":"Death"},{"data":[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y"
+Action.c(677):     :0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{"name":
+Action.c(677):     "2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","
+Action.c(677):     y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name
+Action.c(677):     ":"Life-threatening"},{"data":[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name"
+Action.c(677):     :"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN",
+Action.c(677):     "y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"nam
+Action.c(677):     e":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name":"Others"}
+Action.c(677):     ,{"data":[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"
+Action.c(677):     name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-
+Action.c(677):     JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},
+Action.c(677):     {"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name":"Intervention Required"},{"dat
+Action.c(677):     a":[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":
+Action.c(677):     "2018-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","
+Action.c(677):     y":0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name
+Action.c(677):     ":"2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name":"Hospitalized"},{"data":[{"name":"20
+Action.c(677):     18-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":
+Action.c(677):     0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"
+Action.c(677):     2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y
+Action.c(677):     ":0},{"name":"2018-DEC","y":0}],"name":"Prolong Hospitlization"},{"data":[{"name":"2018-JA
+Action.c(677):     N","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"
+Action.c(677):     name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-
+Action.c(677):     AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},
+Action.c(677):     {"name":"2018-DEC","y":0}],"name":"Disability"},{"data":[{"name":"2018-JAN","y":0},{"name"
+Action.c(677):     :"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY",
+Action.c(677):     "y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"nam
+Action.c(677):     e":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC
+Action.c(677):     ","y":0}],"name":"Congenital Anomaly"},{"data":[{"name":"2018-JAN","y":0},{"name":"2018-FE
+Action.c(677):     B","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{"
+Action.c(677):     name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018-
+Action.c(677):     SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}]
+Action.c(677):     ,"name":"Medically Significant"}],"country-over-time-chart":[{"name":"N/A","data":[{"name"
+Action.c(677):     :"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR",
+Action.c(677):     "y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"nam
+Action.c(677):     e":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV
+Action.c(677):     ","y":0},{"name":"2018-DEC","y":0}]}],"gender-over-time-chart":[{"name":"N/A","data":[{"na
+Action.c(677):     me":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-AP
+Action.c(677):     R","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"
+Action.c(677):     name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-
+Action.c(677):     NOV","y":0},{"name":"2018-DEC","y":0}]}],"outcome-over-time-chart":[{"name":"N/A","data":[
+Action.c(677):     {"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"201
+Action.c(677):     8-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0
+Action.c(677):     },{"name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2
+Action.c(677):     018-NOV","y":0},{"name":"2018-DEC","y":0}]}],"seriousness-count-pie-chart":[{"name":"N/A",
+Action.c(677):     "data":[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"na
+Action.c(677):     me":"2018-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JU
+Action.c(677):     L","y":0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"
+Action.c(677):     name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}]}],"systemOrganClass":{"socs":["Blood an
+Action.c(677):     d lymphatic system disorders","Cardiac disorders","Congenital, familial and genetic disord
+Action.c(677):     ers","Ear and labyrinth disorders","Endocrine disorders","Eye disorders","Gastrointestinal
+Action.c(677):      disorders","General disorders and administration site conditions","Hepatobiliary disorder
+Action.c(677):     s","Immune system disorders","Infections and infestations","Injury, poisoning and procedur
+Action.c(677):     al complications","Investigations","Metabolism and nutrition disorders","Musculoskeletal a
+Action.c(677):     nd connective tissue disorders","Neoplasms benign, malignant and unspecified (incl cysts a
+Action.c(677):     nd polyps)","Nervous system disorders","Pregnancy, puerperium and perinatal conditions","P
+Action.c(677):     sychiatric disorders","Renal and urinary disorders","Reproductive system and breast disord
+Action.c(677):     ers","Respiratory, thoracic and mediastinal disorders","Skin and subcutaneous tissue disor
+Action.c(677):     ders","Social circumstances","Surgical and medical procedures","Vascular disorders","Produ
+Action.c(677):     ct issues"],"years":["2018-JAN","2018-FEB","2018-MAR","2018-APR","2018-MAY","2018-JUN","20
+Action.c(677):     18-JUL","2018-AUG","2018-SEP","2018-OCT","2018-NOV","2018-DEC"],"data":[[0,0,0],[0,1,0],[0
+Action.c(677):     ,2,0],[0,3,0],[0,4,0],[0,5,0],[0,6,0],[0,7,0],[0,8,0],[0,9,0],[0,10,0],[0,11,0],[0,12,0],[
+Action.c(677):     0,13,0],[0,14,0],[0,15,0],[0,16,0],[0,17,0],[0,18,0],[0,19,0],[0,20,0],[0,21,0],[0,22,0],[
+Action.c(677):     0,23,0],[0,24,0],[0,25,0],[0,26,0],[1,0,0],[1,1,0],[1,2,0],[1,3,0],[1,4,0],[1,5,0],[1,6,0]
+Action.c(677):     ,[1,7,0],[1,8,0],[1,9,0],[1,10,0],[1,11,0],[1,12,0],[1,13,0],[1,14,0],[1,15,0],[1,16,0],[1
+Action.c(677):     ,17,0],[1,18,0],[1,19,0],[1,20,0],[1,21,0],[1,22,0],[1,23,0],[1,24,0],[1,25,0],[1,26,0],[2
+Action.c(677):     ,0,0],[2,1,0],[2,2,0],[2,3,0],[2,4,0],[2,5,0],[2,6,0],[2,7,0],[2,8,0],[2,9,0],[2,10,0],[2,
+Action.c(677):     11,0],[2,12,0],[2,13,0],[2,14,0],[2,15,0],[2,16,0],[2,17,0],[2,18,0],[2,19,0],[2,20,0],[2,
+Action.c(677):     21,0],[2,22,0],[2,23,0],[2,24,0],[2,25,0],[2,26,0],[3,0,0],[3,1,0],[3,2,0],[3,3,0],[3,4,0]
+Action.c(677):     ,[3,5,0],[3,6,0],[3,7,0],[3,8,0],[3,9,0],[3,10,0],[3,11,0],[3,12,0],[3,13,0],[3,14,0],[3,1
+Action.c(677):     5,0],[3,16,0],[3,17,0],[3,18,0],[3,19,0],[3,20,0],[3,21,0],[3,22,0],[3,23,0],[3,24,0],[3,2
+Action.c(677):     5,0],[3,26,0],[4,0,0],[4,1,0],[4,2,0],[4,3,0],[4,4,0],[4,5,0],[4,6,0],[4,7,0],[4,8,0],[4,9
+Action.c(677):     ,0],[4,10,0],[4,11,0],[4,12,0],[4,13,0],[4,14,0],[4,15,0],[4,16,0],[4,17,0],[4,18,0],[4,19
+Action.c(677):     ,0],[4,20,0],[4,21,0],[4,22,0],[4,23,0],[4,24,0],[4,25,0],[4,26,0],[5,0,0],[5,1,0],[5,2,0]
+Action.c(677):     ,[5,3,0],[5,4,0],[5,5,0],[5,6,0],[5,7,0],[5,8,0],[5,9,0],[5,10,0],[5,11,0],[5,12,0],[5,13,
+Action.c(677):     0],[5,14,0],[5,15,0],[5,16,0],[5,17,0],[5,18,0],[5,19,0],[5,20,0],[5,21,0],[5,22,0],[5,23,
+Action.c(677):     0],[5,24,0],[5,25,0],[5,26,0],[6,0,0],[6,1,0],[6,2,0],[6,3,0],[6,4,0],[6,5,0],[6,6,0],[6,7
+Action.c(677):     ,0],[6,8,0],[6,9,0],[6,10,0],[6,11,0],[6,12,0],[6,13,0],[6,14,0],[6,15,0],[6,16,0],[6,17,0
+Action.c(677):     ],[6,18,0],[6,19,0],[6,20,0],[6,21,0],[6,22,0],[6,23,0],[6,24,0],[6,25,0],[6,26,0],[7,0,0]
+Action.c(677):     ,[7,1,0],[7,2,0],[7,3,0],[7,4,0],[7,5,0],[7,6,0],[7,7,0],[7,8,0],[7,9,0],[7,10,0],[7,11,0]
+Action.c(677):     ,[7,12,0],[7,13,0],[7,14,0],[7,15,0],[7,16,0],[7,17,0],[7,18,0],[7,19,0],[7,20,0],[7,21,0]
+Action.c(677):     ,[7,22,0],[7,23,0],[7,24,0],[7,25,0],[7,26,0],[8,0,0],[8,1,0],[8,2,0],[8,3,0],[8,4,0],[8,5
+Action.c(677):     ,0],[8,6,0],[8,7,0],[8,8,0],[8,9,0],[8,10,0],[8,11,0],[8,12,0],[8,13,0],[8,14,0],[8,15,0],
+Action.c(677):     [8,16,0],[8,17,0],[8,18,0],[8,19,0],[8,20,0],[8,21,0],[8,22,0],[8,23,0],[8,24,0],[8,25,0],
+Action.c(677):     [8,26,0],[9,0,0],[9,1,0],[9,2,0],[9,3,0],[9,4,0],[9,5,0],[9,6,0],[9,7,0],[9,8,0],[9,9,0],[
+Action.c(677):     9,10,0],[9,11,0],[9,12,0],[9,13,0],[9,14,0],[9,15,0],[9,16,0],[9,17,0],[9,18,0],[9,19,0],[
+Action.c(677):     9,20,0],[9,21,0],[9,22,0],[9,23,0],[9,24,0],[9,25,0],[9,26,0],[10,0,0],[10,1,0],[10,2,0],[
+Action.c(677):     10,3,0],[10,4,0],[10,5,0],[10,6,0],[10,7,0],[10,8,0],[10,9,0],[10,10,0],[10,11,0],[10,12,0
+Action.c(677):     ],[10,13,0],[10,14,0],[10,15,0],[10,16,0],[10,17,0],[10,18,0],[10,19,0],[10,20,0],[10,21,0
+Action.c(677):     ],[10,22,0],[10,23,0],[10,24,0],[10,25,0],[10,26,0],[11,0,0],[11,1,0],[11,2,0],[11,3,0],[1
+Action.c(677):     1,4,0],[11,5,0],[11,6,0],[11,7,0],[11,8,0],[11,9,0],[11,10,0],[11,11,0],[11,12,0],[11,13,0
+Action.c(677):     ],[11,14,0],[11,15,0],[11,16,0],[11,17,0],[11,18,0],[11,19,0],[11,20,0],[11,21,0],[11,22,0
+Action.c(677):     ],[11,23,0],[11,24,0],[11,25,0],[11,26,0]]},"assessmentDetailView":"<div>\\n    <div>\\n  
+Action.c(677):           <table class=\\"table table-striped bs-example fixHeader-table text-center\\" id=\\"
+Action.c(677):     pvTopHead\\">\\n            <thead>\\n            <tr>\\n                <th class=\\"head
+Action.c(677):     Row text-left\\">Characteristics<\\u002fth>\\n                <th class=\\"headRow text-le
+Action.c(677):     ft\\"><div class=\\"col-md-6\\">Category<\\u002fdiv>\\n\\n                    <div class=\\
+Action.c(677):     "col-md-6\\">Number (%)<\\u002fdiv><\\u002fth>\\n            <\\u002ftr>\\n            <\\
+Action.c(677):     u002fthead>\\n            <tbody>\\n            \\n                <tr>\\n                
+Action.c(677):         <td class=\\"text-left\\">-<\\u002ftd>\\n                    <td class=\\"text-left\\"
+Action.c(677):     >\\n                        <div class=\\"col-md-6\\">-<\\u002fdiv>\\n\\n                 
+Action.c(677):            <div class=\\"col-md-6\\">\\n                            <span>-<\\u002fspan>\\n   
+Action.c(677):                          <\\u002fdiv>\\n                    <\\u002ftd>\\n                <\\u
+Action.c(677):     002ftr>\\n            \\n            <\\u002ftbody>\\n        <\\u002ftable>\\n    <\\u002
+Action.c(677):     fdiv>\\n<\\u002fdiv>"},"message":null,"status":true}
+Action.c(677): web_submit_data("graphReport") was successful, 9980 body bytes, 256 header bytes  	[MsgId: MMSG-26386]
+Action.c(694): Notify: Transaction "Signalsummary_07_NavigateActivityLogTab" started.	[MsgId: MMSG-16999]
+Action.c(696): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(696): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(699): web_url("10171_3") started  	[MsgId: MMSG-26355]
+Action.c(699): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(699): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(699): t=912183ms: 256-byte response headers for "http://10.100.22.24:8181/signal/activity/activitiesBySignal/10171?_=1573114232634" (RelFrameId=1, Internal ID=219)
+Action.c(699):     HTTP/1.1 200 \r\n
+Action.c(699):     X-Frame-Options: DENY\r\n
+Action.c(699):     X-Application-Context: application:production:7171\r\n
+Action.c(699):     Cache-Control: no-cache, no-store\r\n
+Action.c(699):     Pragma: no-cache\r\n
+Action.c(699):     Content-Type: application/json;charset=UTF-8\r\n
+Action.c(699):     Transfer-Encoding: chunked\r\n
+Action.c(699):     Date: Mon, 25 Nov 2019 09:44:59 GMT\r\n
+Action.c(699):     \r\n
+Action.c(699): t=912184ms: 1493-byte response body for "http://10.100.22.24:8181/signal/activity/activitiesBySignal/10171?_=1573114232634" (RelFrameId=1, Internal ID=219)
+Action.c(699):     [{"alertName":null,"alertId":null,"activity_id":10331,"type":"AttachmentAdded","details":"
+Action.c(699):     Attachment '[cioms_scanned.pdf]' is added","performedBy":"bhagya","timestamp":"07-Nov-2019
+Action.c(699):      08:03:05","justification":null,"caseNumber":null,"suspect":null,"eventName":null,"current
+Action.c(699):     Assignment":"bhagya","currentAssignmentDept":[],"performedByDept":[]},{"alertName":null,"a
+Action.c(699):     lertId":null,"activity_id":10345,"type":"SignalUpdated","details":"Comments on HA Signal S
+Action.c(699):     tatus changed from 'comments' to 'commentscommentscomments' for signal 'Signal_Perf_Perfor
+Action.c(699):     mance'<br>","performedBy":"bhagya","timestamp":"07-Nov-2019 08:11:11","justification":null
+Action.c(699):     ,"caseNumber":null,"suspect":null,"eventName":null,"currentAssignment":"bhagya","currentAs
+Action.c(699):     signmentDept":[],"performedByDept":[]},{"alertName":null,"alertId":null,"activity_id":1033
+Action.c(699):     7,"type":"ActionCreated","details":"Action 'Additional investigations' created","performed
+Action.c(699):     By":"bhagya","timestamp":"07-Nov-2019 08:03:44","justification":null,"caseNumber":null,"su
+Action.c(699):     spect":null,"eventName":null,"currentAssignment":"bhagya","currentAssignmentDept":[],"perf
+Action.c(699):     ormedByDept":[]},{"alertName":null,"alertId":null,"activity_id":10314,"type":"SignalUpdate
+Action.c(699):     d","details":"Comments on HA Signal Status changed from ' ' to 'comments' for signal 'Sign
+Action.c(699):     al_Perf_Performance'<br>","performedBy":"bhagya","timestamp":"07-Nov-2019 07:58:40","justi
+Action.c(699):     fication":null,"caseNumber":null,"suspect":null,"eventName":null,"currentAssignment":"bhag
+Action.c(699):     ya","currentAssignmentDept":[],"performedByDept":[]}]
+Action.c(699): web_url("10171_3") was successful, 1493 body bytes, 256 header bytes  	[MsgId: MMSG-26386]
+Action.c(708): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(708): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(713): Notify: Transaction "Signalsummary_07_NavigateActivityLogTab" ended with a "Pass" status (Duration: 0.2746).	[MsgId: MMSG-16873]
+Action.c(715): lr_think_time: 17.75 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(718): Notify: Transaction "Signalsummary_08_Logout" started.	[MsgId: MMSG-16999]
+Action.c(720): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(720): Warning -26590: web_remove/revert_auto_header for "X-Requested-With" had no effect  	[MsgId: MWAR-26590]
+Action.c(720): web_remove/revert_auto_header("X-Requested-With") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(722): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(722): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(725): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(725): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(728): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(728): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(731): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(731): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(731): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(731): t=915303ms: 260-byte response headers for "http://10.100.22.24:8181/signal/logout/index" (RelFrameId=1, Internal ID=176)
+Action.c(731):     HTTP/1.1 302 \r\n
+Action.c(731):     X-Frame-Options: DENY\r\n
+Action.c(731):     X-Application-Context: application:production:7171\r\n
+Action.c(731):     Cache-Control: no-cache, no-store\r\n
+Action.c(731):     Pragma: no-cache\r\n
+Action.c(731):     Location: http://10.100.22.24:8181/signal/logoff\r\n
+Action.c(731):     Transfer-Encoding: chunked\r\n
+Action.c(731):     Date: Mon, 25 Nov 2019 09:45:03 GMT\r\n
+Action.c(731):     \r\n
+Action.c(731): Redirecting "http://10.100.22.24:8181/signal/logout/index" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(731): To location "http://10.100.22.24:8181/signal/logoff"  	[MsgId: MMSG-26693]
+Action.c(731): t=915549ms: 297-byte response headers for "http://10.100.22.24:8181/signal/logoff" (RelFrameId=1, Internal ID=177)
+Action.c(731):     HTTP/1.1 302 \r\n
+Action.c(731):     Set-Cookie: grails_remember_me=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/s
+Action.c(731):     ignal\r\n
+Action.c(731):     Set-Cookie: SESSION=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/signal/; Htt
+Action.c(731):     pOnly\r\n
+Action.c(731):     Location: /signal/login/auth\r\n
+Action.c(731):     Content-Length: 0\r\n
+Action.c(731):     Date: Mon, 25 Nov 2019 09:45:03 GMT\r\n
+Action.c(731):     \r\n
+Action.c(731): Redirecting "http://10.100.22.24:8181/signal/logoff" (redirection depth is 1)  	[MsgId: MMSG-26694]
+Action.c(731): To location "http://10.100.22.24:8181/signal/login/auth"  	[MsgId: MMSG-26693]
+Action.c(731): t=915804ms: 357-byte response headers for "http://10.100.22.24:8181/signal/login/auth" (RelFrameId=1, Internal ID=178)
+Action.c(731):     HTTP/1.1 200 \r\n
+Action.c(731):     X-Frame-Options: DENY\r\n
+Action.c(731):     X-Application-Context: application:production:7171\r\n
+Action.c(731):     Cache-Control: no-cache, no-store\r\n
+Action.c(731):     Pragma: no-cache\r\n
+Action.c(731):     Set-Cookie: SESSION=2585bac5-7977-447a-87d9-939fb6b5c515; Path=/signal/; HttpOnly\r\n
+Action.c(731):     Content-Type: text/html;charset=UTF-8\r\n
+Action.c(731):     Content-Language: en-US\r\n
+Action.c(731):     Transfer-Encoding: chunked\r\n
+Action.c(731):     Date: Mon, 25 Nov 2019 09:45:03 GMT\r\n
+Action.c(731):     \r\n
+Action.c(731): t=915804ms: 2397-byte response body for "http://10.100.22.24:8181/signal/login/auth" (RelFrameId=1, Internal ID=178)
+Action.c(731):     <html>\n
+Action.c(731):         <head>\n
+Action.c(731):             <title>Login</title>\n
+Action.c(731):             <link rel="stylesheet" href="/signal/assets/login-23162286b278bf1e48cb0201c9e9a644
+Action.c(731):     .css"/>\n
+Action.c(731):             <link rel="stylesheet" href="/signal/assets/application-aa801ea5ee6d655281e8e424b3
+Action.c(731):     f6d136.css"/>\n
+Action.c(731):             <script type="text/javascript" src="/signal/assets/application-3d08fae965abea68e09
+Action.c(731):     f629b47bba0fc.js" ></script>\n
+Action.c(731):         </head>\n
+Action.c(731):         <body>\n
+Action.c(731):             <div class="container">\n
+Action.c(731):     \n
+Action.c(731):                 <div id="loginStyle">\n
+Action.c(731):                     <form action='/signal/login/authenticate' method='POST' id="loginForm" rol
+Action.c(731):     e="form" autocomplete="off">\n
+Action.c(731):                         <input type="hidden" name="_csrf" value="02b322f2-7851-4d54-8cbc-b1503
+Action.c(731):     7b249e0"/>\n
+Action.c(731):                         <div id="loginTable">\n
+Action.c(731):                             <div id="loginHeader">\n
+Action.c(731):                                 <div class="pvLogo">\n
+Action.c(731):                                     <img src="/signal/assets/pv-signal-logo-61161afba9a8a8e20e
+Action.c(731):     be65b7f0973c2a.png" id="loginLogo"/>\n
+Action.c(731):                                 </div>\n
+Action.c(731):                                 <div class="header-lbl">\n
+Action.c(731):                                     Log in\n
+Action.c(731):                                     \n
+Action.c(731):                                 </div>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                             <div id="loginUserContainer">\n
+Action.c(731):                                 <input type="text" name="username" id="username" class="loginF
+Action.c(731):     ieldUser" placeholder="Username" required autofocus>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                             <div id="loginPassContainer">\n
+Action.c(731):                                 <input type="password" name="password" id="password" class="lo
+Action.c(731):     ginFieldPass" placeholder="Password" required>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                             <div id="loginFooter">\n
+Action.c(731):                                 <button id="loginSubmit" type="submit">Log in</button>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                         </div>\n
+Action.c(731):     \n
+Action.c(731):                         <div class="margin20Top">\n
+Action.c(731):                             \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):                         </div>\n
+Action.c(731):     \n
+Action.c(731):                     </form>\n
+Action.c(731):                 </div>\n
+Action.c(731):             </div>\n
+Action.c(731):             <script type='text/javascript'>\n
+Action.c(731):                 setInterval(function() {window.location.reload(true)}, 60000 * 15);\n
+Action.c(731):                 (function() {\n
+Action.c(731):                     document.forms['loginForm'].elements['j_username'].focus();\n
+Action.c(731):                     localStorage.removeItem("dashboardWidgetsConfig");\n
+Action.c(731):                     document.forms['loginForm'].elements['username'].focus();\n
+Action.c(731):     \n
+Action.c(731):                 })();\n
+Action.c(731):             </script>\n
+Action.c(731):         </body>\n
+Action.c(731):     </html>\n
+Action.c(731): Registered web_reg_find successful for "Text=Login" (count=1)  	[MsgId: MMSG-26364]
+Action.c(731): web_url("index_2") was successful, 2397 body bytes, 914 header bytes  	[MsgId: MMSG-26386]
+Action.c(740): web_websocket_close started  	[MsgId: MMSG-26355]
+Action.c(740): Warning -35047: WebSocket api "web_websocket_close" only supports socket replay  	[MsgId: MWAR-35047]
+Action.c(740): web_websocket_close highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(744): Notify: Transaction "Signalsummary_08_Logout" ended with a "Pass" status (Duration: 0.7512 Wasted Time: 0.0000).	[MsgId: MMSG-16871]
+Action.c(746): lr_think_time: 12.42 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(677): t=920907ms: 256-byte response headers for "http://10.100.22.24:8181/signal/validatedSignal/graphReport" (RelFrameId=1, Internal ID=130)
+Action.c(677):     HTTP/1.1 200 \r\n
+Action.c(677):     X-Frame-Options: DENY\r\n
+Action.c(677):     X-Application-Context: application:production:7171\r\n
+Action.c(677):     Cache-Control: no-cache, no-store\r\n
+Action.c(677):     Pragma: no-cache\r\n
+Action.c(677):     Content-Type: application/json;charset=UTF-8\r\n
+Action.c(677):     Transfer-Encoding: chunked\r\n
+Action.c(677):     Date: Mon, 25 Nov 2019 09:45:08 GMT\r\n
+Action.c(677):     \r\n
+Action.c(677): t=920908ms: 998-byte response body for "http://10.100.22.24:8181/signal/validatedSignal/graphReport" (RelFrameId=1, Internal ID=130)
+Action.c(677):     {"code":200,"data":{"age-grp-over-time-chart":[{"name":"N/A","data":[{"name":"2018-JAN","y
+Action.c(677):     ":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name"
+Action.c(677):     :"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG",
+Action.c(677):     "y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"nam
+Action.c(677):     e":"2018-DEC","y":0}]}],"seriousness-over-time-chart":[{"data":[{"name":"2018-JAN","y":0},
+Action.c(677):     {"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"201
+Action.c(677):     8-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0
+Action.c(677):     },{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2
+Action.c(677):     018-DEC","y":0}],"name":"Death"},{"data":[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y"
+Action.c(677):     :0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{"name":
+Action.c(677):     "2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","
+Action.c(677):     y":0},{"
+Action.c(677): t=920909ms: 1260-byte response body for "http://10.100.22.24:8181/signal/validatedSignal/graphReport" (RelFrameId=1, Internal ID=130)
+Action.c(677):     name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name":"Life-
+Action.c(677):     threatening"},{"data":[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-M
+Action.c(677):     AR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{
+Action.c(677):     "name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018
+Action.c(677):     -OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name":"Others"},{"data"
+Action.c(677):     :[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2
+Action.c(677):     018-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y"
+Action.c(677):     :0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":
+Action.c(677):     "2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name":"Intervention Required"},{"data":[{"na
+Action.c(677):     me":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-AP
+Action.c(677):     R","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"
+Action.c(677):     name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-
+Action.c(677):     NOV","y":0},{"name":"2018-DEC","y":0}],"name":"Hospitalized"},{"data":[{"name":"2018-JAN",
+Action.c(677):     "y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"nam
+Action.c(677): t=920909ms: 7722-byte response body for "http://10.100.22.24:8181/signal/validatedSignal/graphReport" (RelFrameId=1, Internal ID=130)
+Action.c(677):     e":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG
+Action.c(677):     ","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"n
+Action.c(677):     ame":"2018-DEC","y":0}],"name":"Prolong Hospitlization"},{"data":[{"name":"2018-JAN","y":0
+Action.c(677):     },{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2
+Action.c(677):     018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y"
+Action.c(677):     :0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":
+Action.c(677):     "2018-DEC","y":0}],"name":"Disability"},{"data":[{"name":"2018-JAN","y":0},{"name":"2018-F
+Action.c(677):     EB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{
+Action.c(677):     "name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018
+Action.c(677):     -SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}
+Action.c(677):     ],"name":"Congenital Anomaly"},{"data":[{"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0
+Action.c(677):     },{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2
+Action.c(677):     018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018-AUG","y":0},{"name":"2018-SEP","y"
+Action.c(677):     :0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0},{"name":"2018-DEC","y":0}],"name":
+Action.c(677):     "Medically Significant"}],"country-over-time-chart":[{"name":"N/A","data":[{"name":"2018-J
+Action.c(677):     AN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0},{
+Action.c(677):     "name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2018
+Action.c(677):     -AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y":0}
+Action.c(677):     ,{"name":"2018-DEC","y":0}]}],"gender-over-time-chart":[{"name":"N/A","data":[{"name":"201
+Action.c(677):     8-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","y":0
+Action.c(677):     },{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name":"2
+Action.c(677):     018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV","y"
+Action.c(677):     :0},{"name":"2018-DEC","y":0}]}],"outcome-over-time-chart":[{"name":"N/A","data":[{"name":
+Action.c(677):     "2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"2018-APR","
+Action.c(677):     y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0},{"name
+Action.c(677):     ":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2018-NOV"
+Action.c(677):     ,"y":0},{"name":"2018-DEC","y":0}]}],"seriousness-count-pie-chart":[{"name":"N/A","data":[
+Action.c(677):     {"name":"2018-JAN","y":0},{"name":"2018-FEB","y":0},{"name":"2018-MAR","y":0},{"name":"201
+Action.c(677):     8-APR","y":0},{"name":"2018-MAY","y":0},{"name":"2018-JUN","y":0},{"name":"2018-JUL","y":0
+Action.c(677):     },{"name":"2018-AUG","y":0},{"name":"2018-SEP","y":0},{"name":"2018-OCT","y":0},{"name":"2
+Action.c(677):     018-NOV","y":0},{"name":"2018-DEC","y":0}]}],"systemOrganClass":{"socs":["Blood and lympha
+Action.c(677):     tic system disorders","Cardiac disorders","Congenital, familial and genetic disorders","Ea
+Action.c(677):     r and labyrinth disorders","Endocrine disorders","Eye disorders","Gastrointestinal disorde
+Action.c(677):     rs","General disorders and administration site conditions","Hepatobiliary disorders","Immu
+Action.c(677):     ne system disorders","Infections and infestations","Injury, poisoning and procedural compl
+Action.c(677):     ications","Investigations","Metabolism and nutrition disorders","Musculoskeletal and conne
+Action.c(677):     ctive tissue disorders","Neoplasms benign, malignant and unspecified (incl cysts and polyp
+Action.c(677):     s)","Nervous system disorders","Pregnancy, puerperium and perinatal conditions","Psychiatr
+Action.c(677):     ic disorders","Renal and urinary disorders","Reproductive system and breast disorders","Re
+Action.c(677):     spiratory, thoracic and mediastinal disorders","Skin and subcutaneous tissue disorders","S
+Action.c(677):     ocial circumstances","Surgical and medical procedures","Vascular disorders","Product issue
+Action.c(677):     s"],"years":["2018-JAN","2018-FEB","2018-MAR","2018-APR","2018-MAY","2018-JUN","2018-JUL",
+Action.c(677):     "2018-AUG","2018-SEP","2018-OCT","2018-NOV","2018-DEC"],"data":[[0,0,0],[0,1,0],[0,2,0],[0
+Action.c(677):     ,3,0],[0,4,0],[0,5,0],[0,6,0],[0,7,0],[0,8,0],[0,9,0],[0,10,0],[0,11,0],[0,12,0],[0,13,0],
+Action.c(677):     [0,14,0],[0,15,0],[0,16,0],[0,17,0],[0,18,0],[0,19,0],[0,20,0],[0,21,0],[0,22,0],[0,23,0],
+Action.c(677):     [0,24,0],[0,25,0],[0,26,0],[1,0,0],[1,1,0],[1,2,0],[1,3,0],[1,4,0],[1,5,0],[1,6,0],[1,7,0]
+Action.c(677):     ,[1,8,0],[1,9,0],[1,10,0],[1,11,0],[1,12,0],[1,13,0],[1,14,0],[1,15,0],[1,16,0],[1,17,0],[
+Action.c(677):     1,18,0],[1,19,0],[1,20,0],[1,21,0],[1,22,0],[1,23,0],[1,24,0],[1,25,0],[1,26,0],[2,0,0],[2
+Action.c(677):     ,1,0],[2,2,0],[2,3,0],[2,4,0],[2,5,0],[2,6,0],[2,7,0],[2,8,0],[2,9,0],[2,10,0],[2,11,0],[2
+Action.c(677):     ,12,0],[2,13,0],[2,14,0],[2,15,0],[2,16,0],[2,17,0],[2,18,0],[2,19,0],[2,20,0],[2,21,0],[2
+Action.c(677):     ,22,0],[2,23,0],[2,24,0],[2,25,0],[2,26,0],[3,0,0],[3,1,0],[3,2,0],[3,3,0],[3,4,0],[3,5,0]
+Action.c(677):     ,[3,6,0],[3,7,0],[3,8,0],[3,9,0],[3,10,0],[3,11,0],[3,12,0],[3,13,0],[3,14,0],[3,15,0],[3,
+Action.c(677):     16,0],[3,17,0],[3,18,0],[3,19,0],[3,20,0],[3,21,0],[3,22,0],[3,23,0],[3,24,0],[3,25,0],[3,
+Action.c(677):     26,0],[4,0,0],[4,1,0],[4,2,0],[4,3,0],[4,4,0],[4,5,0],[4,6,0],[4,7,0],[4,8,0],[4,9,0],[4,1
+Action.c(677):     0,0],[4,11,0],[4,12,0],[4,13,0],[4,14,0],[4,15,0],[4,16,0],[4,17,0],[4,18,0],[4,19,0],[4,2
+Action.c(677):     0,0],[4,21,0],[4,22,0],[4,23,0],[4,24,0],[4,25,0],[4,26,0],[5,0,0],[5,1,0],[5,2,0],[5,3,0]
+Action.c(677):     ,[5,4,0],[5,5,0],[5,6,0],[5,7,0],[5,8,0],[5,9,0],[5,10,0],[5,11,0],[5,12,0],[5,13,0],[5,14
+Action.c(677):     ,0],[5,15,0],[5,16,0],[5,17,0],[5,18,0],[5,19,0],[5,20,0],[5,21,0],[5,22,0],[5,23,0],[5,24
+Action.c(677):     ,0],[5,25,0],[5,26,0],[6,0,0],[6,1,0],[6,2,0],[6,3,0],[6,4,0],[6,5,0],[6,6,0],[6,7,0],[6,8
+Action.c(677):     ,0],[6,9,0],[6,10,0],[6,11,0],[6,12,0],[6,13,0],[6,14,0],[6,15,0],[6,16,0],[6,17,0],[6,18,
+Action.c(677):     0],[6,19,0],[6,20,0],[6,21,0],[6,22,0],[6,23,0],[6,24,0],[6,25,0],[6,26,0],[7,0,0],[7,1,0]
+Action.c(677):     ,[7,2,0],[7,3,0],[7,4,0],[7,5,0],[7,6,0],[7,7,0],[7,8,0],[7,9,0],[7,10,0],[7,11,0],[7,12,0
+Action.c(677):     ],[7,13,0],[7,14,0],[7,15,0],[7,16,0],[7,17,0],[7,18,0],[7,19,0],[7,20,0],[7,21,0],[7,22,0
+Action.c(677):     ],[7,23,0],[7,24,0],[7,25,0],[7,26,0],[8,0,0],[8,1,0],[8,2,0],[8,3,0],[8,4,0],[8,5,0],[8,6
+Action.c(677):     ,0],[8,7,0],[8,8,0],[8,9,0],[8,10,0],[8,11,0],[8,12,0],[8,13,0],[8,14,0],[8,15,0],[8,16,0]
+Action.c(677):     ,[8,17,0],[8,18,0],[8,19,0],[8,20,0],[8,21,0],[8,22,0],[8,23,0],[8,24,0],[8,25,0],[8,26,0]
+Action.c(677):     ,[9,0,0],[9,1,0],[9,2,0],[9,3,0],[9,4,0],[9,5,0],[9,6,0],[9,7,0],[9,8,0],[9,9,0],[9,10,0],
+Action.c(677):     [9,11,0],[9,12,0],[9,13,0],[9,14,0],[9,15,0],[9,16,0],[9,17,0],[9,18,0],[9,19,0],[9,20,0],
+Action.c(677):     [9,21,0],[9,22,0],[9,23,0],[9,24,0],[9,25,0],[9,26,0],[10,0,0],[10,1,0],[10,2,0],[10,3,0],
+Action.c(677):     [10,4,0],[10,5,0],[10,6,0],[10,7,0],[10,8,0],[10,9,0],[10,10,0],[10,11,0],[10,12,0],[10,13
+Action.c(677):     ,0],[10,14,0],[10,15,0],[10,16,0],[10,17,0],[10,18,0],[10,19,0],[10,20,0],[10,21,0],[10,22
+Action.c(677):     ,0],[10,23,0],[10,24,0],[10,25,0],[10,26,0],[11,0,0],[11,1,0],[11,2,0],[11,3,0],[11,4,0],[
+Action.c(677):     11,5,0],[11,6,0],[11,7,0],[11,8,0],[11,9,0],[11,10,0],[11,11,0],[11,12,0],[11,13,0],[11,14
+Action.c(677):     ,0],[11,15,0],[11,16,0],[11,17,0],[11,18,0],[11,19,0],[11,20,0],[11,21,0],[11,22,0],[11,23
+Action.c(677):     ,0],[11,24,0],[11,25,0],[11,26,0]]},"assessmentDetailView":"<div>\\n    <div>\\n        <t
+Action.c(677):     able class=\\"table table-striped bs-example fixHeader-table text-center\\" id=\\"pvTopHea
+Action.c(677):     d\\">\\n            <thead>\\n            <tr>\\n                <th class=\\"headRow text
+Action.c(677):     -left\\">Characteristics<\\u002fth>\\n                <th class=\\"headRow text-left\\"><d
+Action.c(677):     iv class=\\"col-md-6\\">Category<\\u002fdiv>\\n\\n                    <div class=\\"col-md
+Action.c(677):     -6\\">Number (%)<\\u002fdiv><\\u002fth>\\n            <\\u002ftr>\\n            <\\u002fth
+Action.c(677):     ead>\\n            <tbody>\\n            \\n                <tr>\\n                    <td
+Action.c(677):      class=\\"text-left\\">-<\\u002ftd>\\n                    <td class=\\"text-left\\">\\n   
+Action.c(677):                          <div class=\\"col-md-6\\">-<\\u002fdiv>\\n\\n                        
+Action.c(677):     <div class=\\"col-md-6\\">\\n                            <span>-<\\u002fspan>\\n          
+Action.c(677):                   <\\u002fdiv>\\n                    <\\u002ftd>\\n                <\\u002ftr>
+Action.c(677):     \\n            \\n            <\\u002ftbody>\\n        <\\u002ftable>\\n    <\\u002fdiv>\\
+Action.c(677):     n<\\u002fdiv>"},"message":null,"status":true}
+Action.c(677): web_submit_data("graphReport") was successful, 9980 body bytes, 256 header bytes  	[MsgId: MMSG-26386]
+Action.c(694): Notify: Transaction "Signalsummary_07_NavigateActivityLogTab" started.	[MsgId: MMSG-16999]
+Action.c(696): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(696): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(699): web_url("10171_3") started  	[MsgId: MMSG-26355]
+Action.c(699): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(699): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(699): t=921199ms: 256-byte response headers for "http://10.100.22.24:8181/signal/activity/activitiesBySignal/10171?_=1573114232634" (RelFrameId=1, Internal ID=131)
+Action.c(699):     HTTP/1.1 200 \r\n
+Action.c(699):     X-Frame-Options: DENY\r\n
+Action.c(699):     X-Application-Context: application:production:7171\r\n
+Action.c(699):     Cache-Control: no-cache, no-store\r\n
+Action.c(699):     Pragma: no-cache\r\n
+Action.c(699):     Content-Type: application/json;charset=UTF-8\r\n
+Action.c(699):     Transfer-Encoding: chunked\r\n
+Action.c(699):     Date: Mon, 25 Nov 2019 09:45:08 GMT\r\n
+Action.c(699):     \r\n
+Action.c(699): t=921202ms: 1493-byte response body for "http://10.100.22.24:8181/signal/activity/activitiesBySignal/10171?_=1573114232634" (RelFrameId=1, Internal ID=131)
+Action.c(699):     [{"alertName":null,"alertId":null,"activity_id":10345,"type":"SignalUpdated","details":"Co
+Action.c(699):     mments on HA Signal Status changed from 'comments' to 'commentscommentscomments' for signa
+Action.c(699):     l 'Signal_Perf_Performance'<br>","performedBy":"bhagya","timestamp":"07-Nov-2019 08:11:11"
+Action.c(699):     ,"justification":null,"caseNumber":null,"suspect":null,"eventName":null,"currentAssignment
+Action.c(699):     ":"bhagya","currentAssignmentDept":[],"performedByDept":[]},{"alertName":null,"alertId":nu
+Action.c(699):     ll,"activity_id":10331,"type":"AttachmentAdded","details":"Attachment '[cioms_scanned.pdf]
+Action.c(699):     ' is added","performedBy":"bhagya","timestamp":"07-Nov-2019 08:03:05","justification":null
+Action.c(699):     ,"caseNumber":null,"suspect":null,"eventName":null,"currentAssignment":"bhagya","currentAs
+Action.c(699):     signmentDept":[],"performedByDept":[]},{"alertName":null,"alertId":null,"activity_id":1033
+Action.c(699):     7,"type":"ActionCreated","details":"Action 'Additional investigations' created","performed
+Action.c(699):     By":"bhagya","timestamp":"07-Nov-2019 08:03:44","justification":null,"caseNumber":null,"su
+Action.c(699):     spect":null,"eventName":null,"currentAssignment":"bhagya","currentAssignmentDept":[],"perf
+Action.c(699):     ormedByDept":[]},{"alertName":null,"alertId":null,"activity_id":10314,"type":"SignalUpdate
+Action.c(699):     d","details":"Comments on HA Signal Status changed from ' ' to 'comments' for signal 'Sign
+Action.c(699):     al_Perf_Performance'<br>","performedBy":"bhagya","timestamp":"07-Nov-2019 07:58:40","justi
+Action.c(699):     fication":null,"caseNumber":null,"suspect":null,"eventName":null,"currentAssignment":"bhag
+Action.c(699):     ya","currentAssignmentDept":[],"performedByDept":[]}]
+Action.c(699): web_url("10171_3") was successful, 1493 body bytes, 256 header bytes  	[MsgId: MMSG-26386]
+Action.c(708): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(708): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(713): Notify: Transaction "Signalsummary_07_NavigateActivityLogTab" ended with a "Pass" status (Duration: 0.3029).	[MsgId: MMSG-16873]
+Action.c(715): lr_think_time: 16.36 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Ending action Action.	[MsgId: MMSG-15918]
+Action was aborted.	[MsgId: MMSG-10694]
+Ending Vuser...	[MsgId: MMSG-15966]
+Starting action vuser_end.	[MsgId: MMSG-15919]
+Ending action vuser_end.	[MsgId: MMSG-15918]
+Vuser Terminated.	[MsgId: MMSG-15963]
+Vuser 1 (thread 27684), ended OK."	[MsgId: MMSG-10695]
+Action.c(718): Notify: Transaction "Signalsummary_08_Logout" started.	[MsgId: MMSG-16999]
+Action.c(720): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(720): Warning -26590: web_remove/revert_auto_header for "X-Requested-With" had no effect  	[MsgId: MWAR-26590]
+Action.c(720): web_remove/revert_auto_header("X-Requested-With") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(722): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(722): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(725): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(725): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(728): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(728): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(731): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(731): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(731): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(731): t=930184ms: 260-byte response headers for "http://10.100.22.24:8181/signal/logout/index" (RelFrameId=1, Internal ID=220)
+Action.c(731):     HTTP/1.1 302 \r\n
+Action.c(731):     X-Frame-Options: DENY\r\n
+Action.c(731):     X-Application-Context: application:production:7171\r\n
+Action.c(731):     Cache-Control: no-cache, no-store\r\n
+Action.c(731):     Pragma: no-cache\r\n
+Action.c(731):     Location: http://10.100.22.24:8181/signal/logoff\r\n
+Action.c(731):     Transfer-Encoding: chunked\r\n
+Action.c(731):     Date: Mon, 25 Nov 2019 09:45:17 GMT\r\n
+Action.c(731):     \r\n
+Action.c(731): Redirecting "http://10.100.22.24:8181/signal/logout/index" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(731): To location "http://10.100.22.24:8181/signal/logoff"  	[MsgId: MMSG-26693]
+Action.c(731): t=930434ms: 297-byte response headers for "http://10.100.22.24:8181/signal/logoff" (RelFrameId=1, Internal ID=221)
+Action.c(731):     HTTP/1.1 302 \r\n
+Action.c(731):     Set-Cookie: grails_remember_me=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/s
+Action.c(731):     ignal\r\n
+Action.c(731):     Set-Cookie: SESSION=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/signal/; Htt
+Action.c(731):     pOnly\r\n
+Action.c(731):     Location: /signal/login/auth\r\n
+Action.c(731):     Content-Length: 0\r\n
+Action.c(731):     Date: Mon, 25 Nov 2019 09:45:17 GMT\r\n
+Action.c(731):     \r\n
+Action.c(731): Redirecting "http://10.100.22.24:8181/signal/logoff" (redirection depth is 1)  	[MsgId: MMSG-26694]
+Action.c(731): To location "http://10.100.22.24:8181/signal/login/auth"  	[MsgId: MMSG-26693]
+Action.c(731): t=930693ms: 357-byte response headers for "http://10.100.22.24:8181/signal/login/auth" (RelFrameId=1, Internal ID=222)
+Action.c(731):     HTTP/1.1 200 \r\n
+Action.c(731):     X-Frame-Options: DENY\r\n
+Action.c(731):     X-Application-Context: application:production:7171\r\n
+Action.c(731):     Cache-Control: no-cache, no-store\r\n
+Action.c(731):     Pragma: no-cache\r\n
+Action.c(731):     Set-Cookie: SESSION=b143f673-63f2-42e4-996e-842655d9e143; Path=/signal/; HttpOnly\r\n
+Action.c(731):     Content-Type: text/html;charset=UTF-8\r\n
+Action.c(731):     Content-Language: en-US\r\n
+Action.c(731):     Transfer-Encoding: chunked\r\n
+Action.c(731):     Date: Mon, 25 Nov 2019 09:45:17 GMT\r\n
+Action.c(731):     \r\n
+Action.c(731): t=930694ms: 2397-byte response body for "http://10.100.22.24:8181/signal/login/auth" (RelFrameId=1, Internal ID=222)
+Action.c(731):     <html>\n
+Action.c(731):         <head>\n
+Action.c(731):             <title>Login</title>\n
+Action.c(731):             <link rel="stylesheet" href="/signal/assets/login-23162286b278bf1e48cb0201c9e9a644
+Action.c(731):     .css"/>\n
+Action.c(731):             <link rel="stylesheet" href="/signal/assets/application-aa801ea5ee6d655281e8e424b3
+Action.c(731):     f6d136.css"/>\n
+Action.c(731):             <script type="text/javascript" src="/signal/assets/application-3d08fae965abea68e09
+Action.c(731):     f629b47bba0fc.js" ></script>\n
+Action.c(731):         </head>\n
+Action.c(731):         <body>\n
+Action.c(731):             <div class="container">\n
+Action.c(731):     \n
+Action.c(731):                 <div id="loginStyle">\n
+Action.c(731):                     <form action='/signal/login/authenticate' method='POST' id="loginForm" rol
+Action.c(731):     e="form" autocomplete="off">\n
+Action.c(731):                         <input type="hidden" name="_csrf" value="34facbc4-e2b3-4e70-8f19-03b22
+Action.c(731):     0be9bcc"/>\n
+Action.c(731):                         <div id="loginTable">\n
+Action.c(731):                             <div id="loginHeader">\n
+Action.c(731):                                 <div class="pvLogo">\n
+Action.c(731):                                     <img src="/signal/assets/pv-signal-logo-61161afba9a8a8e20e
+Action.c(731):     be65b7f0973c2a.png" id="loginLogo"/>\n
+Action.c(731):                                 </div>\n
+Action.c(731):                                 <div class="header-lbl">\n
+Action.c(731):                                     Log in\n
+Action.c(731):                                     \n
+Action.c(731):                                 </div>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                             <div id="loginUserContainer">\n
+Action.c(731):                                 <input type="text" name="username" id="username" class="loginF
+Action.c(731):     ieldUser" placeholder="Username" required autofocus>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                             <div id="loginPassContainer">\n
+Action.c(731):                                 <input type="password" name="password" id="password" class="lo
+Action.c(731):     ginFieldPass" placeholder="Password" required>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                             <div id="loginFooter">\n
+Action.c(731):                                 <button id="loginSubmit" type="submit">Log in</button>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                         </div>\n
+Action.c(731):     \n
+Action.c(731):                         <div class="margin20Top">\n
+Action.c(731):                             \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):                         </div>\n
+Action.c(731):     \n
+Action.c(731):                     </form>\n
+Action.c(731):                 </div>\n
+Action.c(731):             </div>\n
+Action.c(731):             <script type='text/javascript'>\n
+Action.c(731):                 setInterval(function() {window.location.reload(true)}, 60000 * 15);\n
+Action.c(731):                 (function() {\n
+Action.c(731):                     document.forms['loginForm'].elements['j_username'].focus();\n
+Action.c(731):                     localStorage.removeItem("dashboardWidgetsConfig");\n
+Action.c(731):                     document.forms['loginForm'].elements['username'].focus();\n
+Action.c(731):     \n
+Action.c(731):                 })();\n
+Action.c(731):             </script>\n
+Action.c(731):         </body>\n
+Action.c(731):     </html>\n
+Action.c(731): Registered web_reg_find successful for "Text=Login" (count=1)  	[MsgId: MMSG-26364]
+Action.c(731): web_url("index_2") was successful, 2397 body bytes, 914 header bytes  	[MsgId: MMSG-26386]
+Action.c(740): web_websocket_close started  	[MsgId: MMSG-26355]
+Action.c(740): Warning -35047: WebSocket api "web_websocket_close" only supports socket replay  	[MsgId: MWAR-35047]
+Action.c(740): web_websocket_close highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(744): Notify: Transaction "Signalsummary_08_Logout" ended with a "Pass" status (Duration: 0.7591 Wasted Time: 0.0000).	[MsgId: MMSG-16871]
+Action.c(746): lr_think_time: 14.52 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(718): Notify: Transaction "Signalsummary_08_Logout" started.	[MsgId: MMSG-16999]
+Action.c(720): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(720): Warning -26590: web_remove/revert_auto_header for "X-Requested-With" had no effect  	[MsgId: MWAR-26590]
+Action.c(720): web_remove/revert_auto_header("X-Requested-With") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(722): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(722): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(725): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(725): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(728): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(728): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(731): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(731): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(731): Notify: Parameter Substitution: parameter "URL" =  "http://10.100.22.24:8181"	[MsgId: MMSG-13992]
+Action.c(731): t=937846ms: 260-byte response headers for "http://10.100.22.24:8181/signal/logout/index" (RelFrameId=1, Internal ID=132)
+Action.c(731):     HTTP/1.1 302 \r\n
+Action.c(731):     X-Frame-Options: DENY\r\n
+Action.c(731):     X-Application-Context: application:production:7171\r\n
+Action.c(731):     Cache-Control: no-cache, no-store\r\n
+Action.c(731):     Pragma: no-cache\r\n
+Action.c(731):     Location: http://10.100.22.24:8181/signal/logoff\r\n
+Action.c(731):     Transfer-Encoding: chunked\r\n
+Action.c(731):     Date: Mon, 25 Nov 2019 09:45:25 GMT\r\n
+Action.c(731):     \r\n
+Action.c(731): Redirecting "http://10.100.22.24:8181/signal/logout/index" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(731): To location "http://10.100.22.24:8181/signal/logoff"  	[MsgId: MMSG-26693]
+Action.c(731): t=938090ms: 297-byte response headers for "http://10.100.22.24:8181/signal/logoff" (RelFrameId=1, Internal ID=133)
+Action.c(731):     HTTP/1.1 302 \r\n
+Action.c(731):     Set-Cookie: grails_remember_me=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/s
+Action.c(731):     ignal\r\n
+Action.c(731):     Set-Cookie: SESSION=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/signal/; Htt
+Action.c(731):     pOnly\r\n
+Action.c(731):     Location: /signal/login/auth\r\n
+Action.c(731):     Content-Length: 0\r\n
+Action.c(731):     Date: Mon, 25 Nov 2019 09:45:25 GMT\r\n
+Action.c(731):     \r\n
+Action.c(731): Redirecting "http://10.100.22.24:8181/signal/logoff" (redirection depth is 1)  	[MsgId: MMSG-26694]
+Action.c(731): To location "http://10.100.22.24:8181/signal/login/auth"  	[MsgId: MMSG-26693]
+Action.c(731): t=938347ms: 357-byte response headers for "http://10.100.22.24:8181/signal/login/auth" (RelFrameId=1, Internal ID=134)
+Action.c(731):     HTTP/1.1 200 \r\n
+Action.c(731):     X-Frame-Options: DENY\r\n
+Action.c(731):     X-Application-Context: application:production:7171\r\n
+Action.c(731):     Cache-Control: no-cache, no-store\r\n
+Action.c(731):     Pragma: no-cache\r\n
+Action.c(731):     Set-Cookie: SESSION=888892e1-f585-47cb-ae37-b982aa60b3a1; Path=/signal/; HttpOnly\r\n
+Action.c(731):     Content-Type: text/html;charset=UTF-8\r\n
+Action.c(731):     Content-Language: en-US\r\n
+Action.c(731):     Transfer-Encoding: chunked\r\n
+Action.c(731):     Date: Mon, 25 Nov 2019 09:45:25 GMT\r\n
+Action.c(731):     \r\n
+Action.c(731): t=938349ms: 2397-byte response body for "http://10.100.22.24:8181/signal/login/auth" (RelFrameId=1, Internal ID=134)
+Action.c(731):     <html>\n
+Action.c(731):         <head>\n
+Action.c(731):             <title>Login</title>\n
+Action.c(731):             <link rel="stylesheet" href="/signal/assets/login-23162286b278bf1e48cb0201c9e9a644
+Action.c(731):     .css"/>\n
+Action.c(731):             <link rel="stylesheet" href="/signal/assets/application-aa801ea5ee6d655281e8e424b3
+Action.c(731):     f6d136.css"/>\n
+Action.c(731):             <script type="text/javascript" src="/signal/assets/application-3d08fae965abea68e09
+Action.c(731):     f629b47bba0fc.js" ></script>\n
+Action.c(731):         </head>\n
+Action.c(731):         <body>\n
+Action.c(731):             <div class="container">\n
+Action.c(731):     \n
+Action.c(731):                 <div id="loginStyle">\n
+Action.c(731):                     <form action='/signal/login/authenticate' method='POST' id="loginForm" rol
+Action.c(731):     e="form" autocomplete="off">\n
+Action.c(731):                         <input type="hidden" name="_csrf" value="ac876283-b563-4ed6-95d7-9e1da
+Action.c(731):     148c193"/>\n
+Action.c(731):                         <div id="loginTable">\n
+Action.c(731):                             <div id="loginHeader">\n
+Action.c(731):                                 <div class="pvLogo">\n
+Action.c(731):                                     <img src="/signal/assets/pv-signal-logo-61161afba9a8a8e20e
+Action.c(731):     be65b7f0973c2a.png" id="loginLogo"/>\n
+Action.c(731):                                 </div>\n
+Action.c(731):                                 <div class="header-lbl">\n
+Action.c(731):                                     Log in\n
+Action.c(731):                                     \n
+Action.c(731):                                 </div>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                             <div id="loginUserContainer">\n
+Action.c(731):                                 <input type="text" name="username" id="username" class="loginF
+Action.c(731):     ieldUser" placeholder="Username" required autofocus>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                             <div id="loginPassContainer">\n
+Action.c(731):                                 <input type="password" name="password" id="password" class="lo
+Action.c(731):     ginFieldPass" placeholder="Password" required>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                             <div id="loginFooter">\n
+Action.c(731):                                 <button id="loginSubmit" type="submit">Log in</button>\n
+Action.c(731):                             </div>\n
+Action.c(731):     \n
+Action.c(731):                         </div>\n
+Action.c(731):     \n
+Action.c(731):                         <div class="margin20Top">\n
+Action.c(731):                             \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):     \n
+Action.c(731):                         </div>\n
+Action.c(731):     \n
+Action.c(731):                     </form>\n
+Action.c(731):                 </div>\n
+Action.c(731):             </div>\n
+Action.c(731):             <script type='text/javascript'>\n
+Action.c(731):                 setInterval(function() {window.location.reload(true)}, 60000 * 15);\n
+Action.c(731):                 (function() {\n
+Action.c(731):                     document.forms['loginForm'].elements['j_username'].focus();\n
+Action.c(731):                     localStorage.removeItem("dashboardWidgetsConfig");\n
+Action.c(731):                     document.forms['loginForm'].elements['username'].focus();\n
+Action.c(731):     \n
+Action.c(731):                 })();\n
+Action.c(731):             </script>\n
+Action.c(731):         </body>\n
+Action.c(731):     </html>\n
+Action.c(731): Registered web_reg_find successful for "Text=Login" (count=1)  	[MsgId: MMSG-26364]
+Action.c(731): web_url("index_2") was successful, 2397 body bytes, 914 header bytes  	[MsgId: MMSG-26386]
+Action.c(740): web_websocket_close started  	[MsgId: MMSG-26355]
+Action.c(740): Warning -35047: WebSocket api "web_websocket_close" only supports socket replay  	[MsgId: MWAR-35047]
+Action.c(740): web_websocket_close highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(744): Notify: Transaction "Signalsummary_08_Logout" ended with a "Pass" status (Duration: 0.7711 Wasted Time: 0.0000).	[MsgId: MMSG-16871]
+Action.c(746): lr_think_time: 13.95 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Ending action Action.	[MsgId: MMSG-15918]
+Action was aborted.	[MsgId: MMSG-10694]
+Ending Vuser...	[MsgId: MMSG-15966]
+Starting action vuser_end.	[MsgId: MMSG-15919]
+Ending action vuser_end.	[MsgId: MMSG-15918]
+Vuser Terminated.	[MsgId: MMSG-15963]
+Vuser 0 (thread 21964), ended OK."	[MsgId: MMSG-10695]
+Ending action Action.	[MsgId: MMSG-15918]
+Action was aborted.	[MsgId: MMSG-10694]
+Ending Vuser...	[MsgId: MMSG-15966]
+Starting action vuser_end.	[MsgId: MMSG-15919]
+Ending action vuser_end.	[MsgId: MMSG-15918]
+Vuser Terminated.	[MsgId: MMSG-15963]
+Vuser 2 (thread 12556), ended OK."	[MsgId: MMSG-10695]

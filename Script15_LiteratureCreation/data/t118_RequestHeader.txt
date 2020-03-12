@@ -1,0 +1,15 @@
+POST /signal/login/authenticate HTTP/1.1
+Host: 10.100.22.24:8181
+Connection: keep-alive
+Content-Length: 74
+Cache-Control: max-age=0
+Origin: http://10.100.22.24:8181
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://10.100.22.24:8181/signal/login/auth
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: SESSION=dfa1e614-c956-4661-823f-f3209b2ef774; rxVisitor=1581052348916JAS3UOPKNB68MUOURE5O3JLO9FH5PCGM; dtLatC=1; rxvt=1581054154005|1581052348920; dtPC=3$52348909_958h-vFFODADAKNNMJREMWIDIJABPMBVIBBKGM; dtSa=true%7CC%7C-1%7CLog%20in%7C-%7C1581052446847%7C52348909_958%7Chttp%3A%2F%2F10.100.22.24%3A8181%2Fsignal%2Flogin%2Fauth%7CLogin%7C1581052354003%7C%7C; dtCookie=v_4_srv_3_sn_406206299558A5AFA3EC35750EA49C69_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1
+

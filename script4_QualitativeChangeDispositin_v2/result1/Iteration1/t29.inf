@@ -1,0 +1,13 @@
+[t29]
+SnapshotXmlFile=snapshot_28.xml
+ContentType=application/json
+StepName=Submit Data: 68_3
+Total=1
+FileName1=t29.json
+RequestHeaderFile=t29_RequestHeader.txt
+ResponseHeaderFile=t29_ResponseHeader.txt
+RawStepEndTime=0
+RawStepName=68_3
+RequestBodyFile=t29_RequestBody.txt
+RawStepStartTime=1581076003425
+URL1=http://10.100.22.24:8181/signal/singleCaseAlert/listByExecutedConfig/68?cumulative=false&adhocRun=false&dashboardFilter=&tagName=&isFilterRequest=true&filters=["Review Required","Validated Observation"]

@@ -1,0 +1,28 @@
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(293): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(293): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(296): web_add_header("Cache-Control") started  	[MsgId: MMSG-26355]
+Action.c(296): web_add_header("Cache-Control") was successful  	[MsgId: MMSG-26392]
+Action.c(299): web_add_header("Pragma") started  	[MsgId: MMSG-26355]
+Action.c(299): web_add_header("Pragma") was successful  	[MsgId: MMSG-26392]
+Action.c(302): web_add_header("Upgrade") started  	[MsgId: MMSG-26355]
+Action.c(302): web_add_header("Upgrade") was successful  	[MsgId: MMSG-26392]
+Action.c(305): web_websocket_connect started  	[MsgId: MMSG-26355]
+Action.c(305): Error -26627: HTTP Status-Code=404 (Not Found) for "ws://10.100.22.24:8181/signal/stomp/800/s5al7w_5/websocket"  	[MsgId: MERR-26627]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 2.	[MsgId: MMSG-10545]
+Action.c(21): web_add_header("Accept-Encoding") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("DNT") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("DNT") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(30): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(41): web_url("signal") started  	[MsgId: MMSG-26355]
+Action.c(41): Error -35048: No match found for the requested parameter "_csrf". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+Action.c(41): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

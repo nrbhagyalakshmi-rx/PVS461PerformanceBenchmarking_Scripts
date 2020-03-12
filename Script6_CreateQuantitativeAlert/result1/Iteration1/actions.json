@@ -1,0 +1,127 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: signal",
+                "infFile": "t2.inf",
+                "time": 1581781191831
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1581781194205
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: events",
+                "infFile": "t8.inf",
+                "time": 1581781196629
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: {alertownerid}_3",
+                "infFile": "t17.inf",
+                "time": 1581781218985
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Submit Data: saveDashboardConfig",
+                "infFile": "t18.inf",
+                "time": 1581781219320
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Submit Data: searchViews",
+                "infFile": "t30.inf",
+                "time": 1581781239029
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Custom Request: getSelectedItem",
+                "infFile": "t31.inf",
+                "time": 1581781239341
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Submit Data: getPreLevelProductParents",
+                "infFile": "t32.inf",
+                "time": 1581781239648
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: fetchAllowedUsers",
+                "infFile": "t33.inf",
+                "time": 1581781239981
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: searchUserGroupList",
+                "infFile": "t34.inf",
+                "time": 1581781240307
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Submit Data: run",
+                "infFile": "t35.inf",
+                "time": 1581781242084
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: dataTables_en.json",
+                "infFile": "t36.inf",
+                "time": 1581781242480
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: info_3",
+                "infFile": "t37.inf",
+                "time": 1581781242775
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: executionStatus",
+                "infFile": "t38.inf",
+                "time": 1581781243102
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Url: index",
+                "infFile": "t39.inf",
+                "time": 1581781261526
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "QuantitativeAlert_02_Login",
+                "rawStartTime": 1581781191861,
+                "rawEndTime": 1581781203314,
+                "thinkTime": 0.0,
+                "wastedTime": 0.06276106834411621
+            },
+            {
+                "transactionName": "QuantitativeAlert_03_NavigateQuantitativeAlert",
+                "rawStartTime": 1581781218986,
+                "rawEndTime": 1581781224602,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07259440422058106
+            },
+            {
+                "transactionName": "QuantitativeAlert_04_CreateQuantitativeAlert",
+                "rawStartTime": 1581781240311,
+                "rawEndTime": 1581781243119,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0357670783996582
+            },
+            {
+                "transactionName": "QuantitativeAlert_05_Logout",
+                "rawStartTime": 1581781260581,
+                "rawEndTime": 1581781261530,
+                "thinkTime": 0.0,
+                "wastedTime": 0.010985851287841797
+            }
+        ]
+    }
+]

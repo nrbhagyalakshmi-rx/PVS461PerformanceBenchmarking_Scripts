@@ -1,0 +1,265 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: signal",
+                "infFile": "t2.inf",
+                "time": 1578910561518
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1578910570005
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: en.json",
+                "infFile": "t4.inf",
+                "time": 1578910570467
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: aggAlertByStatus",
+                "infFile": "t5.inf",
+                "time": 1578910570816
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: ahaByStatus",
+                "infFile": "t6.inf",
+                "time": 1578910571460
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: getProductByStatus",
+                "infFile": "t7.inf",
+                "time": 1578910572116
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: events",
+                "infFile": "t8.inf",
+                "time": 1578910572459
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: info",
+                "infFile": "t9.inf",
+                "time": 1578910573061
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: alertList",
+                "infFile": "t10.inf",
+                "time": 1578910587307
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: actionList",
+                "infFile": "t11.inf",
+                "time": 1578910587678
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: signalList",
+                "infFile": "t13.inf",
+                "time": 1578910599709
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: sideBar",
+                "infFile": "t14.inf",
+                "time": 1578910606927
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: caseByStatus",
+                "infFile": "t15.inf",
+                "time": 1578910611951
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: alertByDueDate",
+                "infFile": "t16.inf",
+                "time": 1578910623994
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Url: getProductByStatus_2",
+                "infFile": "t17.inf",
+                "time": 1578910635933
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: index",
+                "infFile": "t19.inf",
+                "time": 1578910660447
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Url: column-view-64c0085c608464f4a6f66e33d985ae27.html",
+                "infFile": "t20.inf",
+                "time": 1578910660742
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Url: info_2",
+                "infFile": "t21.inf",
+                "time": 1578910661475
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Url: polymer.html",
+                "infFile": "t22.inf",
+                "time": 1578910661933
+            },
+            {
+                "stepId": "STEP20",
+                "stepName": "Url: polymer-mini.html",
+                "infFile": "t24.inf",
+                "time": 1578910665547
+            },
+            {
+                "stepId": "STEP21",
+                "stepName": "Url: polymer-micro.html",
+                "infFile": "t25.inf",
+                "time": 1578910666355
+            },
+            {
+                "stepId": "STEP22",
+                "stepName": "Submit Data: searchViews",
+                "infFile": "t26.inf",
+                "time": 1578910667175
+            },
+            {
+                "stepId": "STEP23",
+                "stepName": "Custom Request: getSelectedItem",
+                "infFile": "t27.inf",
+                "time": 1578910667756
+            },
+            {
+                "stepId": "STEP24",
+                "stepName": "Submit Data: getPreLevelProductParents",
+                "infFile": "t29.inf",
+                "time": 1578910668172
+            },
+            {
+                "stepId": "STEP25",
+                "stepName": "Custom Request: prepareICSRsReport",
+                "infFile": "t31.inf",
+                "time": 1578910947880
+            },
+            {
+                "stepId": "STEP26",
+                "stepName": "Custom Request: requestReport",
+                "infFile": "t32.inf",
+                "time": 1578910949875
+            },
+            {
+                "stepId": "STEP27",
+                "stepName": "Custom Request: requestReport_2",
+                "infFile": "t33.inf",
+                "time": 1578910950319
+            },
+            {
+                "stepId": "STEP28",
+                "stepName": "Custom Request: requestReport_3",
+                "infFile": "t34.inf",
+                "time": 1578910950857
+            },
+            {
+                "stepId": "STEP29",
+                "stepName": "Custom Request: requestReport_4",
+                "infFile": "t35.inf",
+                "time": 1578910951314
+            },
+            {
+                "stepId": "STEP30",
+                "stepName": "Custom Request: requestReport_5",
+                "infFile": "t36.inf",
+                "time": 1578910951739
+            },
+            {
+                "stepId": "STEP31",
+                "stepName": "Url: index_2",
+                "infFile": "t38.inf",
+                "time": 1578910954537
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "SignalReports_01_OpenApplication",
+                "rawStartTime": 1578910560038,
+                "rawEndTime": 1578910561536,
+                "thinkTime": 0.0,
+                "wastedTime": 0.1276555061340332
+            },
+            {
+                "transactionName": "SignalReports_02_Login",
+                "rawStartTime": 1578910561537,
+                "rawEndTime": 1578910635934,
+                "thinkTime": 0.0,
+                "wastedTime": 0.6352591304779053
+            },
+            {
+                "transactionName": "SignalReports_03_NavigateToSignalReports",
+                "rawStartTime": 1578910635934,
+                "rawEndTime": 1578910666359,
+                "thinkTime": 0.0,
+                "wastedTime": 3.918559253692627
+            },
+            {
+                "transactionName": "SignalReports_04_GenerateICSRsByCaseCharacteristics",
+                "rawStartTime": 1578910668183,
+                "rawEndTime": 1578910947883,
+                "thinkTime": 0.0,
+                "wastedTime": 0.013203859329223633
+            },
+            {
+                "transactionName": "SignalReports_05_InitiatePBRERSignalSummaryReport",
+                "rawStartTime": 1578910947883,
+                "rawEndTime": 1578910949880,
+                "thinkTime": 0.0,
+                "wastedTime": 0.008004426956176758
+            },
+            {
+                "transactionName": "SignalReports_06_InitiateSignalSummaryReport",
+                "rawStartTime": 1578910949881,
+                "rawEndTime": 1578910950319,
+                "thinkTime": 0.0,
+                "wastedTime": 0.009606599807739258
+            },
+            {
+                "transactionName": "SignalReports_07_InitiateSignalsByState",
+                "rawStartTime": 1578910950323,
+                "rawEndTime": 1578910950860,
+                "thinkTime": 0.0,
+                "wastedTime": 0.009166717529296875
+            },
+            {
+                "transactionName": "SignalReports_08_InitiateSignalProductsAction",
+                "rawStartTime": 1578910950861,
+                "rawEndTime": 1578910951314,
+                "thinkTime": 0.0,
+                "wastedTime": 0.008695363998413086
+            },
+            {
+                "transactionName": "SignalReports_09_InitiateMemoReport",
+                "rawStartTime": 1578910951318,
+                "rawEndTime": 1578910951742,
+                "thinkTime": 0.0,
+                "wastedTime": 0.006016969680786133
+            },
+            {
+                "transactionName": "SignalReports_10_Logout",
+                "rawStartTime": 1578910951743,
+                "rawEndTime": 1578910954538,
+                "thinkTime": 0.0,
+                "wastedTime": 0.2675980587005615
+            }
+        ]
+    }
+]

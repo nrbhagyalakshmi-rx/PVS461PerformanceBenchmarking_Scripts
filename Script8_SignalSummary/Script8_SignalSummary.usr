@@ -1,0 +1,72 @@
+[General]
+Type=Multi
+DefaultCfg=default.cfg
+ParameterFile=Script8_SignalSummary.prm
+GlobalParameterFile=
+NewFunctionHeader=1
+RunType=cci
+ActionLogicExt=action_logic
+LastActiveAction=Action
+MajorVersion=12
+MinorVersion=60
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+AdditionalTypes=QTWeb
+DevelopTool=Vugen
+LastModifyVer=12.60.0.971
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+LastCodeGenerationVer=12.60.0.971
+DisableRegenerate=0
+Encoding=ANSI
+Description=
+ScriptLocale=en-IN
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[RunLogicFiles]
+Default Profile=default.usp
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[ExtraFiles]
+globals.h=
+WebSocketCB.c=
+[Modified Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Recorded Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="Signalsummary_01_OpenApplication__*delimiter*__Signalsummary_02_Login__*delimiter*__Signalsummary_03_NavigateSignalSummary__*delimiter*__Signalsummary_04_ClickOnaSignal__*delimiter*__Signalsummary_05_UpdateComments__*delimiter*__Signalsummary_06_NavigateAssessmentTab__*delimiter*__createaction__*delimiter*__Signalsummary_07_NavigateActivityLogTab__*delimiter*__Signalsummary_08_Logout"
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=result1
+ActiveRunName=result1
+[Transactions]
+Signalsummary_01_OpenApplication=
+Signalsummary_02_Login=
+Signalsummary_03_NavigateSignalSummary=
+Signalsummary_04_ClickOnaSignal=
+Signalsummary_05_UpdateComments=
+Signalsummary_06_NavigateAssessmentTab=
+createaction=
+Signalsummary_07_NavigateActivityLogTab=
+Signalsummary_08_Logout=
+[ExtraFilesToParse]
+WebSocketCB.c=

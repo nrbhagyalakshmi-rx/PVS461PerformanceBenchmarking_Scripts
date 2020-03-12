@@ -1,0 +1,12 @@
+GET /signal/query/getNumOperators HTTP/1.1
+Host: 10.100.22.24:8181
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+DNT: 1
+Connection: keep-alive
+Referer: http://10.100.22.24:8181/signal/singleCaseAlert/details?callingScreen=review&configId=1097&viewId=6189&isCaseDetailView=false
+Cookie: SESSION=ec1faa0b-04b8-47b0-a77b-c373f5f54ecd
+

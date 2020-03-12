@@ -1,0 +1,73 @@
+[General]
+Type=Multi
+DefaultCfg=default.cfg
+ParameterFile=script10_Reports.prm
+GlobalParameterFile=
+NewFunctionHeader=1
+RunType=cci
+ActionLogicExt=action_logic
+LastActiveAction=Action
+MajorVersion=12
+MinorVersion=60
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+AdditionalTypes=QTWeb
+DevelopTool=Vugen
+LastModifyVer=12.60.0.971
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+LastCodeGenerationVer=12.60.0.971
+DisableRegenerate=0
+Encoding=ANSI
+Description=
+ScriptLocale=en-IN
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[RunLogicFiles]
+Default Profile=default.usp
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[ExtraFiles]
+globals.h=
+WebSocketCB.c=
+[Modified Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Recorded Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="SignalReports_01_OpenApplication__*delimiter*__SignalReports_02_Login__*delimiter*__SignalReports_03_NavigateToSignalReports__*delimiter*__SignalReports_04_GenerateICSRsByCaseCharacteristics__*delimiter*__SignalReports_05_InitiatePBRERSignalSummaryReport__*delimiter*__SignalReports_06_InitiateSignalSummaryReport__*delimiter*__SignalReports_07_InitiateSignalsByState__*delimiter*__SignalReports_08_InitiateSignalProductsAction__*delimiter*__SignalReports_09_InitiateMemoReport__*delimiter*__SignalReports_10_Logout"
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=result1
+ActiveRunName=result1
+[Transactions]
+SignalReports_01_OpenApplication=
+SignalReports_02_Login=
+SignalReports_03_NavigateToSignalReports=
+SignalReports_04_GenerateICSRsByCaseCharacteristics=
+SignalReports_05_InitiatePBRERSignalSummaryReport=
+SignalReports_06_InitiateSignalSummaryReport=
+SignalReports_07_InitiateSignalsByState=
+SignalReports_08_InitiateSignalProductsAction=
+SignalReports_09_InitiateMemoReport=
+SignalReports_10_Logout=
+[ExtraFilesToParse]
+WebSocketCB.c=
