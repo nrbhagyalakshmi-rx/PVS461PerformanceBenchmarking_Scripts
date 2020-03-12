@@ -1,0 +1,14 @@
+Start auto log messages stack - Iteration 21.	[MsgId: MMSG-10545]
+Action.c(717): web_url("listComments") was successful, 369 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(726): Notify: Transaction "QualitativeReview_05_ClickOnComments" ended with a "Pass" status (Duration: 0.6724).	[MsgId: MMSG-16873]
+Action.c(728): lr_think_time: 17.50 seconds (recorded think time was 3.00 seconds).	[MsgId: MMSG-15947]
+Action.c(731): Notify: Transaction "QualitativeReview_06_UpdateComments" started.	[MsgId: MMSG-16999]
+Action.c(733): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(733): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(736): web_add_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(736): web_add_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+Action.c(739): web_submit_data("saveComment") started  	[MsgId: MMSG-26355]
+Action.c(739): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://10.100.22.24:8181/signal/alertComment/saveComment"  	[MsgId: MERR-26612]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

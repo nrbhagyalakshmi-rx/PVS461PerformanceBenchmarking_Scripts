@@ -1,0 +1,162 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: signal",
+                "infFile": "t2.inf",
+                "time": 1583912021454
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1583912022760
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: events",
+                "infFile": "t8.inf",
+                "time": 1583912024587
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: saveDashboardConfig",
+                "infFile": "t17.inf",
+                "time": 1583912043285
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Submit Data: {exec_config_id}",
+                "infFile": "t26.inf",
+                "time": 1583912069597
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: listComments",
+                "infFile": "t27.inf",
+                "time": 1583912086785
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: saveComment",
+                "infFile": "t28.inf",
+                "time": 1583912099637
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: listComments_2",
+                "infFile": "t29.inf",
+                "time": 1583912099994
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: dataTables_en.json",
+                "infFile": "t30.inf",
+                "time": 1583912116521
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: fetchAttachment",
+                "infFile": "t31.inf",
+                "time": 1583912117368
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Submit Data: upload",
+                "infFile": "t32.inf",
+                "time": 1583912119367
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: fetchAttachment_2",
+                "infFile": "t33.inf",
+                "time": 1583912120015
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: listCaseHistory",
+                "infFile": "t34.inf",
+                "time": 1583912133866
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: listSuspectProdCaseHistory",
+                "infFile": "t35.inf",
+                "time": 1583912134264
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Url: index",
+                "infFile": "t36.inf",
+                "time": 1583912151143
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "QualitativeReview_01_OpenApplication",
+                "rawStartTime": 1583912020286,
+                "rawEndTime": 1583912021482,
+                "thinkTime": 0.0,
+                "wastedTime": 0.10591506958007813
+            },
+            {
+                "transactionName": "QualitativeReview_02_Login",
+                "rawStartTime": 1583912021482,
+                "rawEndTime": 1583912030512,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07722663879394531
+            },
+            {
+                "transactionName": "QualitativeReview_03_NavigateTriggeredAlertsQualitativeReview",
+                "rawStartTime": 1583912042903,
+                "rawEndTime": 1583912044835,
+                "thinkTime": 0.0,
+                "wastedTime": 0.02167987823486328
+            },
+            {
+                "transactionName": "QualitativeReview_04_ClickOnAlertName",
+                "rawStartTime": 1583912062613,
+                "rawEndTime": 1583912069614,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04689788818359375
+            },
+            {
+                "transactionName": "QualitativeReview_05_ClickOnComments",
+                "rawStartTime": 1583912086273,
+                "rawEndTime": 1583912086786,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0067522525787353519
+            },
+            {
+                "transactionName": "QualitativeReview_06_UpdateComments",
+                "rawStartTime": 1583912098919,
+                "rawEndTime": 1583912099995,
+                "thinkTime": 0.0,
+                "wastedTime": 0.02168583869934082
+            },
+            {
+                "transactionName": "QualitativeReview_07_UploadAttachment",
+                "rawStartTime": 1583912117402,
+                "rawEndTime": 1583912120019,
+                "thinkTime": 0.0,
+                "wastedTime": 0.031099319458007814
+            },
+            {
+                "transactionName": "QualitativeReview_08_ViewHistory",
+                "rawStartTime": 1583912133397,
+                "rawEndTime": 1583912134264,
+                "thinkTime": 0.0,
+                "wastedTime": 0.009806156158447266
+            },
+            {
+                "transactionName": "QualitativeReview_09_Logout",
+                "rawStartTime": 1583912149977,
+                "rawEndTime": 1583912151146,
+                "thinkTime": 0.0,
+                "wastedTime": 0.007605075836181641
+            }
+        ]
+    }
+]
